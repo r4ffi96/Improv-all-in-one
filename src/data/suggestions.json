@@ -1,0 +1,233 @@
+{
+  "_note": "Bilingual shape kept for a later German pass. v1 seeds English only; empty 'de' arrays fall back to 'en' at read time.",
+  "categories": [
+    {
+      "categoryId": "location",
+      "labels": { "en": "Location", "de": "Ort" },
+      "suggestions": {
+        "en": [
+          "a hospital waiting room", "the back of a moving van", "a ski lift stuck mid-air",
+          "a public library after closing", "a village bakery at 5am", "a hotel breakfast buffet",
+          "a car wash", "the queue at passport control", "a submarine galley",
+          "a school gym during a parents' evening", "a cable car over a valley", "an all-night launderette",
+          "a fitting room in a bridal shop", "a lighthouse in winter", "a call centre floor",
+          "a taxidermy workshop", "the roof of a car park", "a sleeper train compartment",
+          "a garden centre in the rain", "a courtroom during a recess", "an empty swimming pool",
+          "a chalet during a power cut", "a recording studio at 3am", "an airport lost property office",
+          "a funeral reception in a pub", "a rooftop beehive", "a museum after hours",
+          "a border crossing at night", "a campsite shower block", "a dentist's reception"
+        ],
+        "de": []
+      }
+    },
+    {
+      "categoryId": "relationship",
+      "labels": { "en": "Relationship", "de": "Beziehung" },
+      "suggestions": {
+        "en": [
+          "siblings who have not spoken in a year", "old friends from school", "coworkers who dislike each other",
+          "a landlord and a tenant", "a driving instructor and a student", "father and adult daughter",
+          "two members of the same choir", "ex-partners who share a dog", "a nurse and a regular patient",
+          "neighbours on the same landing", "a coach and a player being dropped", "godparent and godchild",
+          "bandmates from a group that split up", "a mentor and a former protégé", "cousins at a family gathering",
+          "flatmates of six years", "a barber and a lifelong customer", "twins with different careers",
+          "a boss and the employee who trained her", "two people in the same support group",
+          "an in-law pair who never got on", "a nephew and a favourite uncle", "co-parents at a handover",
+          "a doctor and a colleague's spouse", "two rivals from the same village", "a teacher and a former pupil",
+          "best friends who both applied for the same job", "a debtor and the friend who lent the money",
+          "a widow and her late husband's business partner", "a couple in their fortieth year together"
+        ],
+        "de": []
+      }
+    },
+    {
+      "categoryId": "occupation",
+      "labels": { "en": "Activity / Occupation", "de": "Tätigkeit / Beruf" },
+      "suggestions": {
+        "en": [
+          "assembling flat-pack furniture", "night-shift security guard", "beekeeper", "wedding photographer",
+          "tuning a piano", "ski instructor", "packing a house into boxes", "avalanche forecaster",
+          "sorting a dead relative's paperwork", "cheesemonger", "traffic warden", "audiobook narrator",
+          "repairing a bicycle in the dark", "sommelier at a tasting", "hospital porter",
+          "counting stock at midnight", "conducting an amateur orchestra", "delivering post in a mountain village",
+          "cleaning a hotel room", "meter reader", "professional queue-stander", "sign language interpreter",
+          "training a guide dog", "restoring a fresco", "dismantling a fairground ride",
+          "operating a lock on a canal", "castings for a shampoo advert", "gritting the roads",
+          "building a dry stone wall", "fitting a hearing aid"
+        ],
+        "de": []
+      }
+    },
+    {
+      "categoryId": "object",
+      "labels": { "en": "Object", "de": "Gegenstand" },
+      "suggestions": {
+        "en": [
+          "a broken metronome", "a jar of pickled onions", "a laminated instruction card", "somebody else's umbrella",
+          "a hearing aid battery", "a folding chair", "a sealed envelope", "a bag of frozen peas",
+          "a trophy with the wrong name on it", "a key that fits nothing", "an expired passport",
+          "a plastic recorder", "a stack of unopened post", "a rented tuxedo", "a wedding ring in a drawer",
+          "a defrosting chest freezer", "a taxidermied owl", "a fire extinguisher", "a bag of unmarked keys",
+          "a hospital wristband", "a tin of paint in a discontinued colour", "an inflatable mattress",
+          "a lost glove on a fence post", "a cassette with no label", "a shared bank card",
+          "a printed-out email", "a vase glued back together", "a garden gnome", "a walkie-talkie",
+          "a lock of hair in an envelope"
+        ],
+        "de": []
+      }
+    },
+    {
+      "categoryId": "emotion",
+      "labels": { "en": "Emotion", "de": "Emotion" },
+      "suggestions": {
+        "en": [
+          "relief that arrives too late", "quiet resentment", "giddy anticipation", "homesickness",
+          "stubborn pride", "embarrassment on someone else's behalf", "grief that keeps surprising you",
+          "smugness", "dread about a phone call", "reluctant admiration", "guilt about being relieved",
+          "the need to be forgiven", "envy of a friend", "panic under a calm surface",
+          "loneliness in company", "protectiveness", "nostalgia that is not really wanted",
+          "the joy of being right", "shame about money", "tenderness towards a stranger",
+          "boredom turning into anger", "hope against evidence", "the exhaustion of pretending",
+          "fury at an object", "gratitude that cannot be said", "suspicion", "wounded dignity",
+          "the pleasure of a small revenge", "impatience with someone you love", "awe"
+        ],
+        "de": []
+      }
+    },
+    {
+      "categoryId": "genre",
+      "labels": { "en": "Genre / Style", "de": "Genre / Stil" },
+      "suggestions": {
+        "en": [
+          "nature documentary", "film noir", "Scandinavian crime drama", "silent film",
+          "kitchen sink realism", "telenovela", "courtroom drama", "spaghetti western",
+          "1980s sitcom", "cosmic horror", "period costume drama", "heist film",
+          "musical theatre", "found footage", "political thriller", "children's puppet show",
+          "true crime podcast", "Greek tragedy", "workplace mockumentary", "space opera",
+          "melodrama", "slapstick", "corporate training video", "romantic comedy",
+          "Bergman-style chamber piece", "post-apocalyptic road movie", "farce", "gothic novel",
+          "advent calendar special", "improvised opera"
+        ],
+        "de": []
+      }
+    },
+    {
+      "categoryId": "character-name",
+      "labels": { "en": "Character Name", "de": "Figurenname" },
+      "suggestions": {
+        "en": [
+          "Beatrix Hollinger", "Sam Okonkwo", "Doris Fankhauser", "Nils Bergqvist", "Yvonne Pratt",
+          "Aleks Novak", "Margit Stauffer", "Terence Bell", "Rosa Imhof", "Dieter Kranz",
+          "Lucia Marchetti", "Hamish Buchanan", "Nadia Farouk", "Gerald Speck", "Ines Baumgartner",
+          "Otto Lindqvist", "Priya Raman", "Wanda Kessler", "Bruno Steiner", "Colette Aubry",
+          "Ivan Dragic", "Marlene Vogt", "Felix Achterberg", "Sinead Doyle", "Kwame Mensah",
+          "Ursula Brand", "Tomasz Wozniak", "Helene Duval", "Rafael Costa", "Edith Naegeli"
+        ],
+        "de": []
+      }
+    },
+    {
+      "categoryId": "opening-line",
+      "labels": { "en": "Opening Line", "de": "Erster Satz" },
+      "suggestions": {
+        "en": [
+          "«You said you'd handle it.»", "«Don't touch that.»", "«It's Tuesday.»",
+          "«I brought the paperwork.»", "«She's not coming.»", "«I told them you'd be fine with it.»",
+          "«This is exactly what I said would happen.»", "«Sit down. Please.»",
+          "«You still have the receipt?»", "«I've been up since four.»", "«Nobody has to know.»",
+          "«That's not how your mother did it.»", "«I paid for this already.»",
+          "«They're asking for you outside.»", "«I want it back.»", "«You look exactly the same.»",
+          "«I only came for the food.»", "«Do not make this a thing.»", "«We agreed.»",
+          "«I found it in your coat.»", "«Twenty-two years I've worked here.»",
+          "«Is that supposed to be funny?»", "«I signed it.»", "«Put the light on.»",
+          "«There's a smell.»", "«He left you something.»", "«I can be back by six.»",
+          "«Nobody told me you were coming.»", "«I've read all of them.»", "«Say it again, slowly.»"
+        ],
+        "de": []
+      }
+    },
+    {
+      "categoryId": "problem",
+      "labels": { "en": "Problem / Conflict", "de": "Problem / Konflikt" },
+      "suggestions": {
+        "en": [
+          "the money is missing and only two people had access", "one of them has already told everyone",
+          "the wrong name is on the document", "the guest of honour has not arrived",
+          "somebody has to be told and nobody will do it", "the lease runs out on Friday",
+          "the recording was still running", "the promise was made before the news came",
+          "the inheritance was split unevenly", "they booked the same day for two things",
+          "he has been coming here for years and never paid", "the reference has to be written today",
+          "the neighbours have complained again", "the photograph proves the opposite",
+          "the medication was swapped", "she was seen where she said she wasn't",
+          "the equipment has been sold already", "there is only one seat left on the flight",
+          "the apology has to be public", "the report is due and the data is wrong",
+          "the dog has to go somewhere", "someone invited a person who should not be here",
+          "the roof will not last another winter", "the child has told the truth to the wrong adult",
+          "the recipe was never written down", "an old debt has been called in",
+          "the will names a stranger", "the deadline moved and nobody was told",
+          "he cannot drive any more and will not say so", "the keys were returned but the copies were not"
+        ],
+        "de": []
+      }
+    },
+    {
+      "categoryId": "superpower",
+      "labels": { "en": "Superpower", "de": "Superkraft" },
+      "suggestions": {
+        "en": [
+          "always knows what time it is", "can hear one specific person's thoughts, badly",
+          "can pause a conversation for ten seconds", "never loses anything",
+          "can make any room five degrees warmer", "understands every language except their own",
+          "is invisible to people over sixty", "can taste when somebody is lying",
+          "remembers every meal they have eaten", "can fix any machine by touching it, once a day",
+          "cannot be photographed", "makes plants grow wherever they sit still",
+          "can undo one sentence per day", "always picks the fastest queue",
+          "can smell what someone is afraid of", "knows the exact price of everything",
+          "can hold their breath for an hour", "is followed by one loyal bird",
+          "can find anyone's lost keys", "makes anyone they touch tell one true thing",
+          "can breathe underwater but only in lakes", "never needs directions",
+          "wakes up knowing one fact about a stranger", "can lift very heavy things only when nobody is watching",
+          "can copy any handwriting", "hears music that has not been written yet",
+          "cannot be lied to by children", "controls one traffic light", "never gets a hangover",
+          "can walk into any building unquestioned"
+        ],
+        "de": []
+      }
+    },
+    {
+      "categoryId": "title",
+      "labels": { "en": "Two-Word Scene Title", "de": "Zweiwort-Titel" },
+      "suggestions": {
+        "en": [
+          "Second Helping", "Winter Duty", "Small Print", "Loose Change", "Wrong Platform",
+          "Family Discount", "Night Shift", "Borrowed Coat", "Final Notice", "Old Business",
+          "Quiet Hours", "Spare Room", "Local Hero", "Half Measures", "Sunday Best",
+          "Missing Post", "Long Weekend", "Broken Record", "Clean Slate", "Common Ground",
+          "Empty Chair", "Free Sample", "Full House", "Last Orders", "Open Verdict",
+          "Paper Anniversary", "Return Journey", "Silent Partner", "Standing Order", "Trial Run"
+        ],
+        "de": []
+      }
+    },
+    {
+      "categoryId": "quirk",
+      "labels": { "en": "Physical Trait / Quirk", "de": "Körperliche Eigenart" },
+      "suggestions": {
+        "en": [
+          "never sits down fully", "touches every doorframe", "speaks slightly too close",
+          "always has one hand in a pocket", "laughs a beat too late", "cannot stop tidying",
+          "holds eye contact far too long", "hums between sentences", "checks the exits",
+          "apologises before speaking", "walks on the balls of the feet", "never removes their coat",
+          "counts things under their breath", "leans on furniture", "flinches at sudden sounds",
+          "keeps checking a watch they are not wearing", "finishes other people's sentences",
+          "smiles when delivering bad news", "stands with weight on one hip", "cracks knuckles when thinking",
+          "always faces the door", "smooths their clothes constantly", "speaks to objects",
+          "repeats the last word they heard", "cannot whisper", "blinks very rarely",
+          "always carries something", "shakes hands too long", "sits on the edge of every chair",
+          "adjusts other people's things"
+        ],
+        "de": []
+      }
+    }
+  ]
+}

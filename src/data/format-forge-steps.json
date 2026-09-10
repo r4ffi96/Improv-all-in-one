@@ -1,0 +1,386 @@
+{
+  "meta": {
+    "title": "The Format Forge",
+    "subtitle": "Developing a new improv format from scratch with a group",
+    "durationMinutes": 360,
+    "groupSize": "3-6 players",
+    "level": "Intermediate",
+    "outputSummary": "A named format with a world premise, a fixed beat structure, one audience-controlled variable and a filled-in format card."
+  },
+  "items": [
+    {
+      "id": "ff-shell-checkin",
+      "kind": "shell",
+      "stepNumber": null,
+      "shortLabel": "Check-in",
+      "title": "Check-in + Warm-up",
+      "output": "Room read, associative gear engaged",
+      "durationMinutes": 20,
+      "setup": "Circle. Check-in prompt: «Name a fictional world you'd like to spend an evening in, and what pulls you there.» Two sentences each, coach answers too. Then Association Circle: word association around the circle at a steady tempo, then a second phase where the response is a concrete sensory image instead of a word.",
+      "coachingFocus": [
+        "Hold the check-in to two sentences per person or it eats the morning.",
+        "The check-in answers are casting information for the whole day. Write them down.",
+        "The image phase of the Association Circle is the point, not the warm-up filler. Do not skip it.",
+        "Keep the Association Circle in the toolkit for the rest of the day as a two-minute reset."
+      ],
+      "pitfalls": [],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-shell-theory",
+      "kind": "shell",
+      "stepNumber": null,
+      "shortLabel": "Method",
+      "title": "Theory Input: The Method",
+      "output": "Shared map of the day, Four Corners Test and anti-brief introduced",
+      "durationMinutes": 10,
+      "setup": "Standing, brief walkthrough of the nine steps using a past example. Introduce the Four Corners Test: a premise needs a cause, a solution, a conflict and actors; a premise that only describes a state collapses into cliché. Introduce the anti-brief: the «terrible» lists from Step 1 stay visible on the wall all day as a drift check.",
+      "coachingFocus": [
+        "Ten minutes, standing. The method is learned by doing it, not by being lectured.",
+        "Use one past example the group can picture, not an abstract description of the method.",
+        "Say the Four Corners Test in one sentence and move on. It gets used properly in Step 7."
+      ],
+      "pitfalls": [
+        "Overrunning this block. Ten minutes is the cap, and the day does not recover the time later."
+      ],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-step-1",
+      "kind": "step",
+      "stepNumber": 1,
+      "shortLabel": "Collect",
+      "title": "Personal Collection",
+      "output": "3 must-haves per category per person",
+      "durationMinutes": 25,
+      "setup": "Solo, silent writing. Each person makes four lists: ten things currently occupying you, ten films / series / books, forms of improv you love right now, and what you currently find terrible. Then circle three must-haves per category. Each circled item goes on its own card, one item per card.",
+      "coachingFocus": [
+        "Honesty over impressiveness. The list nobody would show anyone is the useful one.",
+        "Concrete over abstract. «My father's voicemail» beats «family».",
+        "The «terrible» list is a design constraint, not negativity. It becomes the anti-brief for the rest of the day.",
+        "Silence is part of the exercise. Do not let it turn into a conversation."
+      ],
+      "pitfalls": [
+        "Players writing for the room rather than for themselves. Name it once at the start, not during."
+      ],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-step-2",
+      "kind": "step",
+      "stepNumber": 2,
+      "shortLabel": "Cluster",
+      "title": "Clustering",
+      "output": "Thematic clusters as triggers, not themes",
+      "durationMinutes": 20,
+      "setup": "All cards go on the wall. The group sorts them into clusters and gives each cluster a rough name. Names stay provisional and get rewritten freely.",
+      "coachingFocus": [
+        "Clusters are raw material and triggers for play, never the theme. Say this twice, verbatim.",
+        "Rough names are fine. A cluster that is hard to name is often the interesting one.",
+        "With five or six players, timebox card discussion to thirty seconds each."
+      ],
+      "pitfalls": [
+        "One dominant voice pre-decides the format: «this is obviously our show». Redirect with «Maybe. The play will tell us.»",
+        "The group tries to make the clusters tidy. Tidy clusters are usually the safe ones."
+      ],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-step-3",
+      "kind": "step",
+      "stepNumber": 3,
+      "shortLabel": "Play",
+      "title": "Free Play: «I am, I am»",
+      "output": "Harvested play data: heat, not cleverness",
+      "durationMinutes": 30,
+      "setup": "One player enters and names what they are: «I am a tree». Each following player completes the picture with a further offer. No taking-out, no reset. Players step out when they no longer complete the picture and re-enter with a new offer under the question «if this is true, what else is true?». Three or four rounds of six to seven minutes. One outside eye per round, rotating, taking keyword-level notes: laughter, sudden silence, leaning in, images that return.",
+      "coachingFocus": [
+        "Watch for emotional heat, not cleverness. The notes record where the room reacted, not where the joke landed.",
+        "If play goes flat and wordy, side-coach towards bodies and images.",
+        "Name the bridge out loud: this «if this is true» mindset is the same engine as the consequence chain in Step 5.",
+        "Rotate the outside eye every round so everyone both plays and observes."
+      ],
+      "pitfalls": [
+        "Taking-out and resetting. Both are the group avoiding the picture it has already built.",
+        "Outside eyes writing sentences instead of keywords. Keywords are faster to read back in Step 4."
+      ],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-break-1",
+      "kind": "break",
+      "stepNumber": null,
+      "shortLabel": "Break",
+      "title": "Break",
+      "output": "",
+      "durationMinutes": 15,
+      "setup": "Leave the cards and the anti-brief on the wall. Use the break to check in privately with anyone whose Step 1 material turned out emotionally loaded in play.",
+      "coachingFocus": [],
+      "pitfalls": [],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-step-4",
+      "kind": "step",
+      "stepNumber": 4,
+      "shortLabel": "Harvest",
+      "title": "Harvest the Emergent Theme",
+      "output": "One working premise plus one backup",
+      "durationMinutes": 20,
+      "setup": "Outside eyes read their notes aloud, round by round. The group collects candidate themes on the board, then converges on one working premise and explicitly keeps the second-strongest as a backup. Write both down where they stay visible.",
+      "coachingFocus": [
+        "The backup is not a consolation prize. Step 7 has a kill criterion that needs it.",
+        "Converge on something playable, not something clever. A premise is playable when you can imagine three scenes inside it.",
+        "Fallback rule: if there is no convergence after five minutes of discussion, name three candidates from the harvest notes yourself and have the group vote. Do not extend this step."
+      ],
+      "pitfalls": [
+        "The group drifts back to the original Step 1 lists. The theme comes from the play, not from the lists.",
+        "Discussion expands to fill any time available. Hold the twenty minutes."
+      ],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-step-5",
+      "kind": "step",
+      "stepNumber": 5,
+      "shortLabel": "Chain",
+      "title": "Consequence Chain",
+      "output": "World logic with cause, solution, conflict, actors",
+      "durationMinutes": 30,
+      "setup": "At the whiteboard, one repeated question: «If this is true, what else is true?» First ring is direct consequences. Second ring is consequences of consequences. Mark the Four Corners on the board and tick them off as they appear.",
+      "coachingFocus": [
+        "Push past the first ring. The first ring is shared cultural cliché, the second ring is where the world actually starts.",
+        "Steer towards the Four Corners: cause, solution, conflict, actors. Mark them as they appear.",
+        "Keep it fast and written. This is not a discussion, it is a chain.",
+        "If the room goes heady here, reset with two minutes of Association Circle rather than pushing through."
+      ],
+      "pitfalls": [
+        "Stopping at the first ring and calling it a world.",
+        "Debating whether a consequence is realistic. The only test is whether it produces more consequences."
+      ],
+      "workedExample": "«Emotions are smuggled» → a virus erased emotions → an untested chip brings them back → emotions become illegal → black market, emotion police, quality tiers, generational divide between those who remember feeling and those who never did.",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-step-6",
+      "kind": "step",
+      "stepNumber": 6,
+      "shortLabel": "Test",
+      "title": "Test Rounds",
+      "output": "Associative and narrative test data",
+      "durationMinutes": 40,
+      "setup": "Two modes, roughly seventeen minutes each plus three minutes of micro-debrief. Associative mode: free, image-driven, montage, no plot obligation. Narrative mode: one character, a want, a conflict, an arc. Micro-debrief after each: what carried, where scenes came easily versus where the group pushed, which corner of the world went untouched.",
+      "coachingFocus": [
+        "Say it explicitly: this is diagnostic data collection, not scene production.",
+        "Track which mode fits. It decides the format's centre of gravity in Step 8.",
+        "Note which corner of the world nobody touched. That gap is the Step 7 agenda.",
+        "With five or six players, cap test-round scenes at three players so everyone plays both modes."
+      ],
+      "pitfalls": [
+        "The group tries to make good scenes and stops giving you diagnostic information.",
+        "Skipping the micro-debriefs to fit more scenes in. The debriefs are the data."
+      ],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-break-2",
+      "kind": "break",
+      "stepNumber": null,
+      "shortLabel": "Break",
+      "title": "Break",
+      "output": "",
+      "durationMinutes": 15,
+      "setup": "Second break. Use it to read the test-round notes before Step 7 starts, so the diagnosis takes ten minutes rather than twenty-five.",
+      "coachingFocus": [],
+      "pitfalls": [],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-step-7",
+      "kind": "step",
+      "stepNumber": 7,
+      "shortLabel": "Diagnose",
+      "title": "Diagnosis & Deepening",
+      "output": "A premise that passes the Four Corners Test",
+      "durationMinutes": 45,
+      "setup": "Diagnosis (10 min): run the Four Corners Test on the Step 6 data. Deepening (15 min): return to one cluster and ask «why» instead of describing the state, extending the consequence chain until all four corners are filled. Retest (20 min): two or three scenes in whichever mode carried better in Step 6, inside the deepened world.",
+      "coachingFocus": [
+        "The recurring diagnosis when scenes collapse into one cliché image is: the world is a state, not a system.",
+        "Check the anti-brief. Is the format drifting towards the «terrible» list?",
+        "Clichés in the retest are information, not errors. Name the mechanism, not the players.",
+        "Deepening means more consequence, not a better idea. Keep asking why."
+      ],
+      "pitfalls": [
+        "Kill criteria: if the world is still one-note after two deepening loops, stop. Switch to the Step 4 backup premise and run it through Steps 5 to 7 in compressed form. Frame the switch as method, not failure.",
+        "Rewriting the premise instead of extending it. A new premise costs the whole afternoon."
+      ],
+      "workedExample": "Reference case: a rehab-clinic premise whose test scenes all collapsed into zombies. The world had a condition but no cause, no counter-force and no system, so every scene reached for the same shared image.",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-step-8",
+      "kind": "step",
+      "stepNumber": 8,
+      "shortLabel": "Sequence",
+      "title": "Fix the Scene Sequence",
+      "output": "Fixed beat structure, narrator frame vs content",
+      "durationMinutes": 35,
+      "setup": "Build a beat table on the board with four columns: beat number, element, level, function. Alternate a narrator level (frame: setting, time jumps, closing moral) and a content level (the world premise played out). Dry-run the sequence once on the floor. Then decide and record what is fixed (world premise, sequence, narrator frame) and what is variable (setting details, characters, the concrete instance per show).",
+      "coachingFocus": [
+        "The narrator is a high-skill role: frame, tempo, audience contact. Rotate it in the dry run, cast it deliberately later.",
+        "Fewer beats carry better. Five or six is plenty for a first draft.",
+        "Write the fixed / variable split down. An unwritten split gets renegotiated at every rehearsal.",
+        "If the room goes heady here, reset with two minutes of Association Circle."
+      ],
+      "pitfalls": [
+        "Adding beats to cover every idea from the day. Every extra beat dilutes the fixed asset.",
+        "Designing the beat table without putting it on the floor. The dry run is where the weak beat shows up."
+      ],
+      "workedExample": "Reference structure, «Emotion Experiment»: narrator sets the scene → the neutral world is shown → narrator jumps time → the experiment, feeling breaks through → narrator closes with a moral.",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-step-9",
+      "kind": "step",
+      "stepNumber": 9,
+      "shortLabel": "Audience",
+      "title": "Audience Input + Simulated Run",
+      "output": "One variable input, tested with a simulated audience",
+      "durationMinutes": 35,
+      "setup": "Design (10 min): choose exactly one audience-controlled variable and place it at a beat where the world is already established. Script the narrator's exact ask, word for word. Simulated run (25 min): split the group, half plays the sequence and half is the audience, deliberately including unusable, vague and troll suggestions. Then swap. The narrator practises taking one call, repeating it clearly, and moving on.",
+      "coachingFocus": [
+        "One input only. Every additional input multiplies failure modes and dilutes the fixed-world asset.",
+        "The test is whether the narrator stays in charge when the input misbehaves, not whether the input «works».",
+        "Log open questions (multiple inputs? audience judging the moral?) on the format card instead of solving them live.",
+        "With a group of three: coach plus one player form the simulated audience and the sequence runs twice instead of swapping."
+      ],
+      "pitfalls": [
+        "Softening the simulated audience. Unusable suggestions are the entire point of the test.",
+        "Redesigning the format in response to one bad suggestion."
+      ],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-shell-closer",
+      "kind": "shell",
+      "stepNumber": null,
+      "shortLabel": "Closer",
+      "title": "Closer: Freeze Tag",
+      "output": "Standing close, the new world's images back in play",
+      "durationMinutes": 10,
+      "setup": "Standing Freeze Tag. Any watching player calls «Freeze», takes the exact physical position of a player and justifies it with a new scene. Callback focus: the new scenes reach back to images from the world the group has just built.",
+      "coachingFocus": [
+        "Name the callback focus explicitly, otherwise players default to generic gags.",
+        "Standing, ten minutes. Do not sit the group down for this.",
+        "Freeze early and often. Long scenes here are avoidance."
+      ],
+      "pitfalls": [],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    },
+    {
+      "id": "ff-shell-formatcard",
+      "kind": "shell",
+      "stepNumber": null,
+      "shortLabel": "Card",
+      "title": "Format Card + Check-out",
+      "output": "One filled-in format card the group leaves with",
+      "durationMinutes": 10,
+      "setup": "Fill in one page together: working title, world premise in two sentences, beat table, fixed versus variable list, open questions and next steps. This is the physical artefact the group leaves with. Photograph it. Check-out prompt: «One image from today's world you want to see on stage.»",
+      "coachingFocus": [
+        "Fill it in together, in the room, not afterwards by email.",
+        "Open questions belong on the card. Do not solve them now.",
+        "Photograph the card before anyone leaves."
+      ],
+      "pitfalls": [],
+      "workedExample": "",
+      "notesPlaceholder": ""
+    }
+  ],
+  "formatCardFields": [
+    {
+      "key": "workingTitle",
+      "label": "Working title",
+      "hint": "The name the group is using today. It can change."
+    },
+    {
+      "key": "worldPremise",
+      "label": "World premise (2 sentences)",
+      "hint": "Cause and consequence, not a mood."
+    },
+    {
+      "key": "beatTable",
+      "label": "Beat table",
+      "hint": "Beat number, element, level (narrator / content), function. One line per beat."
+    },
+    {
+      "key": "fixed",
+      "label": "Fixed every show",
+      "hint": "World premise, sequence, narrator frame."
+    },
+    {
+      "key": "variable",
+      "label": "Variable per show",
+      "hint": "Setting details, characters, the concrete instance, the one audience input."
+    },
+    {
+      "key": "openQuestions",
+      "label": "Open questions / next steps",
+      "hint": "Logged, not solved."
+    }
+  ],
+  "adjustments": [
+    {
+      "id": "adj-group-3",
+      "title": "Group size 3",
+      "points": [
+        "Step 3: the coach takes the outside-eye role so no player has to sit out.",
+        "Step 9: coach plus one player form the simulated audience, and the sequence runs twice instead of swapping."
+      ]
+    },
+    {
+      "id": "adj-group-5-6",
+      "title": "Group size 5-6",
+      "points": [
+        "Step 2 needs a firmer hand: timebox card discussion to thirty seconds each.",
+        "Cap test-round scenes at three players so everyone plays both modes."
+      ]
+    },
+    {
+      "id": "adj-late",
+      "title": "Running late: cut in this order",
+      "points": [
+        "1. Shorten the Step 7 retest to one scene.",
+        "2. Draft the Step 8 beat table yourself as a proposal the group edits, rather than building it from zero.",
+        "3. Drop the Step 9 swap and run it once only.",
+        "Never cut: the Step 3 and 4 harvest protocol, the Step 7 diagnosis, or Freeze Tag. Without harvest and diagnosis the method degrades into «pick a theme and hope»."
+      ]
+    },
+    {
+      "id": "adj-early",
+      "title": "Running early",
+      "points": [
+        "Add a second full Step 9 sequence run with a different setting.",
+        "Explore one extra consequence-chain system figure: an antagonist, an authority, a broker."
+      ]
+    },
+    {
+      "id": "adj-mood",
+      "title": "Mood management",
+      "points": [
+        "The day alternates thinking and playing. If the room goes heady (Steps 5 and 8), reset with two minutes of Association Circle rather than pushing through.",
+        "If a Step 1 personal item turns out emotionally loaded in play, check in with that player at a break, privately."
+      ]
+    }
+  ]
+}

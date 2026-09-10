@@ -1,0 +1,80 @@
+/* Dark palette is the primary design; light is the secondary variant. */
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #0e1116;
+  --bg-grad: radial-gradient(120% 60% at 50% 0%, #16202c 0%, #0e1116 62%);
+  --surface: #171d26;
+  --surface-2: #1e2632;
+  --surface-3: #252f3d;
+  --border: #27303d;
+  --border-soft: #1f2733;
+
+  --text: #e8edf5;
+  --text-dim: #9caabd;
+  --text-faint: #6d7a8c;
+
+  --accent: #5aa9ff;
+  --accent-ink: #0b1522;
+  --accent-soft: rgba(90, 169, 255, 0.14);
+  --accent-line: rgba(90, 169, 255, 0.32);
+
+  --gold: #f5c542;
+  --gold-ink: #241c00;
+  --gold-soft: rgba(245, 197, 66, 0.14);
+  --gold-line: rgba(245, 197, 66, 0.34);
+
+  --good: #4ec9a0;
+  --good-soft: rgba(78, 201, 160, 0.14);
+  --warn: #ffb454;
+  --warn-soft: rgba(255, 180, 84, 0.15);
+  --bad: #ff6f6f;
+  --bad-soft: rgba(255, 111, 111, 0.14);
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.32);
+  --shadow-2: 0 2px 6px rgba(0, 0, 0, 0.45), 0 18px 40px rgba(0, 0, 0, 0.42);
+
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 26px;
+
+  --tabbar-h: 62px;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: #f2f5fa;
+  --bg-grad: radial-gradient(120% 60% at 50% 0%, #ffffff 0%, #eef2f8 60%);
+  --surface: #ffffff;
+  --surface-2: #f6f8fc;
+  --surface-3: #eaeff7;
+  --border: #dde4ee;
+  --border-soft: #e8edf5;
+
+  --text: #121722;
+  --text-dim: #56616f;
+  --text-faint: #7b8695;
+
+  --accent: #1f6fd8;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(31, 111, 216, 0.1);
+  --accent-line: rgba(31, 111, 216, 0.26);
+
+  --gold: #b98400;
+  --gold-ink: #ffffff;
+  --gold-soft: rgba(233, 179, 42, 0.18);
+  --gold-line: rgba(185, 132, 0, 0.3);
+
+  --good: #17936d;
+  --good-soft: rgba(23, 147, 109, 0.12);
+  --warn: #b56b00;
+  --warn-soft: rgba(181, 107, 0, 0.12);
+  --bad: #cf3b3b;
+  --bad-soft: rgba(207, 59, 59, 0.1);
+
+  --shadow-1: 0 1px 2px rgba(16, 24, 40, 0.06), 0 6px 16px rgba(16, 24, 40, 0.07);
+  --shadow-2: 0 2px 6px rgba(16, 24, 40, 0.08), 0 18px 40px rgba(16, 24, 40, 0.12);
+}

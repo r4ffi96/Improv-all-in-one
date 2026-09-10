@@ -1,0 +1,22 @@
+{
+  "name": "improv-all-in-one",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Mobile-first improv coaching webapp: session builder, suggestion generator, format library, archive, Format Forge and glossary.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "docx": "^9.7.1",
+    "pdf-lib": "^1.17.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.0"
+  }
+}
