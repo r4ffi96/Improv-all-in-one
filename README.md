@@ -57,18 +57,29 @@ thumb, and per-item `overrides` that adapt a library block for that run (a
 different prompt, its own debrief questions) without forking the library
 entry.
 
-### Archive lock
+### Edit lock
 
-Saving to the archive is behind a passphrase, in both the Session Builder and
-the Format Forge. Unlocking lasts until the app is reloaded; browsing,
-exporting, duplicating and debriefing are never gated.
+Actions that change saved data ask for a passphrase the first time one is used
+after the app is opened. One unlock then covers the rest of the working
+session, and reloading re-locks. Gated:
 
-This is a casual gate, not security. The app is client-side only, so anyone
-with browser devtools can read the bundle, skip the check or write to
-localStorage directly. It stops someone picking up the phone in a rehearsal
-room and nothing more. The passphrase is stored as a salted hash rather than
-in plain text purely so it is not readable in the bundle; `src/lib/archiveLock.js`
-documents how to change it.
+- Save to Archive, and Save day to Archive in the Format Forge
+- Deleting an archive entry, and deleting a single debrief
+- Starring and unstarring a block or a format
+- Removing a format that came from a forge day
+- Clear all data, and Import data (it replaces everything)
+
+Never gated: browsing, searching, building a session, running the Format
+Forge, exporting any document, duplicating into the builder, and writing a
+debrief.
+
+This is a casual gate, not security. The archive lives in `localStorage` on
+one device, so nothing remote can reach it, but anyone with browser devtools
+can read the bundle, skip the check or edit `localStorage` directly. It stops
+someone picking up the phone in a rehearsal room and nothing more. The real
+protection against losing the archive is Export all (JSON). The passphrase is
+stored as a salted hash rather than in plain text purely so it is not readable
+in the bundle; `src/lib/editLock.js` documents how to change it.
 
 ### Hiding and favourites
 

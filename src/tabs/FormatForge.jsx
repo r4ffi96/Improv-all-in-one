@@ -9,7 +9,6 @@ import { exportDocument } from '../export/index.js';
 import {
   Card, CheckBox, ConfirmButton, Disclosure, Empty, Sheet, Tag, TextArea, TextInput,
 } from '../components/ui.jsx';
-import UnlockSheet from '../components/UnlockSheet.jsx';
 import {
   IconBack, IconChevron, IconDownload, IconLock, IconPause, IconPlay, IconReset,
 } from '../components/Icons.jsx';
@@ -23,10 +22,9 @@ function formatClock(totalSeconds) {
 }
 
 export default function FormatForge({ navigate, setSubtitle }) {
-  const { state, patch, showToast, archiveUnlocked, setArchiveUnlocked } = useApp();
+  const { state, patch, showToast, unlocked, requireUnlock } = useApp();
   const run = state.forge;
   const [saveOpen, setSaveOpen] = useState(false);
-  const [unlockOpen, setUnlockOpen] = useState(false);
   const [saveTitle, setSaveTitle] = useState('');
   const [busy, setBusy] = useState('');
   const [tick, setTick] = useState(0);
@@ -332,11 +330,10 @@ export default function FormatForge({ navigate, setSubtitle }) {
           style={{ marginTop: 12 }}
           onClick={() => {
             setSaveTitle(run.title || (run.formatCard || {}).workingTitle || '');
-            if (archiveUnlocked) setSaveOpen(true);
-            else setUnlockOpen(true);
+            requireUnlock(() => setSaveOpen(true));
           }}
         >
-          {archiveUnlocked ? null : <IconLock />} Save day to Archive
+          {unlocked ? null : <IconLock />} Save day to Archive
         </button>
         <ConfirmButton
           className="btn btn--danger btn--block"
@@ -346,13 +343,6 @@ export default function FormatForge({ navigate, setSubtitle }) {
           Start a new forge day
         </ConfirmButton>
       </Card>
-
-      {unlockOpen ? (
-        <UnlockSheet
-          onClose={() => setUnlockOpen(false)}
-          onUnlocked={() => { setArchiveUnlocked(true); setUnlockOpen(false); setSaveOpen(true); }}
-        />
-      ) : null}
 
       {saveOpen ? (
         <Sheet

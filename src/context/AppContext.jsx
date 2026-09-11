@@ -6,8 +6,9 @@ const AppContext = createContext(null);
 export function AppProvider({ children }) {
   const [state, setState] = useState(() => (typeof window === 'undefined' ? defaultState() : loadState()));
   const [toast, setToast] = useState(null);
-  // Deliberately not persisted: saving re-locks when the app is reloaded.
-  const [archiveUnlocked, setArchiveUnlocked] = useState(false);
+  // Deliberately not persisted: everything re-locks when the app is reloaded.
+  const [unlocked, setUnlocked] = useState(false);
+  const [pendingAction, setPendingAction] = useState(null);
   const toastTimer = useRef(null);
 
   // Persist on every change. The payload is small enough that a plain
@@ -26,6 +27,31 @@ export function AppProvider({ children }) {
   }, []);
 
   const replaceAll = useCallback((next) => setState(next), []);
+
+  /**
+   * Run an action that changes saved data, asking for the passphrase first
+   * if this is the first such action since the app was opened. One unlock
+   * covers saving, deleting, starring, clearing and importing.
+   */
+  const requireUnlock = useCallback((action) => {
+    if (unlocked) {
+      action();
+      return;
+    }
+    setPendingAction(() => action);
+  }, [unlocked]);
+
+  const cancelUnlock = useCallback(() => setPendingAction(null), []);
+
+  const completeUnlock = useCallback(() => {
+    // The pending action is read here rather than inside a state updater:
+    // React may run an updater more than once, which would fire the action
+    // twice and, for a toggle, cancel itself out.
+    const action = pendingAction;
+    setUnlocked(true);
+    setPendingAction(null);
+    if (action) action();
+  }, [pendingAction]);
 
   /** Star or unstar a library block or a format. */
   const toggleFavourite = useCallback((kind, id) => {
@@ -47,10 +73,14 @@ export function AppProvider({ children }) {
   const value = useMemo(
     () => ({
       state, patch, replaceAll, toggleFavourite,
-      archiveUnlocked, setArchiveUnlocked,
+      unlocked, requireUnlock, unlockPending: Boolean(pendingAction), cancelUnlock, completeUnlock,
       toast, showToast, setToast,
     }),
-    [state, patch, replaceAll, toggleFavourite, archiveUnlocked, toast, showToast],
+    [
+      state, patch, replaceAll, toggleFavourite,
+      unlocked, requireUnlock, pendingAction, cancelUnlock, completeUnlock,
+      toast, showToast,
+    ],
   );
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

@@ -14,7 +14,7 @@ function summarise(format) {
 }
 
 export default function Formats({ route, navigate, setSubtitle }) {
-  const { state, patch, showToast, toggleFavourite } = useApp();
+  const { state, patch, showToast, toggleFavourite, requireUnlock } = useApp();
   const [favouritesOnly, setFavouritesOnly] = useState(false);
   const hidden = useMemo(() => new Set(state.hidden.formats), [state.hidden.formats]);
   const favourites = useMemo(() => new Set(state.favourites.formats), [state.favourites.formats]);
@@ -46,7 +46,7 @@ export default function Formats({ route, navigate, setSubtitle }) {
               type="button"
               className={`star-btn${favourites.has(current.id) ? ' is-on' : ''}`}
               style={{ alignSelf: 'center' }}
-              onClick={() => toggleFavourite('formats', current.id)}
+              onClick={() => requireUnlock(() => toggleFavourite('formats', current.id))}
               aria-label={favourites.has(current.id) ? 'Unfavourite this format' : 'Favourite this format'}
               aria-pressed={favourites.has(current.id)}
             >
@@ -108,11 +108,11 @@ export default function Formats({ route, navigate, setSubtitle }) {
           <ConfirmButton
             className="btn btn--danger btn--block"
             confirmLabel="Tap again to remove this format"
-            onConfirm={() => {
+            onConfirm={() => requireUnlock(() => {
               patch({ formats: state.formats.filter((f) => f.id !== current.id) });
               showToast('Format removed');
               navigate('formats');
-            }}
+            })}
           >
             Remove from library
           </ConfirmButton>
@@ -179,7 +179,7 @@ export default function Formats({ route, navigate, setSubtitle }) {
                 type="button"
                 className={`star-btn${favourites.has(format.id) ? ' is-on' : ''}`}
                 style={{ alignSelf: 'center' }}
-                onClick={(e) => { e.stopPropagation(); toggleFavourite('formats', format.id); }}
+                onClick={(e) => { e.stopPropagation(); requireUnlock(() => toggleFavourite('formats', format.id)); }}
                 aria-label={favourites.has(format.id) ? `Unfavourite ${format.name}` : `Favourite ${format.name}`}
                 aria-pressed={favourites.has(format.id)}
               >

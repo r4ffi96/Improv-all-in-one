@@ -1,5 +1,6 @@
 /**
- * Casual lock on saving to the archive.
+ * Casual lock on the actions that change saved data: saving to the archive,
+ * deleting from it, starring, clearing and importing.
  *
  * This is a gate, not security. The app is client-side only, so anyone with
  * the browser devtools can read the bundle, skip the check or write to

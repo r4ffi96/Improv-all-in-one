@@ -9,7 +9,7 @@ const TYPE_SHORT = { warmup: 'Warm-up', exercise: 'Exercise', main: 'Main', theo
 
 /** One library block, selectable and expandable. Shared by builder and archive. */
 export default function LibraryItem({ item, selected, onToggle, defaultOpen = false }) {
-  const { state, toggleFavourite } = useApp();
+  const { state, toggleFavourite, requireUnlock } = useApp();
   const [open, setOpen] = useState(defaultOpen);
   const [detail, setDetail] = useState(() => withDetails(item));
   const starred = state.favourites.library.includes(item.id);
@@ -56,7 +56,7 @@ export default function LibraryItem({ item, selected, onToggle, defaultOpen = fa
           type="button"
           className={`star-btn${starred ? ' is-on' : ''}`}
           style={{ alignSelf: 'flex-start', marginTop: 1 }}
-          onClick={(e) => { e.stopPropagation(); toggleFavourite('library', item.id); }}
+          onClick={(e) => { e.stopPropagation(); requireUnlock(() => toggleFavourite('library', item.id)); }}
           aria-label={starred ? `Unfavourite ${item.name}` : `Favourite ${item.name}`}
           aria-pressed={starred}
         >

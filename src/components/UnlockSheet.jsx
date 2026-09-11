@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { verifyPassphrase } from '../lib/archiveLock.js';
+import { verifyPassphrase } from '../lib/editLock.js';
 import { Sheet, TextInput } from './ui.jsx';
 
 /**
- * Passphrase prompt in front of saving to the archive. Unlocking lasts until
- * the app is reloaded, so a session of saves only needs it once.
+ * Passphrase prompt in front of any action that changes saved data.
+ * Unlocking lasts until the app is reloaded, so a working session only needs
+ * it once however many things are saved, deleted or starred.
  */
 export default function UnlockSheet({ onClose, onUnlocked }) {
   const [value, setValue] = useState('');
@@ -27,8 +28,8 @@ export default function UnlockSheet({ onClose, onUnlocked }) {
 
   return (
     <Sheet
-      title="Archive locked"
-      subtitle="Enter the passphrase to save."
+      title="Locked"
+      subtitle="Enter the passphrase to change saved data."
       onClose={onClose}
       footer={
         <button
@@ -54,8 +55,9 @@ export default function UnlockSheet({ onClose, onUnlocked }) {
         <div className="banner banner--bad" style={{ marginTop: 12 }}>{error}</div>
       ) : null}
       <div className="small muted" style={{ marginTop: 12 }}>
-        Unlocks saving until you reload the app. Browsing, exporting and debriefing
-        are not affected.
+        Covers saving to the archive, deleting from it, starring, clearing and
+        importing, until you reload the app. Browsing, exporting and building a
+        session are never locked.
       </div>
     </Sheet>
   );

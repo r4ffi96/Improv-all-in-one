@@ -10,7 +10,6 @@ import {
 import { buildPlayerGuide, buildTrainerGuide } from '../export/builders.js';
 import { exportDocument, formatMinutes, getStrings } from '../export/index.js';
 import LibraryItem from '../components/LibraryItem.jsx';
-import UnlockSheet from '../components/UnlockSheet.jsx';
 import { Card, ConfirmButton, Empty, Meter, Sheet, Switch, Tag, TextInput } from '../components/ui.jsx';
 import {
   IconArrowDown, IconArrowUp, IconClock, IconDownload, IconMinus, IconPlus, IconSearch,
@@ -20,13 +19,12 @@ import {
 const strings = getStrings('en');
 
 export default function SessionBuilder({ navigate, setSubtitle }) {
-  const { state, patch, showToast, archiveUnlocked, setArchiveUnlocked } = useApp();
+  const { state, patch, showToast, unlocked, requireUnlock } = useApp();
   const session = state.builder || null;
   const [browseAll, setBrowseAll] = useState(false);
   const [favouritesOnly, setFavouritesOnly] = useState(false);
   const [topicDraft, setTopicDraft] = useState(session ? session.topic : '');
   const [saveOpen, setSaveOpen] = useState(false);
-  const [unlockOpen, setUnlockOpen] = useState(false);
   const [saveTitle, setSaveTitle] = useState('');
   const [busy, setBusy] = useState('');
 
@@ -487,11 +485,10 @@ export default function SessionBuilder({ navigate, setSubtitle }) {
           disabled={!session.items.length}
           onClick={() => {
             setSaveTitle(session.title);
-            if (archiveUnlocked) setSaveOpen(true);
-            else setUnlockOpen(true);
+            requireUnlock(() => setSaveOpen(true));
           }}
         >
-          {archiveUnlocked ? null : <IconLock />} Save to Archive
+          {unlocked ? null : <IconLock />} Save to Archive
         </button>
         <ConfirmButton
           className="btn btn--danger"
@@ -518,13 +515,6 @@ export default function SessionBuilder({ navigate, setSubtitle }) {
         </div>
         <Meter value={total} max={target} tone={runningTone} />
       </div>
-
-      {unlockOpen ? (
-        <UnlockSheet
-          onClose={() => setUnlockOpen(false)}
-          onUnlocked={() => { setArchiveUnlocked(true); setUnlockOpen(false); setSaveOpen(true); }}
-        />
-      ) : null}
 
       {saveOpen ? (
         <Sheet

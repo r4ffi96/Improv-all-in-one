@@ -8,7 +8,7 @@ import { FORMATS } from '../data/formats.js';
 import { IconChevron, IconDownload, IconMoon, IconSun, IconUpload } from './Icons.jsx';
 
 export default function SettingsSheet({ onClose }) {
-  const { state, patch, replaceAll, showToast } = useApp();
+  const { state, patch, replaceAll, showToast, requireUnlock } = useApp();
   const fileRef = useRef(null);
   const [manage, setManage] = useState(null);
 
@@ -29,14 +29,17 @@ export default function SettingsSheet({ onClose }) {
     showToast('Backup downloaded');
   };
 
+  // Importing replaces everything, so it is gated like a delete.
   const doImport = async (event) => {
     const file = event.target.files && event.target.files[0];
     if (!file) return;
     try {
       const next = parseImport(await file.text());
-      replaceAll(next);
-      showToast('Data imported');
-      onClose();
+      requireUnlock(() => {
+        replaceAll(next);
+        showToast('Data imported');
+        onClose();
+      });
     } catch (err) {
       showToast(`Import failed: ${err.message}`);
     } finally {
@@ -134,7 +137,11 @@ export default function SettingsSheet({ onClose }) {
           <ConfirmButton
             className="btn btn--danger btn--block"
             confirmLabel="Tap again to erase everything"
-            onConfirm={() => { replaceAll({ ...defaultState(), theme: state.theme }); showToast('All data cleared'); onClose(); }}
+            onConfirm={() => requireUnlock(() => {
+              replaceAll({ ...defaultState(), theme: state.theme });
+              showToast('All data cleared');
+              onClose();
+            })}
           >
             Clear all data
           </ConfirmButton>

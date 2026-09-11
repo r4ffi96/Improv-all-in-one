@@ -16,7 +16,7 @@ const SORTS = [
 ];
 
 export default function Archive({ route, navigate, setSubtitle }) {
-  const { state, patch, showToast } = useApp();
+  const { state, patch, showToast, requireUnlock } = useApp();
   const [sort, setSort] = useState('date');
   const [typeFilter, setTypeFilter] = useState('all');
   const [tagFilter, setTagFilter] = useState('all');
@@ -253,9 +253,9 @@ export default function Archive({ route, navigate, setSubtitle }) {
                   <ConfirmButton
                     className="btn btn--danger btn--sm"
                     confirmLabel="Tap again to delete"
-                    onConfirm={() => updateEntry(current.id, (entry) => ({
+                    onConfirm={() => requireUnlock(() => updateEntry(current.id, (entry) => ({
                       ...entry, debriefs: entry.debriefs.filter((_, i) => i !== index),
-                    }))}
+                    })))}
                   >
                     Delete debrief
                   </ConfirmButton>
@@ -268,11 +268,11 @@ export default function Archive({ route, navigate, setSubtitle }) {
         <ConfirmButton
           className="btn btn--danger btn--block"
           confirmLabel="Tap again to delete this entry"
-          onConfirm={() => {
+          onConfirm={() => requireUnlock(() => {
             patch((prev) => ({ archive: prev.archive.filter((e) => e.id !== current.id) }));
             showToast('Deleted from archive');
             navigate('archive');
-          }}
+          })}
         >
           Delete from archive
         </ConfirmButton>
