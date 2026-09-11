@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useHashRoute, TABS } from './lib/hooks.js';
 import { useApp } from './context/AppContext.jsx';
 import SettingsSheet from './components/SettingsSheet.jsx';
-import UnlockSheet from './components/UnlockSheet.jsx';
 import {
   IconAnvil, IconArchive, IconBook, IconBuilder, IconDice, IconGear, IconLayers,
 } from './components/Icons.jsx';
@@ -34,7 +33,7 @@ const TAB_VIEWS = {
 
 export default function App() {
   const { route, navigate } = useHashRoute();
-  const { toast, unlockPending, cancelUnlock, completeUnlock } = useApp();
+  const { toast } = useApp();
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [subtitle, setSubtitle] = useState('');
 
@@ -82,7 +81,6 @@ export default function App() {
       </nav>
 
       {settingsOpen ? <SettingsSheet onClose={() => setSettingsOpen(false)} /> : null}
-      {unlockPending ? <UnlockSheet onClose={cancelUnlock} onUnlocked={completeUnlock} /> : null}
       {toast ? <div className="toast" role="status">{toast}</div> : null}
     </div>
   );

@@ -10,7 +10,7 @@ import {
   Card, CheckBox, ConfirmButton, Disclosure, Empty, Sheet, Tag, TextArea, TextInput,
 } from '../components/ui.jsx';
 import {
-  IconBack, IconChevron, IconDownload, IconLock, IconPause, IconPlay, IconReset,
+  IconBack, IconChevron, IconDownload, IconPause, IconPlay, IconReset,
 } from '../components/Icons.jsx';
 
 const KIND_TONE = { step: 'accent', shell: 'good', break: 'warn' };
@@ -22,7 +22,7 @@ function formatClock(totalSeconds) {
 }
 
 export default function FormatForge({ navigate, setSubtitle }) {
-  const { state, patch, showToast, unlocked, requireUnlock } = useApp();
+  const { state, patch, showToast } = useApp();
   const run = state.forge;
   const [saveOpen, setSaveOpen] = useState(false);
   const [saveTitle, setSaveTitle] = useState('');
@@ -330,10 +330,10 @@ export default function FormatForge({ navigate, setSubtitle }) {
           style={{ marginTop: 12 }}
           onClick={() => {
             setSaveTitle(run.title || (run.formatCard || {}).workingTitle || '');
-            requireUnlock(() => setSaveOpen(true));
+            setSaveOpen(true);
           }}
         >
-          {unlocked ? null : <IconLock />} Save day to Archive
+          Save day to Archive
         </button>
         <ConfirmButton
           className="btn btn--danger btn--block"

@@ -8,7 +8,7 @@ import { buildForgeWorksheet, buildPlayerGuide, buildTrainerGuide } from '../exp
 import { exportDocument, prettyDate, todayISO } from '../export/index.js';
 import { Card, ConfirmButton, Disclosure, Empty, Sheet, Tag, TextArea, TextInput } from '../components/ui.jsx';
 import {
-  IconBack, IconChevron, IconDownload, IconEdit, IconLock, IconNotes, IconSend,
+  IconBack, IconChevron, IconDownload, IconEdit, IconNotes, IconSend,
 } from '../components/Icons.jsx';
 
 const SORTS = [
@@ -18,7 +18,7 @@ const SORTS = [
 ];
 
 export default function Archive({ route, navigate, setSubtitle }) {
-  const { state, patch, showToast, requireUnlock, unlocked } = useApp();
+  const { state, patch, showToast } = useApp();
   const [sort, setSort] = useState('date');
   const [typeFilter, setTypeFilter] = useState('all');
   const [tagFilter, setTagFilter] = useState('all');
@@ -235,9 +235,9 @@ export default function Archive({ route, navigate, setSubtitle }) {
             type="button"
             className="btn btn--gold btn--block"
             style={{ marginTop: 8 }}
-            onClick={() => requireUnlock(() => setDebriefFor(current.id))}
+            onClick={() => setDebriefFor(current.id)}
           >
-            {unlocked ? <IconNotes /> : <IconLock />} Debrief
+            <IconNotes /> Debrief
           </button>
         </Card>
 
@@ -255,9 +255,9 @@ export default function Archive({ route, navigate, setSubtitle }) {
                   <ConfirmButton
                     className="btn btn--danger btn--sm"
                     confirmLabel="Tap again to delete"
-                    onConfirm={() => requireUnlock(() => updateEntry(current.id, (entry) => ({
+                    onConfirm={() => updateEntry(current.id, (entry) => ({
                       ...entry, debriefs: entry.debriefs.filter((_, i) => i !== index),
-                    })))}
+                    }))}
                   >
                     Delete debrief
                   </ConfirmButton>
@@ -270,11 +270,11 @@ export default function Archive({ route, navigate, setSubtitle }) {
         <ConfirmButton
           className="btn btn--danger btn--block"
           confirmLabel="Tap again to delete this entry"
-          onConfirm={() => requireUnlock(() => {
+          onConfirm={() => {
             patch((prev) => ({ archive: prev.archive.filter((e) => e.id !== current.id) }));
             showToast('Deleted from archive');
             navigate('archive');
-          })}
+          }}
         >
           Delete from archive
         </ConfirmButton>

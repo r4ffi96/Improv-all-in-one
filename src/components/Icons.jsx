@@ -52,5 +52,4 @@ export const IconNotes = make(<><rect x="4" y="3.5" width="16" height="17" rx="2
 export const IconSend = make(<><path d="M4 12h13" /><path d="m12 6.5 5.5 5.5L12 17.5" /><path d="M20.5 4v16" /></>);
 export const IconBack = make(<path d="m14.5 5-7 7 7 7" />);
 export const IconRefresh = make(<><path d="M20.5 12a8.5 8.5 0 1 1-2.6-6.1" /><path d="M21 4v5h-5" /></>);
-export const IconLock = make(<><rect x="4.5" y="10.5" width="15" height="10" rx="2.5" /><path d="M8 10.5V7.8a4 4 0 0 1 8 0v2.7" /><path d="M12 14.5v2.5" /></>);
 export const IconFilter = make(<path d="M3.5 5.5h17l-6.5 8v6l-4 2v-8Z" />);

@@ -13,13 +13,13 @@ import LibraryItem from '../components/LibraryItem.jsx';
 import { Card, ConfirmButton, Empty, Meter, Sheet, Switch, Tag, TextInput } from '../components/ui.jsx';
 import {
   IconArrowDown, IconArrowUp, IconClock, IconDownload, IconMinus, IconPlus, IconSearch,
-  IconLock, IconStar, IconStarFilled, IconTrash,
+  IconStar, IconStarFilled, IconTrash,
 } from '../components/Icons.jsx';
 
 const strings = getStrings('en');
 
 export default function SessionBuilder({ navigate, setSubtitle }) {
-  const { state, patch, showToast, unlocked, requireUnlock } = useApp();
+  const { state, patch, showToast } = useApp();
   const session = state.builder || null;
   const [browseAll, setBrowseAll] = useState(false);
   const [favouritesOnly, setFavouritesOnly] = useState(false);
@@ -483,12 +483,9 @@ export default function SessionBuilder({ navigate, setSubtitle }) {
           type="button"
           className="btn btn--gold"
           disabled={!session.items.length}
-          onClick={() => {
-            setSaveTitle(session.title);
-            requireUnlock(() => setSaveOpen(true));
-          }}
+          onClick={() => { setSaveTitle(session.title); setSaveOpen(true); }}
         >
-          {unlocked ? null : <IconLock />} Save to Archive
+          Save to Archive
         </button>
         <ConfirmButton
           className="btn btn--danger"
