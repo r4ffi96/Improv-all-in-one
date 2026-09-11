@@ -8,10 +8,10 @@ and terminology. Everything runs client-side; there is no backend and no account
 
 | Tab | What it does |
 | --- | --- |
-| **Session Builder** | Pick a duration and a focus, choose warm-ups, exercises, a main long-form block and theory blocks from a 425-block library, order them, insert breaks, and export a Trainer Guide and a Player Guide as PDF or DOCX. |
+| **Session Builder** | Pick a duration and a focus, choose warm-ups, exercises, a main long-form block and theory blocks from a 441-block library, order them, insert breaks, and export a Trainer Guide and a Player Guide as PDF or DOCX. Blocks can be starred and the picker filtered to favourites only. |
 | **Suggestions** | Random scene-suggestion generator: 13 categories, 50 entries each, per-card reroll, auto-reroll on a timer, and a starred list you can copy or download as plain text. |
-| **Formats** | 32 whole-show structures (Harold, BIG.BANG.IMPRO, Emotion Experiment, Theatresports, Gorilla Theatre, Micetro, Soap Series, Armando, Montage, La Ronde, Deconstruction, Invocation and more) with their stage breakdowns. |
-| **Archive** | Saved sessions and Format Forge days, filterable and sortable, each re-exportable, duplicable into the builder, and debriefable (debriefs are stored as a list, so a session can be run more than once). |
+| **Formats** | 32 whole-show structures, starrable and filterable to favourites, (Harold, BIG.BANG.IMPRO, Emotion Experiment, Theatresports, Gorilla Theatre, Micetro, Soap Series, Armando, Montage, La Ronde, Deconstruction, Invocation and more) with their stage breakdowns. |
+| **Archive** | Saved sessions and Format Forge days, filterable and sortable, each re-exportable, duplicable into the builder, and debriefable (debriefs are stored as a list, so a session can be run more than once). Three written-up sessions ship with the app and are seeded here on first run. |
 | **Format Forge** | Live facilitation tool for the nine-step format development method: stepper, per-step timer, live notes, the on-the-fly adjustment reference, a format card, and a worksheet export. |
 | **Glossary** | 130 entries in four groups: Terms, Improvisers, Books and Philosophy. Search covers every definition, related terms cross-link, and each entry has a copy button. |
 
@@ -37,13 +37,36 @@ Everything the user creates lives in `localStorage` under `improv-all-in-one:v1`
 Settings has an **Export all data (JSON)** / **Import data (JSON)** pair so a
 backup can be moved between devices by hand.
 
+### Sessions that ship with the app
+
+Three sessions are seeded into the archive on first run, each reproducing a
+Trainer Guide and a Player Guide written outside the app:
+
+- **Game of the Scene: Character Games** (2 h) — finding, naming and playing the unusual pattern
+- **Less Is More: Economy of Speech** (2 h) — breaking the info-dump reflex
+- **Accepting and Giving Offers** (2 h) — listening and the blocking / accepting / over-accepting spectrum
+
+They are ordinary archive entries once seeded: editable, debriefable,
+duplicable and deletable, and deleting one does not bring it back. Their
+block durations match the printed guides exactly, including where a guide's
+own running order does not add up to its stated target.
+
+A session can carry its own coach's notes (pitfalls, adjustments, source
+connections), its own player-guide definition, distinctions and rules of
+thumb, and per-item `overrides` that adapt a library block for that run (a
+different prompt, its own debrief questions) without forking the library
+entry.
+
+### Hiding and favourites
+
 Games, formats and glossary entries can be switched off individually under
 **Settings → Library**. Hiding is reversible, applies to the Session Builder and
 the Formats tab, and never touches archived sessions.
 
 Seed content is edited directly in these files, there is no in-app editor:
 
-- `src/data/library.js` — 48 hand-written session blocks, merged with the import below
+- `src/data/library.js` — 64 hand-written session blocks, merged with the import below
+- `src/data/preset-sessions.js` — the three sessions seeded into the archive
 - `src/data/encyclopedia-games.json` — 377 games from the Improv Encyclopedia (index)
 - `src/data/encyclopedia-games-details.json` — their instructions, notes and variations, loaded on demand
 - `src/data/suggestions.json` — 13 suggestion categories, 50 entries each

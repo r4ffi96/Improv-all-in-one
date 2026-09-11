@@ -33,7 +33,10 @@ function sessionItemsResolved(session) {
     if (item.kind === 'break') {
       return { ...item, lib: null, name: item.label || 'Break' };
     }
-    const lib = fullById(item.libraryId);
+    const base = fullById(item.libraryId);
+    // A session may adapt a block for its own run (a different prompt, its own
+    // debrief questions) without forking the library entry.
+    const lib = base && item.overrides ? { ...base, ...item.overrides } : base;
     return { ...item, lib, name: lib ? lib.name : item.label || 'Removed library item' };
   });
 }
@@ -71,7 +74,9 @@ export function buildTrainerGuide(session, lang = 'en') {
     ),
   ];
 
-  if (session.topic) {
+  if (session.skillFocus) {
+    blocks.push(B.callout(`${strings.skillFocus}: ${session.skillFocus}`));
+  } else if (session.topic) {
     blocks.push(
       B.callout(
         `Focus of this session: ${session.topic}. Every block below is chosen against that focus, and the debrief questions point back to it.`,
@@ -121,14 +126,30 @@ export function buildTrainerGuide(session, lang = 'en') {
     }
   });
 
+  const coach = session.coachNotes || {};
+  if (coach.pitfalls && coach.pitfalls.length) {
+    blocks.push(B.section(strings.pitfallNotes));
+    blocks.push(B.coaching(coach.pitfalls, strings.pitfalls));
+  }
+
   blocks.push(B.section(strings.adjustments));
-  blocks.push(B.coaching(SESSION_ADJUSTMENTS, strings.adjustments.toUpperCase()));
+  blocks.push(B.coaching(
+    coach.adjustments && coach.adjustments.length ? coach.adjustments : SESSION_ADJUSTMENTS,
+    strings.adjustments.toUpperCase(),
+  ));
+
+  if (coach.sources && coach.sources.length) {
+    blocks.push(B.section(strings.sourceConnections));
+    blocks.push(B.bullets(coach.sources));
+  }
 
   return buildDocument({
     title: session.title || 'Training Session',
-    subtitle: session.topic
-      ? `${strings.trainerGuide} · ${session.topic}`
-      : strings.trainerGuide,
+    subtitle: session.subtitle
+      ? `${strings.trainerGuide} · ${session.subtitle}`
+      : session.topic
+        ? `${strings.trainerGuide} · ${session.topic}`
+        : strings.trainerGuide,
     meta: metaFor(session, strings),
     blocks,
     lang,
@@ -159,24 +180,46 @@ export function buildPlayerGuide(session, lang = 'en') {
     ),
   ];
 
-  if (theory.length) {
+  const player = session.playerNotes || {};
+
+  if (player.definition) {
+    blocks.push(B.callout(player.definition));
+  }
+
+  // A session that states its own definition does not also need the generic
+  // theory summary, and the Player Guide has to stay on one page.
+  if (theory.length && !player.definition) {
     blocks.push(B.section(strings.theorySummary));
     blocks.push(B.bullets(theory.map((t) => `${t.lib.name}: ${trim(t.lib.description, 130)}`)));
   }
 
-  if (hasHarold) {
+  if (player.distinctions && player.distinctions.length) {
+    blocks.push(B.section(strings.keyDistinctions));
+    blocks.push(B.bullets(player.distinctions));
+  }
+
+  if (player.diagram === 'funnel') {
+    blocks.push(B.section(strings.funnelDiagram));
+    blocks.push(B.diagram('funnel'));
+  } else if (hasHarold) {
     blocks.push(B.section(strings.haroldDiagram));
     blocks.push(B.diagram('harold'));
   }
 
-  blocks.push(B.section(strings.keyDistinctions));
-  blocks.push(B.bullets(PLAYER_RULES_OF_THUMB));
+  blocks.push(B.section(
+    player.distinctions && player.distinctions.length ? strings.rulesOfThumb : strings.keyDistinctions,
+  ));
+  blocks.push(B.bullets(
+    player.rulesOfThumb && player.rulesOfThumb.length ? player.rulesOfThumb : PLAYER_RULES_OF_THUMB,
+  ));
 
   return buildDocument({
     title: session.title || 'Training Session',
-    subtitle: session.topic
-      ? `${strings.playerGuide} · ${session.topic}`
-      : strings.playerGuide,
+    subtitle: session.subtitle
+      ? `${strings.playerGuide} · ${session.subtitle}`
+      : session.topic
+        ? `${strings.playerGuide} · ${session.topic}`
+        : strings.playerGuide,
     meta: metaFor(session, strings),
     blocks,
     lang,

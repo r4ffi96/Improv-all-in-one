@@ -12,7 +12,8 @@ import { exportDocument, formatMinutes, getStrings } from '../export/index.js';
 import LibraryItem from '../components/LibraryItem.jsx';
 import { Card, ConfirmButton, Empty, Meter, Sheet, Switch, Tag, TextInput } from '../components/ui.jsx';
 import {
-  IconArrowDown, IconArrowUp, IconClock, IconDownload, IconMinus, IconPlus, IconSearch, IconTrash,
+  IconArrowDown, IconArrowUp, IconClock, IconDownload, IconMinus, IconPlus, IconSearch,
+  IconStar, IconStarFilled, IconTrash,
 } from '../components/Icons.jsx';
 
 const strings = getStrings('en');
@@ -21,6 +22,7 @@ export default function SessionBuilder({ navigate, setSubtitle }) {
   const { state, patch, showToast } = useApp();
   const session = state.builder || null;
   const [browseAll, setBrowseAll] = useState(false);
+  const [favouritesOnly, setFavouritesOnly] = useState(false);
   const [topicDraft, setTopicDraft] = useState(session ? session.topic : '');
   const [saveOpen, setSaveOpen] = useState(false);
   const [saveTitle, setSaveTitle] = useState('');
@@ -52,6 +54,7 @@ export default function SessionBuilder({ navigate, setSubtitle }) {
   }, [setSubtitle, total, target, session]);
 
   const hidden = useMemo(() => new Set(state.hidden.library), [state.hidden.library]);
+  const favourites = useMemo(() => new Set(state.favourites.library), [state.favourites.library]);
 
   const candidates = useMemo(
     () => (session && session.topic ? findCandidates(session.topic) : []),
@@ -63,8 +66,10 @@ export default function SessionBuilder({ navigate, setSubtitle }) {
       : candidates;
     // Blocks switched off in settings stay out of the picker, but items
     // already in a session (or an archived one) still resolve by id.
-    return groupByType(pool.filter((i) => !hidden.has(i.id)));
-  }, [browseAll, candidates, hidden]);
+    return groupByType(pool.filter(
+      (i) => !hidden.has(i.id) && (!favouritesOnly || favourites.has(i.id)),
+    ));
+  }, [browseAll, candidates, hidden, favouritesOnly, favourites]);
 
   if (!session) return <Empty>Loading&hellip;</Empty>;
 
@@ -244,9 +249,27 @@ export default function SessionBuilder({ navigate, setSubtitle }) {
             {browseAll ? 'Show matches only' : 'Browse the full library instead'}
           </button>
         ) : null}
+        <div className="row row--tight" style={{ marginTop: 12 }}>
+          <button
+            type="button"
+            className={`chip${favouritesOnly ? ' is-active' : ''}`}
+            onClick={() => setFavouritesOnly((v) => !v)}
+            aria-pressed={favouritesOnly}
+          >
+            {favouritesOnly ? <IconStarFilled width={15} height={15} /> : <IconStar width={15} height={15} />}
+            Favourites only
+          </button>
+          <span className="tiny faint">{favourites.size} starred</span>
+        </div>
       </Card>
 
       {/* ---------------- candidates ---------------- */}
+      {favouritesOnly && visibleCount === 0 ? (
+        <Empty>
+          Nothing starred yet. Tap the star on a block to keep it here.
+        </Empty>
+      ) : null}
+
       {TYPE_ORDER.map((type) => {
         const items = visibleLibrary[type];
         if (!items.length) return null;

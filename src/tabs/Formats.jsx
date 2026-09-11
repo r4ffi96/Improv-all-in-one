@@ -1,9 +1,9 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { FORMATS } from '../data/formats.js';
 import { GLOSSARY } from '../data/glossary.js';
 import { useApp } from '../context/AppContext.jsx';
 import { Card, ConfirmButton, Empty, Tag } from '../components/ui.jsx';
-import { IconBack, IconChevron } from '../components/Icons.jsx';
+import { IconBack, IconChevron, IconStar, IconStarFilled } from '../components/Icons.jsx';
 
 /** First sentence of the summary, for the list card. */
 function summarise(format) {
@@ -14,8 +14,10 @@ function summarise(format) {
 }
 
 export default function Formats({ route, navigate, setSubtitle }) {
-  const { state, patch, showToast } = useApp();
+  const { state, patch, showToast, toggleFavourite } = useApp();
+  const [favouritesOnly, setFavouritesOnly] = useState(false);
   const hidden = useMemo(() => new Set(state.hidden.formats), [state.hidden.formats]);
+  const favourites = useMemo(() => new Set(state.favourites.formats), [state.favourites.formats]);
   const all = useMemo(
     () => [...state.formats.map((f) => ({ ...f, userAdded: true })), ...FORMATS]
       .filter((f) => !hidden.has(f.id)),
@@ -40,6 +42,16 @@ export default function Formats({ route, navigate, setSubtitle }) {
           <div className="card__title" style={{ fontSize: 21 }}>{current.name}</div>
           <div className="small muted" style={{ marginTop: 4 }}>{current.origin}</div>
           <div className="row row--tight" style={{ marginTop: 10 }}>
+            <button
+              type="button"
+              className={`star-btn${favourites.has(current.id) ? ' is-on' : ''}`}
+              style={{ alignSelf: 'center' }}
+              onClick={() => toggleFavourite('formats', current.id)}
+              aria-label={favourites.has(current.id) ? 'Unfavourite this format' : 'Favourite this format'}
+              aria-pressed={favourites.has(current.id)}
+            >
+              {favourites.has(current.id) ? <IconStarFilled /> : <IconStar />}
+            </button>
             <Tag tone="gold">{current.typicalDuration}</Tag>
             {current.userAdded ? <Tag tone="accent">From a forge day</Tag> : null}
             {(current.categoryTags || []).map((tag) => <Tag key={tag}>{tag}</Tag>)}
@@ -109,18 +121,43 @@ export default function Formats({ route, navigate, setSubtitle }) {
     );
   }
 
+  const listed = favouritesOnly ? all.filter((f) => favourites.has(f.id)) : all;
+
   return (
     <div className="stack">
       <p className="small muted" style={{ margin: '0 0 2px' }}>
         Whole show structures. Individual exercises live in the Session Builder library.
       </p>
-      {all.length === 0 ? <Empty>No formats yet.</Empty> : null}
-      {all.map((format) => (
+      <div className="row row--tight">
         <button
-          key={format.id}
           type="button"
+          className={`chip${favouritesOnly ? ' is-active' : ''}`}
+          onClick={() => setFavouritesOnly((v) => !v)}
+          aria-pressed={favouritesOnly}
+        >
+          {favouritesOnly ? <IconStarFilled width={15} height={15} /> : <IconStar width={15} height={15} />}
+          Favourites only
+        </button>
+        <span className="tiny faint">{favourites.size} starred</span>
+      </div>
+      {listed.length === 0 ? (
+        <Empty>
+          {favouritesOnly ? 'Nothing starred yet. Tap the star on a format to keep it here.' : 'No formats yet.'}
+        </Empty>
+      ) : null}
+      {listed.map((format) => (
+        <div
+          key={format.id}
           className="pick"
+          role="button"
+          tabIndex={0}
           onClick={() => navigate('formats', format.id)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              navigate('formats', format.id);
+            }
+          }}
           style={{ cursor: 'pointer' }}
         >
           <div className="pick__top">
@@ -134,11 +171,26 @@ export default function Formats({ route, navigate, setSubtitle }) {
                 {format.userAdded ? <Tag tone="good">From a forge day</Tag> : null}
               </div>
             </div>
-            <span style={{ color: 'var(--text-faint)', alignSelf: 'center' }}>
-              <IconChevron width={18} height={18} />
+            <span
+              className="stack-sm"
+              style={{ alignItems: 'center', gap: 6, alignSelf: 'center' }}
+            >
+              <button
+                type="button"
+                className={`star-btn${favourites.has(format.id) ? ' is-on' : ''}`}
+                style={{ alignSelf: 'center' }}
+                onClick={(e) => { e.stopPropagation(); toggleFavourite('formats', format.id); }}
+                aria-label={favourites.has(format.id) ? `Unfavourite ${format.name}` : `Favourite ${format.name}`}
+                aria-pressed={favourites.has(format.id)}
+              >
+                {favourites.has(format.id) ? <IconStarFilled /> : <IconStar />}
+              </button>
+              <span style={{ color: 'var(--text-faint)', lineHeight: 0 }}>
+                <IconChevron width={18} height={18} />
+              </span>
             </span>
           </div>
-        </button>
+        </div>
       ))}
     </div>
   );

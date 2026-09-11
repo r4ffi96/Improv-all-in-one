@@ -255,6 +255,49 @@ function haroldDiagram() {
   ];
 }
 
+/** The game-of-the-scene funnel, the DOCX counterpart of the drawn diagram. */
+function funnelDiagram() {
+  const rows = [
+    ['Base reality + yes-and', 'Explore the world, establish the W-questions', false],
+    ['First unusual thing', "The partner's reaction makes it obvious", false],
+    ['GAME: if this is true, what else is true?', 'Escalate along the same pattern', true],
+  ];
+  const out = [];
+  rows.forEach(([label, note, accent]) => {
+    out.push(
+      fullWidthTable(
+        [
+          new TableRow({
+            children: [
+              new TableCell({
+                children: [
+                  para(label, {
+                    bold: true, size: S.small - 0.3, color: C.diagramText,
+                    align: AlignmentType.CENTER, after: 0,
+                  }),
+                ],
+                shading: shading(accent ? C.diagramAccent : C.diagramBox),
+                borders: {
+                  top: solid(accent ? C.diagramAccentLine : C.diagramBoxLine, 4),
+                  bottom: solid(accent ? C.diagramAccentLine : C.diagramBoxLine, 4),
+                  left: solid(accent ? C.diagramAccentLine : C.diagramBoxLine, 4),
+                  right: solid(accent ? C.diagramAccentLine : C.diagramBoxLine, 4),
+                },
+              }),
+            ],
+          }),
+        ],
+        { margins: { top: tw(4), bottom: tw(4), left: tw(5), right: tw(5) } },
+      ),
+      para(note, {
+        italics: true, size: S.small - 0.8, color: C.subtitle,
+        align: AlignmentType.CENTER, before: 2, after: 5,
+      }),
+    );
+  });
+  return out;
+}
+
 const spacer = (pt = 5) => new Paragraph({ text: '', spacing: { after: tw(pt) } });
 
 function renderBlock(block, strings) {
@@ -269,7 +312,10 @@ function renderBlock(block, strings) {
     case 'kv': return kvBlock(block);
     case 'agenda': return agendaBlock(block);
     case 'table': return tableBlock(block);
-    case 'diagram': return block.kind === 'harold' ? haroldDiagram() : [];
+    case 'diagram':
+      if (block.kind === 'harold') return haroldDiagram();
+      if (block.kind === 'funnel') return funnelDiagram();
+      return [];
     case 'rule': return [new Paragraph({ text: '', spacing: { after: tw(8) }, border: { bottom: solid(C.rule, 6) } })];
     case 'space': return [spacer(block.h || 6)];
     case 'pagebreak': return [new Paragraph({ text: '', pageBreakBefore: true })];

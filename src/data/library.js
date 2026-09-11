@@ -974,22 +974,24 @@ const CURATED = [
     id: 'th-game-of-the-scene',
     name: 'Game of the Scene',
     type: 'theory',
-    categoryTags: ['Theory', 'Game of the Scene', 'UCB'],
+    categoryTags: ['Theory', 'Game of the Scene', 'UCB', 'Napier', 'Platform', 'Heightening'],
     description:
       'The UCB logic of finding one unusual thing and playing its pattern rather than adding new ideas.',
     fullText:
-      'A scene begins with a base reality: two people, a relationship, something they are doing. Somewhere in the first exchanges, one unusual thing appears. The game of the scene is the pattern built by repeating that unusual thing in new but logically connected forms.\n\nThe engine question is: if this is true, what else is true? Each heightening move is a consequence of the same premise, not a fresh idea. A second unusual thing does not heighten a scene, it replaces it.\n\nThree practical markers: name the game in one sentence, find the second example before you find the third, and let the characters keep caring about the base reality while the pattern grows.',
-    setup: 'Whiteboard or flipchart. Draw the base reality, the first unusual thing, and the ladder of examples.',
+      'Structure of a scene\n\nEvery scene contains four elements: place, characters, actions, and motives. In narrative scenes the drive is external: save the relationship, save the marriage, save the world. In game-based scenes the drive is internal, because one of the four elements is unusual, and that unusual element is the game.\n\nDefinition\n\nGame of the scene is the single specific idea that makes a scene funny. It is a consistent pattern of behaviour that breaks from the expected patterns of everyday life.\n\nShort-form games such as Freeze Tag are not the game of the scene. Short-form games are formats; game of the scene is a scenic principle. \u00abTop of your intelligence\u00bb means responding truthfully to what is happening in the scene, not trying to be clever. Authenticity is what makes the game land.\n\nThe funnel\n\nOpening: you start wide, explore the world, and yes-and is the most important tool here. Give colour, establish the W-questions (who, what, where, why), build the platform.\n\nTransition point: the first unusual thing happens. The partner\u2019s reaction makes it obvious, not the thing itself. The reaction signals that this matters, that this is different.\n\nEscalation: the range narrows and the game is found. From here, if this is true, what else is true? Escalate further and further along the same pattern. The game is played, not discussed.\n\nNapier\u2019s framing\n\nMick Napier calls this your deal, your personal road map for the scene. Whatever you establish in your first two moves becomes your pattern: when you do something twice in improvisation, you establish a pattern. From there, hold on to what you created and heighten it. Do not let go.',
+    setup: 'Whiteboard or flipchart. Draw the funnel: wide opening, the first unusual thing at the transition point, then the narrowing escalation.',
     coachingNotes: [
-      'Keep this under ten minutes. It is learned by playing, not by hearing.',
+      'The game should have an authentic reason. It is not comedy escalation, it is emotional justification.',
+      'Ask: why does this character do this? Why should the audience care?',
+      'Keep it to fifteen minutes. It is learned by playing, not by hearing.',
       'Use a scene the group just played as the example rather than a canonical one.',
       'The distinction that costs groups the most time is game versus plot. Make it explicit.',
     ],
     variations: [],
     debriefQuestions: ['Name the game of the last scene in one sentence.'],
-    durationMinutes: 10,
+    durationMinutes: 15,
     groupSizeFit: 'any',
-    source: 'UCB Manual',
+    source: 'UCB Manual / Napier - Improvise / Sandro Raffaele',
   },
   {
     id: 'th-status-platform-tilt',
@@ -1208,6 +1210,382 @@ const CURATED = [
     durationMinutes: 8,
     groupSizeFit: 'any',
     source: 'anundpfirsich / Sandro original',
+  },
+  /* ------------------------------------------------------------------ */
+  /* SESSION GUIDE BLOCKS                                                */
+  /* Written for the Game of the Scene and Less Is More session guides.  */
+  /* ------------------------------------------------------------------ */
+  {
+    id: 'sr-checkin-quirk',
+    name: 'Check-in: Quirks and Habits',
+    type: 'warmup',
+    categoryTags: ['Introduction', 'Check-in', 'Group', 'Game of the Scene', 'Character'],
+    description:
+      'Each player names a quirk others have pointed out in them, seeding the idea that games come from behaviour.',
+    fullText:
+      'Circle. The prompt: «What’s a quirk or habit you have that other people have pointed out to you, something you do without thinking about it?» One answer each, short.\n\nWhy it works: it seeds the idea that games come from behavioural patterns rather than from being clever. Quirks are real-life first unusual things. It also warms up self-awareness and a little vulnerability before any scene work.',
+    setup: 'Circle, seated or standing. Coach answers too and models the length.',
+    coachingNotes: [
+      'One answer each, kept short. This is a seed, not a therapy round.',
+      'Point out afterwards that every answer was a behaviour, not an idea. That is the whole session in one sentence.',
+    ],
+    variations: ['Name a quirk of someone you live with instead of your own.'],
+    debriefQuestions: [],
+    durationMinutes: 5,
+    groupSizeFit: 'any',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-pattern-game',
+    name: 'Pattern Game (What Comes Next)',
+    type: 'warmup',
+    categoryTags: ['Game of the Scene', 'Heightening', 'Association', 'Warm-up', 'Circle'],
+    description:
+      'Circle drill on the escalation logic of game: one statement about a character, then each player answers «if that is true, what else is true?».',
+    fullText:
+      'Circle. One player makes a declarative statement about a character or a situation, for example «My neighbour always checks his mailbox exactly three times». The next player heightens it by asking «if that’s true, what else is true?» and answering it, for example «He also counts every step to the car». Continue around the circle, each person escalating the same pattern.\n\nThis is the core escalation logic of game of the scene, isolated in its simplest verbal form, before players have to find it inside a scene.',
+    setup: 'Standing circle. Coach seeds the first statement if the group hesitates.',
+    coachingNotes: [
+      'Heighten the pattern, do not just add random new information.',
+      'Each contribution should feel inevitable rather than surprising. The logic of the pattern dictates the moves.',
+      'If someone breaks the pattern or goes sideways, name it gently and reset.',
+    ],
+    variations: [
+      'Run two laps on the same pattern and see how far the logic stretches.',
+      'Do it in pairs at speed, then bring the best pattern back to the circle.',
+    ],
+    debriefQuestions: ['Which move felt inevitable, and which one was a new idea in disguise?'],
+    durationMinutes: 10,
+    groupSizeFit: '4+',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-i-am-i-am-i-take',
+    name: 'I Am, I Am, I Take',
+    type: 'warmup',
+    categoryTags: ['Association', 'Group', 'Spontaneity', 'Warm-up', 'Game of the Scene'],
+    description:
+      'Three-player image building where the third player ties two unrelated offers together, then one is taken away.',
+    fullText:
+      'Circle. Player A steps forward: «I am a tree». Player B steps in and adds a related thing: «I am a bird in the tree». Player C steps in and ties the two together: «I am the wind shaking you both». Player A then says «I take the bird» (or the wind), taking one of the other two with them. The remaining player restarts with a new offer.\n\nPlayer C is doing game identification: finding the connection between two unrelated offers. That is the same muscle the scene work needs later.',
+    setup: 'Standing circle with room to step into the middle.',
+    coachingNotes: [
+      'Encourage bold, committed physicality. Body before brain.',
+      'Name Player C’s job explicitly: finding the connection is the same muscle as game-finding.',
+      'Push for speed. Deliberation kills it.',
+    ],
+    variations: [
+      'Silent version: the offers are physical shapes only, and Player C names the connection.',
+      'Four-player version where the fourth must also fit the pattern before anyone is taken.',
+    ],
+    debriefQuestions: ['As the third player, what were you actually looking for?'],
+    durationMinutes: 10,
+    groupSizeFit: '4+',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-tableau-image-building',
+    name: 'Tableau: Image Building',
+    type: 'exercise',
+    categoryTags: ['Game of the Scene', 'Group', 'Physicality', 'Association', 'Concentration'],
+    description:
+      'Frozen images built by three players, where the third names the pattern between the first two offers.',
+    fullText:
+      'One player enters and freezes in a physical pose, a snapshot rather than a pantomime. A second player adds to the image. A third player enters and ties the first two together, naming out loud what the image is.\n\nRun several rounds with different trios. The third player is practising game identification: what is the pattern between these two offers?',
+    setup: 'Clean playing area, group watching from one side. Rotate so everyone plays third at least once.',
+    coachingNotes: [
+      'The third player is practising game identification: what is the pattern between these two offers?',
+      'Encourage bold interpretation. There is no wrong answer, only uncommitted ones.',
+      'Discuss briefly after each round: what did the third player see, was it obvious or a reach?',
+    ],
+    variations: [
+      'Fourth player adds an image that changes the meaning of the first three.',
+      'The third player names the image physically instead of verbally.',
+    ],
+    debriefQuestions: [
+      'When the naming was a reach, did it make the image better or did it throw it away?',
+    ],
+    durationMinutes: 10,
+    groupSizeFit: '3+',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-coached-scenework-platform',
+    name: 'Coached Scenework: Platform to First Unusual Thing',
+    type: 'exercise',
+    categoryTags: ['Game of the Scene', 'Platform', 'Scene work', 'Two-person', 'Coached'],
+    description:
+      'Two-player scenes stopped twice by the coach: once to check the platform, once to name the first unusual thing.',
+    fullText:
+      'Two players start a scene. The coach stops them twice.\n\nStop 1, platform check: freeze once the W-questions are established (who, where, what, relationship). Ask the group «What do we know? Is the platform solid?» Then continue.\n\nStop 2, game identification: freeze again when something unusual emerges. Ask «What’s the first unusual thing? What’s the game?» If the players did not notice it, the group names it. If the partner did not react to it, name that too, because the reaction is what makes the unusual thing visible. Then stop the scene. Do not let them play the game yet.\n\nHolding the scene back at exactly that point is the teaching move: the group sees the game arrive without the relief of playing it.',
+    setup: 'Bare stage, group watching. Coach edits with a clap and runs the two stops out loud.',
+    coachingNotes: [
+      'Are they showing or telling? Watch physicality, environment work and behaviour against exposition.',
+      'Is the relationship specific? «Friends» is vague; «old roommates who haven’t spoken since the incident» is specific.',
+      'At the game-identification stop, can the group agree on the game? If not, the unusual thing was not clear enough. Discuss why.',
+      'The partner’s reaction is everything. If the first unusual thing goes unnoticed, it is not a game yet.',
+    ],
+    variations: [
+      'Run extra reps here if platform-building is where the group struggles.',
+      'Silent platform: build the W-questions with no dialogue before the first line.',
+    ],
+    debriefQuestions: [
+      'What would happen if someone had tried to be unusual in the first 30 seconds? What would you lose?',
+    ],
+    durationMinutes: 20,
+    groupSizeFit: '2+',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-coached-scenework-full',
+    name: 'Coached Scenework: Full Scenes',
+    type: 'main',
+    categoryTags: ['Game of the Scene', 'Scene work', 'Heightening', 'Two-person', 'Coached'],
+    description:
+      'Uninterrupted scenes with side-coaching through platform, game discovery and escalation.',
+    fullText:
+      'New pairs. Scenes run without stops. The coach side-coaches during the scene: early on «take your time, build the world»; when the game emerges «there it is, now play it»; during escalation «if this is true, what else is true?»; if they drift «you had it, go back».\n\nAfter each scene, a brief group debrief: what was the game, when did you spot it, did both players have the same game?\n\nAfter two or three coached scenes, let a pair run completely uncoached.',
+    setup: 'Bare stage. Coach stays at the side and speaks into the scene without stopping it.',
+    coachingNotes: [
+      'Watch for objectifying, Napier’s term: players stepping outside the scene to comment on the pattern instead of playing it. Redirect with «stay in it, don’t announce the game, be the game».',
+      'Watch for players who find the game and then abandon it. Coach: «one game, go deeper not wider».',
+      'Watch for mechanical escalation without emotional grounding. Ask «why does your character do this?»',
+      'After two or three coached scenes, let a pair run uncoached.',
+    ],
+    variations: [
+      'Constraint version: find the game in the first 60 seconds, then play it for three minutes without dropping it.',
+      'Same pair replays their scene with the game known from the first line.',
+    ],
+    debriefQuestions: [
+      'What was the game, in one sentence?',
+      'When did you spot it, and did both players have the same game?',
+    ],
+    durationMinutes: 25,
+    groupSizeFit: '2+',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-checkin-six-words',
+    name: 'Check-in: Six Words Only',
+    type: 'warmup',
+    categoryTags: ['Introduction', 'Check-in', 'Limitations', 'Restraint', 'Group'],
+    description:
+      'Each player describes their day in exactly six words, setting economy of speech as the frame for the evening.',
+    fullText:
+      'Circle. The prompt: «Tell us about your day, but you get six words.» Hard count, no exceptions.\n\nIt sets the constraint before the warm-up even starts, so economy of speech is the frame for the whole evening rather than a note applied later.',
+    setup: 'Circle. Coach counts out loud if anyone overruns, and goes first.',
+    coachingNotes: [
+      'Hard count, no exceptions. The rule being unarguable is the point.',
+      'Do not let anyone restate it «properly» afterwards.',
+    ],
+    variations: ['Three words for a second lap.', 'Six words, but one of them has to be a verb.'],
+    debriefQuestions: [],
+    durationMinutes: 5,
+    groupSizeFit: 'any',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-one-sentence-scenes',
+    name: 'One-Sentence Scenes',
+    type: 'exercise',
+    categoryTags: ['Limitations', 'Restraint', 'Scene work', 'Look and Listen', 'Economy of speech'],
+    description:
+      'Every line is a single sentence, with no compound sentences and no «and then», as a structural cure for the info-dump.',
+    fullText:
+      'Every line in the scene is a single sentence. No compound sentences, no «and then». If someone runs on, side-coach a hard cut. Run multiple reps, rotating who plays and who watches.\n\nWith three players, the watcher’s job each round is to catch the first line that tries to do two jobs at once, and to call it out after the scene rather than during it.\n\nThe constraint is not the note «talk less». It is a structural rule that cannot be argued with.',
+    setup: 'Two players on, the rest watching with the catch-the-line brief. Coach cuts run-ons immediately.',
+    coachingNotes: [
+      'This is the direct answer to an over-talking pattern: the constraint is structural, not a note.',
+      'Watch for players hedging around the rule with a long single sentence stuffed with clauses. That is still one job trying to be three.',
+      'Rotate roles enough that everyone plays and everyone watches at least once.',
+    ],
+    variations: [
+      'Six words per line instead of one sentence.',
+      'One sentence each, but the scene has to reach a decision.',
+    ],
+    debriefQuestions: [
+      'Which line tried to do two jobs at once?',
+      'What did you hear once there was less to process?',
+    ],
+    durationMinutes: 40,
+    groupSizeFit: '3+',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-free-scene-diagnostic',
+    name: 'Free Scene, Constraint Removed',
+    type: 'exercise',
+    categoryTags: ['Scene work', 'Diagnostic', 'Restraint', 'Look and Listen'],
+    description:
+      'A long unconstrained scene run purely as a diagnostic: does the shorter phrasing survive once nobody is counting?',
+    fullText:
+      'No rules. Let it run longer than a single diagnostic scene would normally go.\n\nThis is the real test: does the group naturally speak in shorter units now, or does the info-dump reflex come straight back once nobody is counting?\n\nThe coach does not intervene. The value of the block is the data it produces for the debrief.',
+    setup: 'Bare stage, no constraint announced. Coach sits down and takes notes rather than side-coaching.',
+    coachingNotes: [
+      'Do not intervene. This block is diagnostic, not instructional.',
+      'Note specifically when and how the old pattern reappears, for the debrief.',
+    ],
+    variations: ['Run it twice with different pairs and compare where the reflex returns.'],
+    debriefQuestions: [
+      'Where exactly did the old pattern come back?',
+      'What was happening in the scene at that moment?',
+    ],
+    durationMinutes: 25,
+    groupSizeFit: '2+',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-session-debrief',
+    name: 'Session Debrief',
+    type: 'exercise',
+    categoryTags: ['Debrief', 'Group', 'Closer'],
+    description:
+      'Seated group debrief at the end of a session: what was noticed, what carries forward, where it broke down.',
+    fullText:
+      'Sit the group down. Three questions, answered around the circle rather than by whoever speaks first:\n\nWhat did you notice?\nWhat do you want to carry forward?\nWhere did the discipline of the evening break down, and where exactly?\n\nName the breakdown directly. A debrief that only collects praise gives the group nothing to work with next time.',
+    setup: 'Seated circle. Coach writes down the carry-forward answers.',
+    coachingNotes: [
+      'Go around the circle rather than letting the confident players answer everything.',
+      'Name the breakdown specifically, with the moment it happened, not as a general tendency.',
+      'Write down the carry-forward answers. They are the agenda for the next session.',
+    ],
+    variations: ['Pairs first for two minutes, then one sentence each to the whole group.'],
+    debriefQuestions: [],
+    durationMinutes: 10,
+    groupSizeFit: 'any',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-checkout-one-word',
+    name: 'Check-out: One Word',
+    type: 'exercise',
+    categoryTags: ['Closer', 'Group', 'Check-out'],
+    description:
+      'One word each on the main takeaway, forcing synthesis and revealing whether the concept landed.',
+    fullText:
+      'Standing circle. One word each: the main takeaway from tonight.\n\nKeeping it to one word forces synthesis, and the words the group reaches for often reveal whether the concept actually landed or whether they are repeating the coach’s phrasing back.',
+    setup: 'Standing circle, coats on. Under a minute per lap.',
+    coachingNotes: [
+      'One word. If someone gives a sentence, ask for the word inside it.',
+      'Listen for whether the words are theirs or yours. Repeating your phrasing is not the same as understanding.',
+    ],
+    variations: ['One word plus a physical shape.'],
+    debriefQuestions: [],
+    durationMinutes: 5,
+    groupSizeFit: 'any',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-checkin-yes-no',
+    name: 'Check-in: Yes or No This Week',
+    type: 'warmup',
+    categoryTags: ['Introduction', 'Check-in', 'Accepting', 'Group'],
+    description:
+      'Each player names a moment this week where they said yes to something they almost refused, or the reverse.',
+    fullText:
+      'Circle. The prompt: «Name one moment this week where you said yes to something you almost said no to, or the reverse.» One answer each.\n\nIt primes the theme without improv jargon, and gets people thinking about accepting and refusing as something they already do offstage.',
+    setup: 'Circle, seated or standing. Coach answers too and keeps it to a couple of sentences each.',
+    coachingNotes: [
+      'No improv vocabulary yet. The point is that they already do this offstage.',
+      'Both directions are useful. The reluctant no teaches as much as the reluctant yes.',
+    ],
+    variations: ['Name a moment where you said yes and regretted it.'],
+    debriefQuestions: [],
+    durationMinutes: 5,
+    groupSizeFit: 'any',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-word-sound-movement-pass',
+    name: 'Word + Sound + Movement Pass',
+    type: 'warmup',
+    categoryTags: ['Accepting', 'Look and Listen', 'Physicality', 'Warm-up', 'Circle'],
+    description:
+      'A three-part package of word, sound and physicality passed around the circle, received whole and transformed.',
+    fullText:
+      'Circle. One player hands a word, a sound and a piece of physicality to their neighbour. The neighbour receives all three, transforms them, and passes a new word plus sound plus movement package to the next person.\n\nThe point is receiving the whole package: word, tone and body, not just the word. Players who only pass the verbal part have already shown you the note they need.',
+    setup: 'Standing circle with room to move. Coach demonstrates one full package first.',
+    coachingNotes: [
+      'The point is receiving the whole package: word, tone and body, not just the word.',
+      'Watch for players who only pass the verbal part and drop the physicality or tone.',
+    ],
+    variations: [
+      'Drop the word and pass sound plus movement only.',
+      'Pass across the circle instead of to a neighbour, so eye contact has to do the sending.',
+    ],
+    debriefQuestions: ['Which of the three parts did you keep dropping?'],
+    durationMinutes: 10,
+    groupSizeFit: '4+',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'th-listening-and-offers',
+    name: 'Listening and Offers',
+    type: 'theory',
+    categoryTags: ['Theory', 'Accepting', 'Look and Listen', 'Offer', 'Blocking'],
+    description:
+      'You cannot accept what you did not hear, everything is an offer, and the spectrum runs from blocking through accepting to over-accepting.',
+    fullText:
+      'You cannot accept what you do not hear\n\nMost blocking in intermediate players is not deliberate, it is inattention. The player had a plan and did not notice the offer. Hearing is only half of it: active listening means recognising that what your partner just said or did is an offer in the first place. Acceptance starts with the decision to treat your partner’s contribution as something worth building on.\n\nEverything is an offer\n\nNot just words. A gesture, a silence, a shift in posture, a change in eye contact. Offers are everywhere; the skill is in seeing them.\n\nThe spectrum of responses to an offer\n\nBlocking: refusing or ignoring the offer. «No it isn’t», changing the subject, not reacting.\nAccepting: taking the offer and building on it.\nOver-accepting: accepting so enthusiastically or extremely that you derail the scene or take over.\n\nHealthy acceptance sits between the two ends. Over-accepting creates as many problems as blocking, it just shifts the whole burden onto one player.',
+    setup:
+      'Deliver it straight after the listening warm-ups, so you can point back at what the group just felt. Three words on the flipchart: blocking, accepting, over-accepting.',
+    coachingNotes: [
+      'Point back at the warm-ups. The group has just demonstrated what full attention feels like; name it rather than describing it.',
+      'Ten minutes maximum. The next two exercises explore the spectrum directly.',
+      'Say the over-accepting end out loud now. Groups hear «accept everything» and run straight past it.',
+    ],
+    variations: [],
+    debriefQuestions: ['Where on the spectrum do you default?'],
+    durationMinutes: 10,
+    groupSizeFit: 'any',
+    source: 'Johnstone lineage / Sandro Raffaele',
+  },
+  {
+    id: 'sr-the-gap',
+    name: 'The Gap',
+    type: 'exercise',
+    categoryTags: ['Accepting', 'Look and Listen', 'Limitations', 'Scene work', 'Two-person'],
+    description:
+      'A normal scene with one rule: wait a full three seconds before responding to anything, in eye contact, without pre-loading.',
+    fullText:
+      'Pairs. Play a normal scene on any suggestion. One rule: each player must wait a full three seconds before responding to anything their partner says or does. No faking it by looking away. Stay in eye contact, receive the offer, let it land, then respond.\n\nThis is the hinge of a listening session. Warm-ups train listening outside a scene context; the Gap puts the same skill into a real scene and makes the invisible act of receiving an offer visible and physical.\n\nAfter a few rounds at three seconds, try one second, then no enforced pause at all with the instruction «keep the quality of attention you had during the gap». That last round is the real skill transfer.',
+    setup: 'Pairs, bare stage. Coach counts the first few gaps out loud so the length is not negotiable.',
+    coachingNotes: [
+      'Rushing: players who cannot hold the three seconds. Name it without judgment: «you responded in about one second there, try again».',
+      'Pre-loading: players who use the pause to rehearse their next line instead of receiving. Ask «were you listening during the pause, or planning?»',
+      'The scene improving: almost always, scenes get richer under this constraint. Name it when it happens.',
+    ],
+    variations: [
+      'Three seconds, then one second, then no enforced pause but the same quality of attention.',
+      'The pause has to be filled with a physical response rather than stillness.',
+    ],
+    debriefQuestions: [
+      'Were you listening during the pause, or planning?',
+      'What did the scene gain from the constraint?',
+    ],
+    durationMinutes: 15,
+    groupSizeFit: '2+',
+    source: 'Sandro Raffaele',
+  },
+  {
+    id: 'sr-checkout-next-scene',
+    name: 'Check-out: One Thing to Practice',
+    type: 'exercise',
+    categoryTags: ['Closer', 'Check-out', 'Group'],
+    description:
+      'Each player finishes the sentence «One thing I want to practice in my next scene is...».',
+    fullText:
+      'Circle. Each player finishes the sentence: «One thing I want to practice in my next scene is...»\n\nThe stem forces a concrete, personal commitment rather than a general appreciation of the evening, and it gives the coach a list to follow up on next time.',
+    setup: 'Standing circle, coats on. One sentence each, no discussion.',
+    coachingNotes: [
+      'One sentence each, no discussion. Write them down.',
+      'Push for something specific and playable, not «be more present».',
+    ],
+    variations: ['Say it to one other player rather than to the circle.'],
+    debriefQuestions: [],
+    durationMinutes: 5,
+    groupSizeFit: 'any',
+    source: 'Sandro Raffaele',
   },
 ];
 

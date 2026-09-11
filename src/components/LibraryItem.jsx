@@ -1,14 +1,18 @@
 import { useEffect, useState } from 'react';
 import { ensureLibraryDetails, withDetails } from '../data/library.js';
+import { useApp } from '../context/AppContext.jsx';
 import { CheckBox, Tag } from './ui.jsx';
+import { IconStar, IconStarFilled } from './Icons.jsx';
 
 const TYPE_TONE = { warmup: 'good', exercise: 'accent', main: 'gold', theory: 'warn' };
 const TYPE_SHORT = { warmup: 'Warm-up', exercise: 'Exercise', main: 'Main', theory: 'Theory' };
 
 /** One library block, selectable and expandable. Shared by builder and archive. */
 export default function LibraryItem({ item, selected, onToggle, defaultOpen = false }) {
+  const { state, toggleFavourite } = useApp();
   const [open, setOpen] = useState(defaultOpen);
   const [detail, setDetail] = useState(() => withDetails(item));
+  const starred = state.favourites.library.includes(item.id);
 
   // Encyclopedia instructions are fetched the first time a card is opened.
   useEffect(() => {
@@ -48,6 +52,16 @@ export default function LibraryItem({ item, selected, onToggle, defaultOpen = fa
             {open ? 'Tap to collapse' : 'Tap for full instructions'}
           </div>
         </div>
+        <button
+          type="button"
+          className={`star-btn${starred ? ' is-on' : ''}`}
+          style={{ alignSelf: 'flex-start', marginTop: 1 }}
+          onClick={(e) => { e.stopPropagation(); toggleFavourite('library', item.id); }}
+          aria-label={starred ? `Unfavourite ${item.name}` : `Favourite ${item.name}`}
+          aria-pressed={starred}
+        >
+          {starred ? <IconStarFilled /> : <IconStar />}
+        </button>
       </div>
 
       {open ? (

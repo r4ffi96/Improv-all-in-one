@@ -25,6 +25,15 @@ export function AppProvider({ children }) {
 
   const replaceAll = useCallback((next) => setState(next), []);
 
+  /** Star or unstar a library block or a format. */
+  const toggleFavourite = useCallback((kind, id) => {
+    setState((prev) => {
+      const list = prev.favourites[kind] || [];
+      const next = list.includes(id) ? list.filter((x) => x !== id) : [...list, id];
+      return { ...prev, favourites: { ...prev.favourites, [kind]: next } };
+    });
+  }, []);
+
   const showToast = useCallback((message) => {
     setToast(message);
     clearTimeout(toastTimer.current);
@@ -34,8 +43,8 @@ export function AppProvider({ children }) {
   useEffect(() => () => clearTimeout(toastTimer.current), []);
 
   const value = useMemo(
-    () => ({ state, patch, replaceAll, toast, showToast, setToast }),
-    [state, patch, replaceAll, toast, showToast],
+    () => ({ state, patch, replaceAll, toggleFavourite, toast, showToast, setToast }),
+    [state, patch, replaceAll, toggleFavourite, toast, showToast],
   );
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

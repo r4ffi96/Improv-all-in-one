@@ -571,9 +571,63 @@ class PdfRenderer {
     this.y -= this.blockGap;
   }
 
-  /** Harold structure, drawn with primitives rather than an image asset. */
   blockDiagram(block) {
-    if (block.kind !== 'harold') return;
+    if (block.kind === 'funnel') return this.diagramFunnel();
+    if (block.kind === 'harold') return this.diagramHarold();
+    return undefined;
+  }
+
+  /**
+   * The game-of-the-scene funnel: a wide opening that narrows onto the game.
+   * Drawn with primitives, like the Harold diagram.
+   */
+  diagramFunnel() {
+    const rowH = 22 * this.rowUnit;
+    const gap = 7 * this.rowUnit;
+    const w = this.width;
+    const rows = [
+      { label: 'Base reality + yes-and', note: 'Explore the world, establish the W-questions', width: 1, accent: false },
+      { label: 'First unusual thing', note: "The partner's reaction makes it obvious", width: 0.72, accent: false },
+      { label: 'GAME: if this is true, what else is true?', note: 'Escalate along the same pattern', width: 0.48, accent: true },
+    ];
+    const noteSize = this.S.small - 1;
+    const total = rows.length * (rowH + noteSize * 1.4 + gap) + 10;
+    this.need(total);
+
+    let y = this.y;
+    rows.forEach((row, i) => {
+      const bw = w * row.width;
+      const x = this.left + (w - bw) / 2;
+      this.rect(x, y - rowH, bw, rowH, {
+        fill: row.accent ? C.diagramAccent : C.diagramBox,
+        border: row.accent ? C.diagramAccentLine : C.diagramBoxLine,
+        borderWidth: 0.8,
+      });
+      const size = this.S.small - 0.3;
+      const label = this.wrap(row.label, this.f.bold, size, bw - 8)[0] || row.label;
+      const tw = this.measure(label, this.f.bold, size);
+      this.text(label, x + Math.max(4, (bw - tw) / 2), y - rowH + (rowH - size) / 2 + 1.6, {
+        font: this.f.bold, size, color: C.diagramText,
+      });
+
+      const note = this.wrap(row.note, this.f.italic, noteSize, w)[0] || row.note;
+      const nw = this.measure(note, this.f.italic, noteSize);
+      this.text(note, this.left + (w - nw) / 2, y - rowH - noteSize - 1.5, {
+        font: this.f.italic, size: noteSize, color: C.subtitle,
+      });
+
+      if (i < rows.length - 1) {
+        const cx = this.left + w / 2;
+        this.line(cx, y - rowH - noteSize - 4.5, cx, y - rowH - gap - noteSize * 1.4, C.diagramBoxLine, 0.7);
+      }
+      y -= rowH + gap + noteSize * 1.4;
+    });
+
+    this.y = y - this.blockGap + gap;
+  }
+
+  /** Harold structure, drawn with primitives rather than an image asset. */
+  diagramHarold() {
     const rowH = 21 * this.rowUnit;
     const gap = 9 * this.rowUnit;
     const rows = 6;

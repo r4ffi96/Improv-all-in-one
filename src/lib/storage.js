@@ -7,6 +7,8 @@
  * exported and re-imported as JSON from the settings screen.
  */
 
+import { PRESET_SESSIONS } from '../data/preset-sessions.js';
+
 export const STORAGE_KEY = 'improv-all-in-one:v1';
 export const SCHEMA_VERSION = 1;
 
@@ -16,7 +18,9 @@ export function defaultState() {
     theme: 'dark',
     archive: [],
     formats: [],   // entries sent over from a Format Forge day
-    hidden: { library: [], formats: [] },  // ids switched off in settings
+    hidden: { library: [], formats: [] },      // ids switched off in settings
+    favourites: { library: [], formats: [] },  // starred blocks and formats
+    seededPresets: [],                     // preset sessions already placed in the archive
     builder: null,
     forge: null,
     suggestions: {
@@ -32,13 +36,29 @@ export function defaultState() {
 export function loadState() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return defaultState();
+    if (!raw) return seedPresets(defaultState());
     const parsed = JSON.parse(raw);
-    return migrate(parsed);
+    return seedPresets(migrate(parsed));
   } catch (err) {
     console.warn('Could not read saved data, starting fresh.', err);
-    return defaultState();
+    return seedPresets(defaultState());
   }
+}
+
+/**
+ * Put the sessions that ship with the app into the archive the first time
+ * each one is seen. They become ordinary entries after that, so deleting one
+ * does not bring it back and edits are kept.
+ */
+export function seedPresets(state) {
+  const missing = PRESET_SESSIONS.filter((preset) => !state.seededPresets.includes(preset.id));
+  if (!missing.length) return state;
+  const known = new Set(state.archive.map((entry) => entry.id));
+  return {
+    ...state,
+    archive: [...missing.filter((p) => !known.has(p.id)), ...state.archive],
+    seededPresets: [...state.seededPresets, ...missing.map((p) => p.id)],
+  };
 }
 
 export function saveState(state) {
@@ -61,9 +81,14 @@ export function migrate(input) {
     theme: input.theme === 'light' ? 'light' : 'dark',
     archive: Array.isArray(input.archive) ? input.archive : [],
     formats: Array.isArray(input.formats) ? input.formats : [],
+    seededPresets: Array.isArray(input.seededPresets) ? input.seededPresets : [],
     hidden: {
       library: Array.isArray(input.hidden?.library) ? input.hidden.library : [],
       formats: Array.isArray(input.hidden?.formats) ? input.hidden.formats : [],
+    },
+    favourites: {
+      library: Array.isArray(input.favourites?.library) ? input.favourites.library : [],
+      formats: Array.isArray(input.favourites?.formats) ? input.favourites.formats : [],
     },
     suggestions: { ...base.suggestions, ...(input.suggestions || {}) },
   };
