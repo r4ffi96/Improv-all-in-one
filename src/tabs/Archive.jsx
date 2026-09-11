@@ -7,7 +7,9 @@ import { uid } from '../lib/storage.js';
 import { buildForgeWorksheet, buildPlayerGuide, buildTrainerGuide } from '../export/builders.js';
 import { exportDocument, prettyDate, todayISO } from '../export/index.js';
 import { Card, ConfirmButton, Disclosure, Empty, Sheet, Tag, TextArea, TextInput } from '../components/ui.jsx';
-import { IconBack, IconChevron, IconDownload, IconEdit, IconNotes, IconSend } from '../components/Icons.jsx';
+import {
+  IconBack, IconChevron, IconDownload, IconEdit, IconLock, IconNotes, IconSend,
+} from '../components/Icons.jsx';
 
 const SORTS = [
   { id: 'date', label: 'Newest' },
@@ -16,7 +18,7 @@ const SORTS = [
 ];
 
 export default function Archive({ route, navigate, setSubtitle }) {
-  const { state, patch, showToast, requireUnlock } = useApp();
+  const { state, patch, showToast, requireUnlock, unlocked } = useApp();
   const [sort, setSort] = useState('date');
   const [typeFilter, setTypeFilter] = useState('all');
   const [tagFilter, setTagFilter] = useState('all');
@@ -233,9 +235,9 @@ export default function Archive({ route, navigate, setSubtitle }) {
             type="button"
             className="btn btn--gold btn--block"
             style={{ marginTop: 8 }}
-            onClick={() => setDebriefFor(current.id)}
+            onClick={() => requireUnlock(() => setDebriefFor(current.id))}
           >
-            <IconNotes /> Debrief
+            {unlocked ? <IconNotes /> : <IconLock />} Debrief
           </button>
         </Card>
 

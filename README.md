@@ -67,11 +67,11 @@ session, and reloading re-locks. Gated:
 - Deleting an archive entry, and deleting a single debrief
 - Starring and unstarring a block or a format
 - Removing a format that came from a forge day
+- Writing a debrief
 - Clear all data, and Import data (it replaces everything)
 
 Never gated: browsing, searching, building a session, running the Format
-Forge, exporting any document, duplicating into the builder, and writing a
-debrief.
+Forge, exporting any document, and duplicating into the builder.
 
 This is a casual gate, not security. The archive lives in `localStorage` on
 one device, so nothing remote can reach it, but anyone with browser devtools
