@@ -55,9 +55,9 @@ export default function UnlockSheet({ onClose, onUnlocked }) {
         <div className="banner banner--bad" style={{ marginTop: 12 }}>{error}</div>
       ) : null}
       <div className="small muted" style={{ marginTop: 12 }}>
-        Covers saving to the archive, deleting from it, starring, clearing and
-        importing, until you reload the app. Browsing, exporting and building a
-        session are never locked.
+        Covers saving to the archive, deleting from it, debriefing, starring,
+        clearing and importing, until you reload the app. Browsing, exporting
+        and building a session are never locked.
       </div>
     </Sheet>
   );
