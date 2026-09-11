@@ -123,7 +123,7 @@
    "Circle",
    "Whole group"
   ],
-  "description": "Fun game to warm up and to teach players some Chivalry .",
+  "description": "Fun game to warm up and to teach players some Chivalry.",
   "durationMinutes": 8,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -403,7 +403,7 @@
    "Character",
    "Scene work"
   ],
-  "description": "This is like the short form version Balladeer , but now as soon as the balladeer stops singing or finishes the song, the characters start playing and talking independently.",
+  "description": "This is like the short form version Balladeer, but now as soon as the balladeer stops singing or finishes the song, the characters start playing and talking independently.",
   "durationMinutes": 30,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -514,7 +514,7 @@
    "Two-person",
    "Storytelling"
   ],
-  "description": "Fairly difficult combination of Satellite TV and Satellite Radio : players in pairs, establish a beat.",
+  "description": "Fairly difficult combination of Satellite TV and Satellite Radio: players in pairs, establish a beat.",
   "durationMinutes": 15,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -594,7 +594,7 @@
    "Circle",
    "Whole group"
   ],
-  "description": "This is a variation on Bippety Bop : all players in a circle, one player in the middle who is 'it'.",
+  "description": "This is a variation on Bippety Bop: all players in a circle, one player in the middle who is 'it'.",
   "durationMinutes": 8,
   "groupSizeFit": "3",
   "source": "Improv Encyclopedia"
@@ -624,7 +624,7 @@
    "Whole group",
    "Movement"
   ],
-  "description": "This one starts just like Free Association Circle : players in a circle, establish a rhythm, and freely associate on previous player's word.",
+  "description": "This one starts just like Free Association Circle: players in a circle, establish a rhythm, and freely associate on previous player's word.",
   "durationMinutes": 15,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -656,7 +656,7 @@
    "Warm-up",
    "Freeze"
   ],
-  "description": "This one is just like Freeze Tag , but here the MC calls Freeze, and calls in another player.",
+  "description": "This one is just like Freeze Tag, but here the MC calls Freeze, and calls in another player.",
   "durationMinutes": 8,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -723,7 +723,7 @@
    "Blind",
    "Silent"
   ],
-  "description": "This one is like Group Order , except that everyone keeps their eyes closed, and no talking is allowed while the group lines up.",
+  "description": "This one is like Group Order, except that everyone keeps their eyes closed, and no talking is allowed while the group lines up.",
   "durationMinutes": 10,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -740,7 +740,7 @@
    "Suggestion-driven",
    "Scene work"
   ],
-  "description": "This is like a musical version of Pockets : ask the audience to write simple sentences on slips of paper.",
+  "description": "This is like a musical version of Pockets: ask the audience to write simple sentences on slips of paper.",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -930,8 +930,7 @@
   "categoryTags": [
    "Exercise",
    "Group",
-   "Circle",
-   "Blind"
+   "Circle"
   ],
   "description": "Form a circle, holding hands. Then, any player can start moving about, making knots in the circle.",
   "durationMinutes": 15,
@@ -965,7 +964,7 @@
    "Warm-up",
    "Circle"
   ],
-  "description": "This one is like a Free Association Circle , except that the rhythm is more explicit.",
+  "description": "This one is like a Free Association Circle, except that the rhythm is more explicit.",
   "durationMinutes": 8,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -1053,8 +1052,7 @@
   "type": "exercise",
   "categoryTags": [
    "Performance",
-   "Suggestion-driven",
-   "Scene work"
+   "Suggestion-driven"
   ],
   "description": "Ask for a product (existing or non-existing).",
   "durationMinutes": 10,
@@ -1150,7 +1148,7 @@
    "Freeze",
    "Scene work"
   ],
-  "description": "CopyCat goes like a verbal Freeze Tag . A scene is started.",
+  "description": "CopyCat goes like a verbal Freeze Tag. A scene is started.",
   "durationMinutes": 15,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -1293,7 +1291,7 @@
    "Whole group",
    "Blind"
   ],
-  "description": "This one is like Scorpion , but in this version killed players are not 'out', but can be revived.",
+  "description": "This one is like Scorpion, but in this version killed players are not 'out', but can be revived.",
   "durationMinutes": 15,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -1339,7 +1337,7 @@
    "Character",
    "Scene work"
   ],
-  "description": "This is like Ding : players play a scene. When a bell is rang, they both need to drop into a completely different character, but the scene continues.",
+  "description": "This is like Ding: players play a scene. When a bell is rang, they both need to drop into a completely different character, but the scene continues.",
   "durationMinutes": 15,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -1354,7 +1352,7 @@
    "Questions",
    "Audience on stage"
   ],
-  "description": "This is a variation on Day in the Life : pick an audience member and ask her some questions about her day.",
+  "description": "This is a variation on Day in the Life: pick an audience member and ask her some questions about her day.",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -1384,7 +1382,7 @@
    "Character",
    "Scene work"
   ],
-  "description": "A normal scene is played. At any moment a player not in the scene (or a player dedicated to this particular role) stops the scene ( see Cut ) and has the actors replay the scene with different...",
+  "description": "A normal scene is played. At any moment a player not in the scene (or a player dedicated to this particular role) stops the scene (see Cut) and has the actors replay the scene with different...",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -1473,7 +1471,7 @@
    "Names",
    "Scene work"
   ],
-  "description": "Excellent introductory exercise for building environments and Platform .",
+  "description": "Excellent introductory exercise for building environments and Platform.",
   "durationMinutes": 15,
   "groupSizeFit": "2",
   "source": "Improv Encyclopedia"
@@ -1538,7 +1536,7 @@
    "Freeze",
    "Scene work"
   ],
-  "description": "This is an extension of Blind Freeze : 2 players in scene, the others line up with their backs to the scene.",
+  "description": "This is an extension of Blind Freeze: 2 players in scene, the others line up with their backs to the scene.",
   "durationMinutes": 10,
   "groupSizeFit": "2",
   "source": "Improv Encyclopedia"
@@ -1662,7 +1660,7 @@
    "Warm-up",
    "Sound"
   ],
-  "description": "This one is like an extended version of Bippety Bop .",
+  "description": "This one is like an extended version of Bippety Bop.",
   "durationMinutes": 8,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -1777,7 +1775,7 @@
    "Character",
    "Scene work"
   ],
-  "description": "This is a variation on Little Voice . In this game one character has a piece of gum in her mouth, and this piece of gum is capable of talking.",
+  "description": "This is a variation on Little Voice. In this game one character has a piece of gum in her mouth, and this piece of gum is capable of talking.",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -1949,7 +1947,7 @@
    "Freeze",
    "Character"
   ],
-  "description": "This is an extension of Blind Freeze : players try to do callbacks from previous scenes in the Freeze.",
+  "description": "This is an extension of Blind Freeze: players try to do callbacks from previous scenes in the Freeze.",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -2006,7 +2004,7 @@
    "Emotion",
    "Suggestion-driven"
   ],
-  "description": "This is a long format, origin unknown, and has resemblance to a Harold .",
+  "description": "This is a long format, origin unknown, and has resemblance to a Harold.",
   "durationMinutes": 30,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -2085,7 +2083,7 @@
    "Two-person",
    "Storytelling"
   ],
-  "description": "2 players play a story in Gibberish , 2 others translate.",
+  "description": "2 players play a story in Gibberish, 2 others translate.",
   "durationMinutes": 10,
   "groupSizeFit": "2",
   "source": "Improv Encyclopedia"
@@ -2268,7 +2266,7 @@
    "Performance",
    "Suggestion-driven"
   ],
-  "description": "This is like 'invent-your-won-game' : ask the audience for the name of an unexisting improv game, then invent the rules on the spot, and play it.",
+  "description": "This is like 'invent-your-won-game': ask the audience for the name of an unexisting improv game, then invent the rules on the spot, and play it.",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -2283,7 +2281,7 @@
    "Two-person",
    "Object Work"
   ],
-  "description": "Another exercise on Jabbertalk : players in pairs.",
+  "description": "Another exercise on Jabbertalk: players in pairs.",
   "durationMinutes": 15,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -2328,7 +2326,7 @@
    "Sound",
    "Counting"
   ],
-  "description": "This is a variation on Walking by Numbers : all players find a position the room.",
+  "description": "This is a variation on Walking by Numbers: all players find a position the room.",
   "durationMinutes": 15,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -2815,7 +2813,7 @@
    "Character",
    "Endowment"
   ],
-  "description": "This is a kind of Opening for Long Form . It goes in three steps.",
+  "description": "This is a kind of Opening for Long Form. It goes in three steps.",
   "durationMinutes": 30,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -2862,7 +2860,7 @@
    "Suggestion-driven",
    "Questions"
   ],
-  "description": "This games is not unlike Worlds Worst : have the players close/cover their ears.",
+  "description": "This games is not unlike Worlds Worst: have the players close/cover their ears.",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -2881,7 +2879,7 @@
    "Character",
    "Speed"
   ],
-  "description": "This is at times a physical Warm-up , a physical association game, and a game for character work.",
+  "description": "This is at times a physical Warm-up, a physical association game, and a game for character work.",
   "durationMinutes": 8,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -2897,10 +2895,9 @@
    "Narration",
    "Performance",
    "Storytelling",
-   "Silent",
    "Scene work"
   ],
-  "description": "Excellent exercise for players that suffer from chronic Waffling .",
+  "description": "Excellent exercise for players that suffer from chronic Waffling.",
   "durationMinutes": 15,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -3358,7 +3355,7 @@
    "Competitive",
    "Scene work"
   ],
-  "description": "Pronounce as 'Maestro'. Comparable to Gorilla Theatre , but a bit easier, and can be played with a fairly large number of players (up to 20), and 2 directors.",
+  "description": "Pronounce as 'Maestro'. Comparable to Gorilla Theatre, but a bit easier, and can be played with a fairly large number of players (up to 20), and 2 directors.",
   "durationMinutes": 30,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -3487,7 +3484,7 @@
    "Movement",
    "Scene work"
   ],
-  "description": "Play in pairs, one word at a time (see Word at a Time Scene ).",
+  "description": "Play in pairs, one word at a time (see Word at a Time Scene).",
   "durationMinutes": 15,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -3773,7 +3770,7 @@
    "Listening",
    "Speed"
   ],
-  "description": "This is basically the opposite to Imitate : for the shopkeeper, rather than imitating the customer's character, try and build a totally opposite character.",
+  "description": "This is basically the opposite to Imitate: for the shopkeeper, rather than imitating the customer's character, try and build a totally opposite character.",
   "durationMinutes": 15,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -3856,7 +3853,7 @@
   ],
   "description": "Classic warm-up. Everyone in a circle.",
   "durationMinutes": 8,
-  "groupSizeFit": "4",
+  "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
  },
  {
@@ -3886,7 +3883,7 @@
    "Warm-up",
    "Circle"
   ],
-  "description": "This is a bit like Free Association Circle , except that player are not to freely associate on the previously heard word, but on the ensemble of what has been heard, thereby heightening is.",
+  "description": "This is a bit like Free Association Circle, except that player are not to freely associate on the previously heard word, but on the ensemble of what has been heard, thereby heightening is.",
   "durationMinutes": 8,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -3988,7 +3985,7 @@
    "Rhyme",
    "Language"
   ],
-  "description": "A simple translation game. The setup is a foreign language poet, who performs some of his work in Gibberish .",
+  "description": "A simple translation game. The setup is a foreign language poet, who performs some of his work in Gibberish.",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -4203,7 +4200,7 @@
    "Two-person",
    "Scene work"
   ],
-  "description": "Exercise on Jabbertalk . Have 2 players do a short scene (1 minute or so).",
+  "description": "Exercise on Jabbertalk. Have 2 players do a short scene (1 minute or so).",
   "durationMinutes": 15,
   "groupSizeFit": "2",
   "source": "Improv Encyclopedia"
@@ -4285,7 +4282,7 @@
    "Circle",
    "Whole group"
   ],
-  "description": "Everyone in a circle. One person starts by saying \"Did you hear about ...\" and points to someone else.",
+  "description": "Everyone in a circle. One person starts by saying \"Did you hear about...\" and points to someone else.",
   "durationMinutes": 8,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -4331,7 +4328,7 @@
    "Look and Listen",
    "Two-person"
   ],
-  "description": "Same as Satellite Radio , but with movements.",
+  "description": "Same as Satellite Radio, but with movements. Players in pairs.",
   "durationMinutes": 15,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -4643,7 +4640,7 @@
    "Storytelling",
    "Character"
   ],
-  "description": "Play an episode from a soap series. This can be done as a Long Form , but can also be used in short form.",
+  "description": "Play an episode from a soap series. This can be done as a Long Form, but can also be used in short form.",
   "durationMinutes": 30,
   "groupSizeFit": "4+",
   "source": "Improv Encyclopedia"
@@ -4893,7 +4890,7 @@
    "Suggestion-driven",
    "Elimination"
   ],
-  "description": "This is like Story Story Die , but sung. Get a suggestions, and sing a song to that suggestion.",
+  "description": "This is like Story Story Die, but sung. Get a suggestions, and sing a song to that suggestion.",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -4992,7 +4989,7 @@
    "Group",
    "Trust"
   ],
-  "description": "This one is an extension of Sculptors . Divide the class in 2 groups, same number of players in every group.",
+  "description": "This one is an extension of Sculptors. Divide the class in 2 groups, same number of players in every group.",
   "durationMinutes": 15,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -5007,7 +5004,7 @@
    "Props",
    "Scene work"
   ],
-  "description": "This is like Simple Continuation , except that the MC interrupts the scene several times, and at each interruption all actors in the scene get switched; no new actors join in, and no actors leave.",
+  "description": "This is like Simple Continuation, except that the MC interrupts the scene several times, and at each interruption all actors in the scene get switched; no new actors join in, and no actors leave.",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -5039,7 +5036,7 @@
    "Names",
    "Monologue"
   ],
-  "description": "This is basically a one-person Long Form . In this format the player plays all characters.",
+  "description": "This is basically a one-person Long Form. In this format the player plays all characters.",
   "durationMinutes": 30,
   "groupSizeFit": "1",
   "source": "Improv Encyclopedia"
@@ -5082,8 +5079,7 @@
   "categoryTags": [
    "Format",
    "Names",
-   "Competitive",
-   "Scene work"
+   "Competitive"
   ],
   "description": "Theatre Sports is really a collection of formats.",
   "durationMinutes": 30,
@@ -5101,7 +5097,7 @@
    "Props",
    "Questions"
   ],
-  "description": "This is a group exercise for building Characters .",
+  "description": "This is a group exercise for building Characters.",
   "durationMinutes": 15,
   "groupSizeFit": "5",
   "source": "Improv Encyclopedia"
@@ -5115,7 +5111,7 @@
    "Long Form",
    "Performance"
   ],
-  "description": "This is a Long Form format based on Blind Harold .",
+  "description": "This is a Long Form format based on Blind Harold.",
   "durationMinutes": 30,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -5240,7 +5236,7 @@
    "Character",
    "Scene work"
   ],
-  "description": "Ask for 2 occupations. Then do a 4-beat scene as follows: Player 1 sings about how great and satisfying her job is, but she's missing something critical, or has a minor little problem with it...",
+  "description": "Ask for 2 occupations. Then do a 4-beat scene as follows: Player 1 sings about how great and satisfying her job is, but she's missing something critical, or",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -5272,7 +5268,7 @@
    "Questions",
    "Scene work"
   ],
-  "description": "Get 3 rules from the audience, e.g. players have only one arm, players can't use a word that contains an 's' and after every question uttered players needs to yell 'Yess!'.",
+  "description": "Get 3 rules from the audience, e.g. players have only one arm, players can't use a word that contains an's' and after every question uttered players needs to yell 'Yess!'.",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -5302,7 +5298,7 @@
    "Audience on stage",
    "Scene work"
   ],
-  "description": "Here are a couple of different ways to time scenes (apart from using your watch) time a player can keep his head immersed in a bucket of water time it takes the audience to throw 20 socks onto the...",
+  "description": "Here are a couple of different ways to time scenes (apart from using your watch) time a player can keep his head immersed in a bucket of water",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -5728,7 +5724,7 @@
    "Storytelling",
    "Scene work"
   ],
-  "description": "This is like Word at a Time Expert , but with a bit more scene work.",
+  "description": "This is like Word at a Time Expert, but with a bit more scene work.",
   "durationMinutes": 10,
   "groupSizeFit": "2",
   "source": "Improv Encyclopedia"
@@ -5745,7 +5741,7 @@
    "Scene work",
    "Speed"
   ],
-  "description": "This is like Word at a Time Scene , but here the players improvise a song.",
+  "description": "This is like Word at a Time Scene, but here the players improvise a song.",
   "durationMinutes": 10,
   "groupSizeFit": "any",
   "source": "Improv Encyclopedia"
@@ -5776,8 +5772,7 @@
    "Exercise",
    "Warm-up",
    "Circle",
-   "Whole group",
-   "Alphabet"
+   "Whole group"
   ],
   "description": "Another association game. All players in a circle.",
   "durationMinutes": 8,

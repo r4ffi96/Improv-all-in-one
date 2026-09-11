@@ -56,7 +56,7 @@ export default function Formats({ route, navigate, setSubtitle }) {
                 {current.stages.map((stage, i) => (
                   <div className="beat" key={`${stage.name}-${i}`}>
                     <div className="beat__name">{stage.name}</div>
-                    <div className="beat__desc">{stage.description}</div>
+                    {stage.description ? <div className="beat__desc">{stage.description}</div> : null}
                   </div>
                 ))}
               </div>
