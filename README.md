@@ -8,12 +8,12 @@ and terminology. Everything runs client-side; there is no backend and no account
 
 | Tab | What it does |
 | --- | --- |
-| **Session Builder** | Pick a duration and a focus, choose warm-ups, exercises, a main long-form block and theory blocks from the seeded library, order them, insert breaks, and export a Trainer Guide and a Player Guide as PDF or DOCX. |
-| **Suggestions** | Random scene-suggestion generator: 12 categories, 30 entries each, per-card reroll, auto-reroll on a timer, and a starred list you can copy or download as plain text. |
-| **Formats** | Reference entries for whole show structures (Harold, BIG.BANG.IMPRO, Emotion Experiment, Armando, Montage, La Ronde, Deconstruction, Invocation) with their stage breakdowns. |
+| **Session Builder** | Pick a duration and a focus, choose warm-ups, exercises, a main long-form block and theory blocks from a 425-block library, order them, insert breaks, and export a Trainer Guide and a Player Guide as PDF or DOCX. |
+| **Suggestions** | Random scene-suggestion generator: 13 categories, 50 entries each, per-card reroll, auto-reroll on a timer, and a starred list you can copy or download as plain text. |
+| **Formats** | 32 whole-show structures (Harold, BIG.BANG.IMPRO, Emotion Experiment, Theatresports, Gorilla Theatre, Micetro, Soap Series, Armando, Montage, La Ronde, Deconstruction, Invocation and more) with their stage breakdowns. |
 | **Archive** | Saved sessions and Format Forge days, filterable and sortable, each re-exportable, duplicable into the builder, and debriefable (debriefs are stored as a list, so a session can be run more than once). |
 | **Format Forge** | Live facilitation tool for the nine-step format development method: stepper, per-step timer, live notes, the on-the-fly adjustment reference, a format card, and a worksheet export. |
-| **Glossary** | 22 terms with definitions, cross-links between related terms, and a copy button. |
+| **Glossary** | 130 entries in four groups: Terms, Improvisers, Books and Philosophy. Search covers every definition, related terms cross-link, and each entry has a copy button. |
 
 ## Generated documents
 
@@ -37,13 +37,37 @@ Everything the user creates lives in `localStorage` under `improv-all-in-one:v1`
 Settings has an **Export all data (JSON)** / **Import data (JSON)** pair so a
 backup can be moved between devices by hand.
 
+Games, formats and glossary entries can be switched off individually under
+**Settings → Library**. Hiding is reversible, applies to the Session Builder and
+the Formats tab, and never touches archived sessions.
+
 Seed content is edited directly in these files, there is no in-app editor:
 
-- `src/data/library.js` — 48 session blocks (warm-ups, exercises, long-form runs, theory)
-- `src/data/suggestions.json` — 12 suggestion categories
-- `src/data/formats.js` — 8 documented formats
+- `src/data/library.js` — 48 hand-written session blocks, merged with the import below
+- `src/data/encyclopedia-games.json` — 377 games from the Improv Encyclopedia (index)
+- `src/data/encyclopedia-games-details.json` — their instructions, notes and variations, loaded on demand
+- `src/data/suggestions.json` — 13 suggestion categories, 50 entries each
+- `src/data/formats.js` — 8 hand-written formats, merged with the import below
+- `src/data/encyclopedia-formats.json` — 24 Long Form and Format entries from the encyclopedia
 - `src/data/format-forge-steps.json` — the nine steps, session shell, breaks and adjustments
-- `src/data/glossary.js` — 22 glossary entries
+- `src/data/glossary.js` — 22 hand-written terms, merged with the imports below
+- `src/data/encyclopedia-keywords.json` — 91 keywords from the encyclopedia glossary
+- `src/data/encyclopedia-entries.json` — 17 encyclopedia entries grouped as improvisers, books and philosophy
+
+### Imported content
+
+Games, keywords and encyclopedia entries come from the Improv Encyclopedia
+(v2.0.6, www.improvencyclopedia.org). Each game keeps the source's own
+categories (Accepting, Concentration, Look and Listen, Solo, Limitations and so
+on) and gains derived labels such as Circle, Two-person, Storytelling or
+Suggestion-driven so the focus search can find it. Games tagged Long Form or
+Format appear both in the Formats tab and as Main blocks in the Session Builder.
+Nine encyclopedia games that duplicate a hand-written block were dropped at
+import, so every name appears once.
+
+The instruction bodies are about 240 kB, so they are split out and fetched the
+first time a block is opened or exported. Searching, picking and timing all work
+from the index alone.
 
 Schemas for the Suggestion Generator and the Glossary carry `{ en, de }` fields
 so German can be added later without restructuring. v1 seeds English only and

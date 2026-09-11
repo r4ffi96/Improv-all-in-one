@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { GLOSSARY } from '../data/glossary.js';
+import { GLOSSARY, GLOSSARY_GROUPS } from '../data/glossary.js';
 import { useApp } from '../context/AppContext.jsx';
 import { Empty, Tag } from '../components/ui.jsx';
 import { IconChevron, IconCopy, IconSearch, IconClose } from '../components/Icons.jsx';
@@ -12,6 +12,7 @@ export default function Glossary({ route, navigate, setSubtitle }) {
   const { showToast } = useApp();
   const [query, setQuery] = useState('');
   const [letter, setLetter] = useState('all');
+  const [group, setGroup] = useState('all');
   const refs = useRef({});
   const openId = route.params[0] || null;
 
@@ -21,7 +22,7 @@ export default function Glossary({ route, navigate, setSubtitle }) {
   );
 
   useEffect(() => {
-    setSubtitle(`${GLOSSARY.length} terms`);
+    setSubtitle(`${GLOSSARY.length} entries`);
     return () => setSubtitle('');
   }, [setSubtitle]);
 
@@ -29,6 +30,7 @@ export default function Glossary({ route, navigate, setSubtitle }) {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return sorted.filter((entry) => {
+      if (group !== 'all' && entry.group !== group) return false;
       if (letter !== 'all' && !pick(entry.term).toUpperCase().startsWith(letter)) return false;
       if (!q) return true;
       const haystack = [
@@ -36,11 +38,18 @@ export default function Glossary({ route, navigate, setSubtitle }) {
       ].filter(Boolean).join(' ').toLowerCase();
       return haystack.includes(q);
     });
-  }, [sorted, query, letter]);
+  }, [sorted, query, letter, group]);
 
   const letters = useMemo(() => {
-    const set = new Set(sorted.map((e) => pick(e.term)[0].toUpperCase()));
+    const pool = group === 'all' ? sorted : sorted.filter((e) => e.group === group);
+    const set = new Set(pool.map((e) => pick(e.term)[0].toUpperCase()));
     return ['all', ...Array.from(set).sort()];
+  }, [sorted, group]);
+
+  const groupCounts = useMemo(() => {
+    const counts = { all: sorted.length };
+    sorted.forEach((e) => { counts[e.group] = (counts[e.group] || 0) + 1; });
+    return counts;
   }, [sorted]);
 
   useEffect(() => {
@@ -89,6 +98,19 @@ export default function Glossary({ route, navigate, setSubtitle }) {
             </button>
           ) : null}
         </div>
+      </div>
+
+      <div className="chip-row">
+        {GLOSSARY_GROUPS.filter((g) => groupCounts[g.id]).map((g) => (
+          <button
+            key={g.id}
+            type="button"
+            className={`chip${group === g.id ? ' is-active' : ''}`}
+            onClick={() => { setGroup(g.id); setLetter('all'); }}
+          >
+            {g.label} <span className="tiny faint">{groupCounts[g.id]}</span>
+          </button>
+        ))}
       </div>
 
       <div className="alpha-bar">
@@ -140,9 +162,17 @@ export default function Glossary({ route, navigate, setSubtitle }) {
                 </button>
                 {isOpen ? (
                   <div className="disclosure__body">
-                    <p className="small" style={{ margin: '0 0 12px', color: 'var(--text-dim)' }}>
-                      {pick(entry.definition)}
-                    </p>
+                    <div className="small" style={{ margin: '0 0 12px', color: 'var(--text-dim)' }}>
+                      {pick(entry.definition).split('\n\n').map((para, i) => (
+                        <p
+                          key={i}
+                          className="pre-wrap"
+                          style={{ margin: i === 0 ? '0 0 8px' : '0 0 8px' }}
+                        >
+                          {para}
+                        </p>
+                      ))}
+                    </div>
                     {entry.relatedTerms.length ? (
                       <>
                         <div className="label" style={{ marginBottom: 6 }}>Related</div>
@@ -165,6 +195,12 @@ export default function Glossary({ route, navigate, setSubtitle }) {
                       </>
                     ) : null}
                     <div className="row">
+                      {entry.group && entry.group !== 'term' ? (
+                        <Tag tone="accent">
+                          {entry.group === 'improviser' ? 'Improviser'
+                            : entry.group === 'book' ? 'Book' : 'Philosophy'}
+                        </Tag>
+                      ) : null}
                       <Tag>{entry.sourceReference}</Tag>
                       <div className="spacer" />
                       <button type="button" className="btn btn--sm" onClick={() => copy(entry)}>

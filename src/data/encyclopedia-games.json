@@ -1,0 +1,5907 @@
+[
+ {
+  "id": "ie-3-series",
+  "name": "3 Series",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Look and Listen",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Everyone in a circle. Pick a category (e.g. make of cars, girls names, kinds of food, kinds of plants, whatever).",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-3-some",
+  "name": "3 some",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Warm-up"
+  ],
+  "description": "Fun warm-up. One player offers something, e.g. I am a slice of cheese.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-accepting-circle",
+  "name": "Accepting Circle",
+  "type": "warmup",
+  "categoryTags": [
+   "Accepting",
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Physicality",
+   "Sound"
+  ],
+  "description": "Get everyone in a big circle. One player starts by making a little gesture, perhaps with a little sound.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-actor-s-nightmare",
+  "name": "Actor's Nightmare",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Two-person",
+   "Justification"
+  ],
+  "description": "This one is played by 2 players, one of which gets their lines on paper (like a script).",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-adjective-scene",
+  "name": "Adjective Scene",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Suggestion-driven",
+   "Scene work"
+  ],
+  "description": "Ask for an adjective (e.g. sad). Play a scene in which the players are as sad as possible.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-aerobics",
+  "name": "Aerobics",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Introduction",
+   "Look and Listen",
+   "Circle",
+   "Whole group",
+   "Movement"
+  ],
+  "description": "This is a fun observation game. Place all players in a line.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-ali-baba-and-the-40-thieves",
+  "name": "Ali Baba and the 40 Thieves",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Energy",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Physicality"
+  ],
+  "description": "Excellent warm-up. Everyone in a circle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-alien-tiger-cow",
+  "name": "Alien Tiger Cow",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Fun game to warm up and to teach players some Chivalry .",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-alliteration-introduction",
+  "name": "Alliteration Introduction",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Introduction",
+   "Circle",
+   "Whole group",
+   "Physicality",
+   "Names"
+  ],
+  "description": "Excellent game for players to get to know each other's names.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-alliterations",
+  "name": "Alliterations",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Counting",
+   "Alphabet"
+  ],
+  "description": "You will need a tennis ball or a towel tied in a knot for this one.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-alphabet-circle",
+  "name": "Alphabet Circle",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Alphabet",
+   "Competitive",
+   "Speed"
+  ],
+  "description": "Great warm-up game to sharpen concentration. Everyone in a circle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-alphabet-game",
+  "name": "Alphabet Game",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Die",
+   "Performance",
+   "Verbal wit",
+   "Character",
+   "Alphabet",
+   "Scene work"
+  ],
+  "description": "This is a scene consisting of 26 lines of dialog.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-american-idol",
+  "name": "American Idol",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Suggestion-driven",
+   "Names",
+   "Competitive"
+  ],
+  "description": "This is a spoof of the format of (American) Idol, the TV show in which new singers are discovered.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-animalistics",
+  "name": "Animalistics",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Characters",
+   "Exercise",
+   "Performance",
+   "Suggestion-driven",
+   "Character",
+   "Scene work"
+  ],
+  "description": "Ask the audience for animals. Players play a scene, in which the characters are based on these animals.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-animals",
+  "name": "Animals",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Whole group"
+  ],
+  "description": "Make sure you have an even number of players.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-artist-model-clay",
+  "name": "Artist Model Clay",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group"
+  ],
+  "description": "3 players. One is a lump of clay - behind her is a second player who is a model.",
+  "durationMinutes": 15,
+  "groupSizeFit": "3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-asides",
+  "name": "Asides",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Freeze",
+   "Character",
+   "Scene work"
+  ],
+  "description": "A scene is played, which any player can stop at any time by yelling freeze.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-assassin",
+  "name": "Assassin",
+  "type": "warmup",
+  "categoryTags": [
+   "Warm-up",
+   "Whole group"
+  ],
+  "description": "Great warm-up for a group of 7+ people. Everyone picks someone to be their bodyguard, and somebody to be their assassin.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-association-jump",
+  "name": "Association Jump",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Group",
+   "Warm-up",
+   "Freeze",
+   "Physicality",
+   "Speed"
+  ],
+  "description": "This is physical association game. All plays mill about the room.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-audience-warm-ups",
+  "name": "Audience Warm-ups",
+  "type": "warmup",
+  "categoryTags": [
+   "Audience Participation",
+   "Warm-up",
+   "Performance",
+   "Suggestion-driven",
+   "Physicality",
+   "Names",
+   "Sound"
+  ],
+  "description": "Often an improvised show starts with an audience warm-up.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-automatic-storytelling",
+  "name": "Automatic Storytelling",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Narration",
+   "Two-person",
+   "Storytelling",
+   "Questions"
+  ],
+  "description": "This is an exercise you can only do once with a group.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-back-dancing",
+  "name": "Back Dancing",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Trust",
+   "Two-person",
+   "Movement"
+  ],
+  "description": "Played in pairs. Actors stand back to back, and dance on different kinds of music.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-backwards-interview",
+  "name": "Backwards Interview",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Two-person",
+   "Suggestion-driven"
+  ],
+  "description": "Ask for a topic for a TV interview. Then 2 players do the interview backwards.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-balladeer-1",
+  "name": "Balladeer(1)",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Storytelling",
+   "Suggestion-driven"
+  ],
+  "description": "One player is the balladeer, who starts singing a ballad about an audience suggestion.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-balladeer-2",
+  "name": "Balladeer(2)",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Character",
+   "Scene work"
+  ],
+  "description": "This is like the short form version Balladeer , but now as soon as the balladeer stops singing or finishes the song, the characters start playing and talking independently.",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-barney",
+  "name": "Barney",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Spontaneity",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Alphabet"
+  ],
+  "description": "Silly warm-up game. Everyone in a circle, one person as a 'caller' in the middle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-barpro",
+  "name": "BarPro",
+  "type": "main",
+  "categoryTags": [
+   "Format",
+   "Suggestion-driven",
+   "Names",
+   "Props",
+   "Competitive"
+  ],
+  "description": "The (slightly negative sounding) name is attributed to Keith Johnstone and refers to shows consisting of short games, played in small rooms, like bars and tiny comedy clubs.",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-bartender",
+  "name": "Bartender",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Suggestion-driven"
+  ],
+  "description": "Ask for a silly problem. Player 1 goes into a bar and explains his woes to the bartender in a song.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-beatnik-poet",
+  "name": "Beatnik Poet",
+  "type": "exercise",
+  "categoryTags": [
+   "Die",
+   "Limitations",
+   "Performance",
+   "Whole group",
+   "Rhyme",
+   "Suggestion-driven"
+  ],
+  "description": "Tell the audience we are going to improvise a bad poetry night at pseudo- intellectual coffee house.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-become",
+  "name": "Become",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Spontaneity",
+   "Whole group"
+  ],
+  "description": "This one can be player with all players at a time, or you can ask the group to watch as players come up with different ideas on how to do this.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-before-or-after",
+  "name": "Before or After",
+  "type": "exercise",
+  "categoryTags": [
+   "Continuation",
+   "Performance",
+   "Scene work",
+   "Speed"
+  ],
+  "description": "A short scene is played. After that the host asks the audience whether they want to see what happened before this scene, or what happens after this scene.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-bidirectional-satellite-tv",
+  "name": "Bidirectional Satellite TV",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Look and Listen",
+   "Two-person",
+   "Storytelling"
+  ],
+  "description": "Fairly difficult combination of Satellite TV and Satellite Radio : players in pairs, establish a beat.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-big-blob",
+  "name": "Big Blob",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Limitations",
+   "Performance",
+   "Movement",
+   "Character",
+   "Scene work"
+  ],
+  "description": "Players perform a scene in a location that contains an enormous blob of blubber.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-big-booty",
+  "name": "Big Booty",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Everyone in a circle. One player is Big Booty.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-big-fish-small-fish",
+  "name": "Big Fish Small Fish",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Fun energizer game. Everyone in a circle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-bippety-bop-1",
+  "name": "Bippety Bop(1)",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Speed"
+  ],
+  "description": "Silly warm-up to get the blood flowing. A players in a circle, one player in the middle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-bippety-bop-2",
+  "name": "Bippety Bop(2)",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "This is a variation on Bippety Bop : all players in a circle, one player in the middle who is 'it'.",
+  "durationMinutes": 8,
+  "groupSizeFit": "3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-black-box",
+  "name": "Black Box",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Two-person"
+  ],
+  "description": "This one is played by 2 players. One holds a (mimed) black box, which has 3 buttons, one of which is red.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-blind-association-circle",
+  "name": "Blind Association Circle",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Look and Listen",
+   "Circle",
+   "Whole group",
+   "Movement"
+  ],
+  "description": "This one starts just like Free Association Circle : players in a circle, establish a rhythm, and freely associate on previous player's word.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-blindfolded-scene",
+  "name": "Blindfolded Scene",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Trust",
+   "Blind",
+   "Scene work"
+  ],
+  "description": "Players are blindfolded and then play a scene.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-blind-freeze",
+  "name": "Blind Freeze",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Performance",
+   "Warm-up",
+   "Freeze"
+  ],
+  "description": "This one is just like Freeze Tag , but here the MC calls Freeze, and calls in another player.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-blind-harold",
+  "name": "Blind Harold",
+  "type": "main",
+  "categoryTags": [
+   "Exercise",
+   "Limitations",
+   "Long Form",
+   "Look and Listen",
+   "Performance",
+   "Whole group",
+   "Blind",
+   "Listening"
+  ],
+  "description": "This is really a listening exercise, though it has been performed as a Long Form for audiences.",
+  "durationMinutes": 30,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-blind-lead",
+  "name": "Blind Lead",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Trust",
+   "Blind",
+   "Props"
+  ],
+  "description": "One player is blindfolded, and the room is filled with obstacles (put a couple of chairs everywhere, leave all kinds of junk on the floor).",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-blind-line-offers",
+  "name": "Blind Line Offers",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Physicality",
+   "Counting",
+   "Scene work"
+  ],
+  "description": "Line up the players, give'em each a number. Call out 2 numbers.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-blind-line-up",
+  "name": "Blind Line Up",
+  "type": "warmup",
+  "categoryTags": [
+   "Group",
+   "Introduction",
+   "Warm-up",
+   "Whole group",
+   "Blind",
+   "Silent"
+  ],
+  "description": "This one is like Group Order , except that everyone keeps their eyes closed, and no talking is allowed while the group lines up.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-blind-musical",
+  "name": "Blind Musical",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Storytelling",
+   "Suggestion-driven",
+   "Scene work"
+  ],
+  "description": "This is like a musical version of Pockets : ask the audience to write simple sentences on slips of paper.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-blues-jam",
+  "name": "Blues Jam",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Suggestion-driven"
+  ],
+  "description": "Ask the audience for 5 things that give them the blues.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-body-hide",
+  "name": "Body Hide",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Introduction",
+   "Trust"
+  ],
+  "description": "Excellent exercise to get to know each other, and to learn to trust and touch each other.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-bong-bong-bong",
+  "name": "Bong Bong Bong",
+  "type": "exercise",
+  "categoryTags": [
+   "Guessing",
+   "Limitations",
+   "Performance",
+   "Object Work",
+   "Suggestion-driven",
+   "Gibberish",
+   "Scene work"
+  ],
+  "description": "Silly game, inspired by a Korean TV show (so we're told).",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-boris",
+  "name": "Boris",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Narration",
+   "Performance",
+   "Two-person",
+   "Scene work"
+  ],
+  "description": "2 players play an interrogation scene. One is the interrogator, the other is a suspect.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-bucket",
+  "name": "Bucket",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Limitations",
+   "Performance",
+   "Suggestion-driven",
+   "Scene work"
+  ],
+  "description": "Before the show ask the audience to write simple sentences on slips of paper.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-bunny",
+  "name": "Bunny",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Extremely silly game, to pump up the energy. Get everyone in a circle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-call-from-ray",
+  "name": "Call from Ray",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Scene work"
+  ],
+  "description": "A scene is begun. At some point in the scene an onstage player has to receive a \"Call from Ray\" (or any other name agreed upon).",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-cards",
+  "name": "Cards",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Two-person",
+   "Suggestion-driven",
+   "Justification",
+   "Props",
+   "Scene work"
+  ],
+  "description": "Ask the audience to write short sentences on cards.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-card-status",
+  "name": "Card Status",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Limitations",
+   "Look and Listen",
+   "Performance",
+   "Status",
+   "Character",
+   "Props",
+   "Audience on stage",
+   "Scene work"
+  ],
+  "description": "Excellent Status game. 4 players.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-cat-and-mouse",
+  "name": "Cat and Mouse",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Warm-up",
+   "Two-person",
+   "Whole group"
+  ],
+  "description": "All players in pairs. One player is cat, one other player is mouse, and all others stay in pairs, arms hooked together.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-catch-em",
+  "name": "Catch'em",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Energy",
+   "Exercise",
+   "Warm-up",
+   "Freeze",
+   "Elimination"
+  ],
+  "description": "One player is 'it' and stands at one end of the room, facing the wall.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-circle-of-knots",
+  "name": "Circle of Knots",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Circle",
+   "Blind"
+  ],
+  "description": "Form a circle, holding hands. Then, any player can start moving about, making knots in the circle.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-circle-sitting",
+  "name": "Circle Sitting",
+  "type": "warmup",
+  "categoryTags": [
+   "Group",
+   "Trust",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Movement"
+  ],
+  "description": "Have everyone stand in a circle, really close to each other, facing inwards.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-clap-snap-association",
+  "name": "Clap Snap Association",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Warm-up",
+   "Circle"
+  ],
+  "description": "This one is like a Free Association Circle , except that the rhythm is more explicit.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-clap-snap-stamp",
+  "name": "Clap Snap Stamp",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Warm-up",
+   "Two-person",
+   "Whole group",
+   "Counting",
+   "Speed"
+  ],
+  "description": "All players in pairs, facing each other. We're going to count from one to three, each player one number at a time, and we keep repeating this.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-click-bang-you-re-dead",
+  "name": "Click Bang you're dead",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Introduction",
+   "Circle",
+   "Whole group",
+   "Sound"
+  ],
+  "description": "Description: all players sit in a circle. Only one player should know how to play and what the secret is; this player is the leader at first, until others catch on.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-columbian-hypnosis",
+  "name": "Columbian Hypnosis",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Trust",
+   "Two-person"
+  ],
+  "description": "Played in pairs. One player holds her open hand, fingers upward, about 2-3 inches from her partner's face.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-comedysportz",
+  "name": "ComedySportz",
+  "type": "main",
+  "categoryTags": [
+   "Format",
+   "Suggestion-driven",
+   "Competitive"
+  ],
+  "description": "ComedySports was started by Dick Chudnow in 1884 in Milwaukee.",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-coming-home",
+  "name": "Coming Home",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Environment",
+   "Exercise",
+   "Character"
+  ],
+  "description": "Ask players to think of someone they know. Then ask them to play how that person would come home from work.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-commercial",
+  "name": "Commercial",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Suggestion-driven",
+   "Scene work"
+  ],
+  "description": "Ask for a product (existing or non-existing).",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-complete-bodies",
+  "name": "Complete Bodies",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Look and Listen",
+   "Two-person",
+   "Storytelling"
+  ],
+  "description": "Players in pairs. One player takes a position, using all parts of her body.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-concentration-circle",
+  "name": "Concentration Circle",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Counting"
+  ],
+  "description": "Place all players in a circle and number them sequentially, starting with a random player.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-confessions",
+  "name": "Confessions",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Verbal wit",
+   "Character"
+  ],
+  "description": "Not exactly theater but fun when played well.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-continuing-emotions",
+  "name": "Continuing Emotions",
+  "type": "exercise",
+  "categoryTags": [
+   "Continuation",
+   "Performance",
+   "Emotion",
+   "Freeze",
+   "Character",
+   "Scene work"
+  ],
+  "description": "A 'neutral' scene is started, and is then interrupted (frozen) several times by the MC.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-continuing-styles",
+  "name": "Continuing Styles",
+  "type": "exercise",
+  "categoryTags": [
+   "Continuation",
+   "Performance",
+   "Storytelling",
+   "Scene work"
+  ],
+  "description": "A 'neutral' scene is started. This scene gets interrupted several times by the MC, and then continued in a film/ literature/ drama/ TV-program style provided by the audience.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-copycat",
+  "name": "CopyCat",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Performance",
+   "Freeze",
+   "Scene work"
+  ],
+  "description": "CopyCat goes like a verbal Freeze Tag . A scene is started.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-crabtrees-conundrum",
+  "name": "Crabtrees Conundrum",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Two-person",
+   "Rhyme",
+   "Scene work"
+  ],
+  "description": "This game is taking from Mrs. Crabtree from South Park.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-crime-endowments",
+  "name": "Crime Endowments",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Guessing",
+   "Performance",
+   "Props"
+  ],
+  "description": "One player is endowed as the head of a criminal organization and gathers with the others to plan or act out the crime.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-crisis-situation",
+  "name": "Crisis Situation",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Spontaneity",
+   "Two-person"
+  ],
+  "description": "Great exercise for spontaneity. 2 players on stage approach each other with a crisis, and an object unrelated to the crisis.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-cross-circle",
+  "name": "Cross Circle",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Introduction",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Movement",
+   "Names"
+  ],
+  "description": "Perfect game to learn each other's names. Everyone in a circle.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-cut",
+  "name": "Cut",
+  "type": "main",
+  "categoryTags": [
+   "Format",
+   "Long Form",
+   "Two-person",
+   "Storytelling",
+   "Suggestion-driven",
+   "Character",
+   "Scene work"
+  ],
+  "description": "This Long Form game is played with 6 to 15 players.",
+  "durationMinutes": 30,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-dating-game",
+  "name": "Dating Game",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Performance",
+   "Questions"
+  ],
+  "description": "This is played like a Blind Date show. One player leaves the stage, and the audience provides endowments for the 3 others.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-day-in-the-life",
+  "name": "Day in the Life",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Performance",
+   "Questions",
+   "Audience on stage"
+  ],
+  "description": "The MC picks a member of the audience and interviews this person about their average (work) day.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-deaf-replay",
+  "name": "Deaf Replay",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Replay",
+   "Two-person",
+   "Scene work"
+  ],
+  "description": "2 players play a scene while 2 others watch the scene, with their ears covered.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-death-and-retriever",
+  "name": "Death and Retriever",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Trust",
+   "Whole group",
+   "Blind"
+  ],
+  "description": "This one is like Scorpion , but in this version killed players are not 'out', but can be revived.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-death-in-a-minute",
+  "name": "Death in a Minute",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Timed",
+   "Scene work"
+  ],
+  "description": "2 or 3 players play a 1 minute scene, in which one player must die.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2-3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-diamond",
+  "name": "Diamond",
+  "type": "exercise",
+  "categoryTags": [
+   "Continuation",
+   "Performance",
+   "Two-person",
+   "Suggestion-driven",
+   "Scene work"
+  ],
+  "description": "4 players in a square; 2 in front, 2 behind them.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-ding-characters",
+  "name": "Ding Characters",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Character",
+   "Scene work"
+  ],
+  "description": "This is like Ding : players play a scene. When a bell is rang, they both need to drop into a completely different character, but the scene continues.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-ding-dong",
+  "name": "Ding Dong",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Performance",
+   "Questions",
+   "Audience on stage"
+  ],
+  "description": "This is a variation on Day in the Life : pick an audience member and ask her some questions about her day.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-ding",
+  "name": "Ding",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Performance",
+   "Spontaneity",
+   "Scene work"
+  ],
+  "description": "A scene is played. Whenever the MC ring a bell (or yells 'Ding'), the player that is doing something/saying something needs to say/do something else.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-director-s-cut",
+  "name": "Director's Cut",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Emotion",
+   "Character",
+   "Scene work"
+  ],
+  "description": "A normal scene is played. At any moment a player not in the scene (or a player dedicated to this particular role) stops the scene ( see Cut ) and has the actors replay the scene with different...",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-disc-1",
+  "name": "Disc(1)",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Limitations",
+   "Justification",
+   "Scene work"
+  ],
+  "description": "Tell the players to imagine the stage is a disc, only supported right in the center of the stage.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-disc-2",
+  "name": "Disc(2)",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Limitations",
+   "Movement"
+  ],
+  "description": "Imagine the stage is a large disc, supported in the middle.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-dissociation",
+  "name": "Dissociation",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Warm-up"
+  ],
+  "description": "This game can be done individually, or you can have one player do it in front of the class.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-distance-game",
+  "name": "Distance Game",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Limitations",
+   "Two-person",
+   "Emotion"
+  ],
+  "description": "Two players stand a few feet apart facing each other and have the most boring 4-line interchange possible.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-distorting-mirror",
+  "name": "Distorting Mirror",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Two-person"
+  ],
+  "description": "This is a variation of the classic Mirror exercise.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-doors",
+  "name": "Doors",
+  "type": "exercise",
+  "categoryTags": [
+   "Environment",
+   "Exercise",
+   "Whole group",
+   "Object Work",
+   "Names",
+   "Scene work"
+  ],
+  "description": "Excellent introductory exercise for building environments and Platform .",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-doo-wop-1",
+  "name": "Doo Wop(1)",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Suggestion-driven",
+   "Genre"
+  ],
+  "description": "This is another structured song format, sung as a 1950's doo-wop.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-doo-wop-2",
+  "name": "Doo Wop(2)",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Storytelling",
+   "Suggestion-driven",
+   "Sound",
+   "Scene work"
+  ],
+  "description": "This is another structured long form. Get a topic, line up the players, and start improvising a song around the theme, usually without using a piano player (it would get too structured and...",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-do-ron-ron",
+  "name": "Do Ron Ron",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Musical"
+  ],
+  "description": "4 players sing a song about a subject, given by the audience, on the tune of Do Ron Ron.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-double-blind-freeze",
+  "name": "Double Blind Freeze",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Two-person",
+   "Freeze",
+   "Scene work"
+  ],
+  "description": "This is an extension of Blind Freeze : 2 players in scene, the others line up with their backs to the scene.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-double-endowment",
+  "name": "Double Endowment",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Look and Listen",
+   "Narration",
+   "Performance",
+   "Two-person",
+   "Listening",
+   "Scene work"
+  ],
+  "description": "Another great game to train listening skills.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-double-opening",
+  "name": "Double Opening",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Limitations",
+   "Look and Listen",
+   "Narration",
+   "Two-person",
+   "Scene work"
+  ],
+  "description": "2 players each make a (strong) opening sentence, at the same time.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-dry-cleaning-bag-of-death",
+  "name": "Dry Cleaning Bag of Death",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Justification",
+   "Scene work"
+  ],
+  "description": "We need three or four players. During the scene, one player is always off-stage, with his head inside a dry cleaning bag, slowly suffocating.",
+  "durationMinutes": 10,
+  "groupSizeFit": "3-4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-dubbed-movie",
+  "name": "Dubbed Movie",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Scene work"
+  ],
+  "description": "2 or more actors play a scene, but they don't speak, although they can move their mouths as if they are speaking.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-duck-duck-goose",
+  "name": "Duck Duck Goose",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Warm-up",
+   "Whole group",
+   "Gibberish",
+   "Sound"
+  ],
+  "description": "Invent a name for a non-existing but simple children's game.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-dvd-special-edition",
+  "name": "DVD Special Edition",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Performance",
+   "Storytelling",
+   "Character",
+   "Scene work",
+   "Speed"
+  ],
+  "description": "Start off with a trailer, narrated by one of the players, followed by some quick scenes, maximum 5 lines per scene.",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-eights",
+  "name": "Eights",
+  "type": "warmup",
+  "categoryTags": [
+   "Warm-up"
+  ],
+  "description": "Excellent game to warm up those muscles. Everybody scatter around, stand up relaxedly.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-elephant",
+  "name": "Elephant",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Sound"
+  ],
+  "description": "This one is like an extended version of Bippety Bop .",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-emotional-family",
+  "name": "Emotional Family",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Whole group",
+   "Emotion",
+   "Suggestion-driven",
+   "Freeze",
+   "Character"
+  ],
+  "description": "Usually played with 4 players, but can be done with more or less players.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-emotional-mirror",
+  "name": "Emotional Mirror",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Gibberish",
+   "Warm-up",
+   "Two-person",
+   "Emotion"
+  ],
+  "description": "Players in pairs, facing each other. One starts talking in gibberish, with a specific emotion (angry, happy, in love, you name it).",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-emotional-quadrants",
+  "name": "Emotional Quadrants",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Emotion",
+   "Scene work"
+  ],
+  "description": "Divide the scene in 4 quadrants, and allocate 4 different emotions to each quadrant.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-emotions-characters",
+  "name": "Emotions Characters",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Two-person",
+   "Whole group",
+   "Emotion",
+   "Movement",
+   "Character"
+  ],
+  "description": "Players in pairs, arms loosely hanging (not folded, not stuck in pant pockets).",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-endowments",
+  "name": "Endowments",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Guessing",
+   "Performance"
+  ],
+  "description": "This is a general handle for a ton of endowment games: one player leaves, the audience gives an occupation, and this player need to be endowed with that occupation.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-energy-1-10",
+  "name": "Energy 1-10",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Group",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Counting"
+  ],
+  "description": "Everyone in a big circle, squatting down. We will count 1 to 10, all together, moving up, with increasing energy level.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-evil-stick-of-gum",
+  "name": "Evil Stick of Gum",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Character",
+   "Scene work"
+  ],
+  "description": "This is a variation on Little Voice . In this game one character has a piece of gum in her mouth, and this piece of gum is capable of talking.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-evil-twin",
+  "name": "Evil Twin",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Freeze",
+   "Justification",
+   "Tag-out",
+   "Scene work"
+  ],
+  "description": "4 players. 2 will play a scene.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-exaggeration-circle",
+  "name": "Exaggeration Circle",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Physicality",
+   "Sound"
+  ],
+  "description": "All players in a circle, or a long line. One player starts a little gesture, with or without a little sound..",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-excluding",
+  "name": "Excluding",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Scene work"
+  ],
+  "description": "4 players play a scene, in which one of the players gets excluded.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-family-portraits",
+  "name": "Family Portraits",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Group",
+   "Warm-up",
+   "Whole group",
+   "Suggestion-driven"
+  ],
+  "description": "Fun game to get everyone to work together. Players are going to 'build' family portraits.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-famous-last-words",
+  "name": "Famous Last Words",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Verbal wit",
+   "Character"
+  ],
+  "description": "MC asks the audience for famous (living or dead) people, or characters in movies, cartoons or songs.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-famous-person-endowment",
+  "name": "Famous Person Endowment",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Guessing",
+   "Performance",
+   "Whole group",
+   "Scene work"
+  ],
+  "description": "1 player gets a number of famous persons; one for each other player in the scene.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-fast-food-laban",
+  "name": "Fast Food Laban",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Character",
+   "Speed"
+  ],
+  "description": "Laban was a movement theorist, and this exercise is based on (a simplified form of some of) his ideas.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-fast-food-stanislawski",
+  "name": "Fast Food Stanislawski",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Two-person",
+   "Character",
+   "Scene work",
+   "Speed"
+  ],
+  "description": "Have 2 players perform a scene, perhaps give them a title or a location, but also give them a subtext for their character.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-fast-forward",
+  "name": "Fast Forward",
+  "type": "exercise",
+  "categoryTags": [
+   "Continuation",
+   "Performance",
+   "Storytelling",
+   "Scene work",
+   "Speed"
+  ],
+  "description": "For this handle we need a 'director', or the MC can take on this role.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-feature-film",
+  "name": "Feature Film",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Performance",
+   "Character",
+   "Scene work"
+  ],
+  "description": "This is a collection of scenes, all based around (the making of) a movie.",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-final-freeze",
+  "name": "Final Freeze",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Freeze",
+   "Character"
+  ],
+  "description": "This is an extension of Blind Freeze : players try to do callbacks from previous scenes in the Freeze.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-finger-applause",
+  "name": "Finger Applause",
+  "type": "warmup",
+  "categoryTags": [
+   "Audience Participation",
+   "Warm-up",
+   "Performance"
+  ],
+  "description": "Have the audience clap not their hands, but start with 2 fingers.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-fingertips",
+  "name": "Fingertips",
+  "type": "exercise",
+  "categoryTags": [
+   "Trust",
+   "Two-person"
+  ],
+  "description": "Played in pairs. Players touch all ten fingers, and one player closes her eyes.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-firing-squad",
+  "name": "Firing Squad",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Warm-up",
+   "Whole group",
+   "Speed"
+  ],
+  "description": "This is an association game, sometimes used in workshops to 'punish' a silly or inattentive student.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-five-four-three-two-one",
+  "name": "Five Four Three Two One",
+  "type": "main",
+  "categoryTags": [
+   "Format",
+   "Long Form",
+   "Emotion",
+   "Suggestion-driven"
+  ],
+  "description": "This is a long format, origin unknown, and has resemblance to a Harold .",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-five-things",
+  "name": "Five Things",
+  "type": "exercise",
+  "categoryTags": [
+   "Gibberish",
+   "Guessing",
+   "Limitations",
+   "Performance",
+   "Suggestion-driven",
+   "Character"
+  ],
+  "description": "One player leaves the stage while the Host asks for an everyday activity.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-flock-dance",
+  "name": "Flock Dance",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Introduction",
+   "Warm-up",
+   "Two-person",
+   "Physicality",
+   "Movement"
+  ],
+  "description": "This is a physical warm-up. The group forms a pyramid: one player becomes the top, 2 players behind her, 3 players on a third line, and so on.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-follow-the-leader",
+  "name": "Follow the Leader",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Circle",
+   "Whole group",
+   "Speed"
+  ],
+  "description": "All but one in a circle, one player in the middle.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-follow-your-nose",
+  "name": "Follow your Nose",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Warm-up",
+   "Physicality"
+  ],
+  "description": "Silly physical warm-up. Have everybody mill around the room, and shout a body part.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-foreign-movie",
+  "name": "Foreign Movie",
+  "type": "exercise",
+  "categoryTags": [
+   "Gibberish",
+   "Performance",
+   "Two-person",
+   "Storytelling"
+  ],
+  "description": "2 players play a story in Gibberish , 2 others translate.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-fortune-cookie",
+  "name": "Fortune Cookie",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Scene work"
+  ],
+  "description": "Open a fortune cookie, read it aloud. Then play a scene based on the fortune.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-fortune-teller",
+  "name": "Fortune Teller",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Guessing",
+   "Performance"
+  ],
+  "description": "One player covers his ears while the others get 'predictions' from the audience; one prediction per other player.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-free-association-circle",
+  "name": "Free Association Circle",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Everyone in a circle and we establish a rhythm, by swinging a hand.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-free-association",
+  "name": "Free Association",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Warm-up"
+  ],
+  "description": "This is the classic association exercise. There are various ways of playing this (see Variations and see other games in the Association category.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-free-association-lines",
+  "name": "Free Association Lines",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Whole group",
+   "Movement"
+  ],
+  "description": "Yet another way to play association games. Place all players on 2 lines, facing each other.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-free-falling",
+  "name": "Free Falling",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Trust",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Nice, but a bit dangerous exercise to build trust.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-french-braid",
+  "name": "French Braid",
+  "type": "main",
+  "categoryTags": [
+   "Format",
+   "Long Form",
+   "Performance",
+   "Whole group",
+   "Scene work"
+  ],
+  "description": "This is a very simple format, which consists of a number of (unrelated) scenes, that get interrupted, and then continues at a later point.",
+  "durationMinutes": 30,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-front-desk",
+  "name": "Front Desk",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Environment",
+   "Exercise",
+   "Scene work"
+  ],
+  "description": "We play a scene, set in the lobby of a hotel.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-fruit-basket",
+  "name": "Fruit Basket",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Props"
+  ],
+  "description": "All players but one sitting a circle, one person in the middle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-fusillade",
+  "name": "Fusillade",
+  "type": "exercise",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Performance",
+   "Whole group",
+   "Suggestion-driven",
+   "Speed"
+  ],
+  "description": "Great exercise in fast thinking, but seen done in performance as well.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-fuzzy-ducky",
+  "name": "Fuzzy Ducky",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Counting"
+  ],
+  "description": "Silly concentration game and great warm-up. All players in a circle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-game-o-matic",
+  "name": "Game-O-Matic",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Suggestion-driven"
+  ],
+  "description": "This is like 'invent-your-won-game' : ask the audience for the name of an unexisting improv game, then invent the rules on the spot, and play it.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-gibberish-commands",
+  "name": "Gibberish Commands",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Gibberish",
+   "Two-person",
+   "Object Work"
+  ],
+  "description": "Another exercise on Jabbertalk : players in pairs.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-gibberish-expert",
+  "name": "Gibberish Expert",
+  "type": "exercise",
+  "categoryTags": [
+   "Experts",
+   "Gibberish",
+   "Performance"
+  ],
+  "description": "One player is an expert on a subject, often provided by the audience.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-gibberish-malapropism",
+  "name": "Gibberish Malapropism",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Gibberish",
+   "Movement"
+  ],
+  "description": "This exercise flexes your mind and is a good exercise for Gibberish games.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-give-and-take",
+  "name": "Give and Take",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Whole group",
+   "Movement",
+   "Sound",
+   "Counting"
+  ],
+  "description": "This is a variation on Walking by Numbers : all players find a position the room.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-goalie",
+  "name": "Goalie",
+  "type": "exercise",
+  "categoryTags": [
+   "Accepting",
+   "Characters",
+   "Exercise",
+   "Whole group",
+   "Character",
+   "Scene work"
+  ],
+  "description": "Great high-tempo exercise. 1 player up front.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-goon-river",
+  "name": "Goon River",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Performance",
+   "Storytelling",
+   "Suggestion-driven",
+   "Character",
+   "Names",
+   "Monologue"
+  ],
+  "description": "This is a format that consists of monologues.",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-gorilla-theatre",
+  "name": "Gorilla Theatre",
+  "type": "main",
+  "categoryTags": [
+   "Format",
+   "Competitive"
+  ],
+  "description": "This format is played with 3 experienced players, one MC and another player, dressed up as a Gorilla.",
+  "durationMinutes": 30,
+  "groupSizeFit": "3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-greetings",
+  "name": "Greetings",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Introduction",
+   "Warm-up",
+   "Whole group",
+   "Trust"
+  ],
+  "description": "All players start milling about the room. You then ask them to greet each other, perhaps just by shaking hands.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-group-environment",
+  "name": "Group Environment",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Environment",
+   "Exercise",
+   "Group",
+   "Physicality",
+   "Character"
+  ],
+  "description": "This is a group exercise in building environments.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-group-freeze",
+  "name": "Group Freeze",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Whole group",
+   "Freeze",
+   "Movement",
+   "Speed"
+  ],
+  "description": "Everyone starts milling about the room. Any player may decide to stop walking at any time.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-group-order",
+  "name": "Group Order",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Warm-up"
+  ],
+  "description": "Nice warm-up exercise to help the group function/agree as a whole.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-guest-game",
+  "name": "Guest Game",
+  "type": "exercise",
+  "categoryTags": [
+   "Narration",
+   "Performance",
+   "Character",
+   "Scene work"
+  ],
+  "description": "In this game we play in scene in which one player is a guest, somewhere.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-hall-of-justice",
+  "name": "Hall of Justice",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Suggestion-driven",
+   "Justification"
+  ],
+  "description": "Fun game for 5+ players, involving superheroes and villains.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-handicapped-fairy-tale",
+  "name": "Handicapped Fairy Tale",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Storytelling",
+   "Suggestion-driven",
+   "Character"
+  ],
+  "description": "Very silly but very effective. Ask the audience for a fairy tale.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-hand-slap",
+  "name": "Hand Slap",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Elimination"
+  ],
+  "description": "All players in a circle, down on the floor. Cross arms, and then put hands flat on the ground.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-hat-continuation",
+  "name": "Hat Continuation",
+  "type": "exercise",
+  "categoryTags": [
+   "Continuation",
+   "Performance",
+   "Storytelling",
+   "Freeze",
+   "Character",
+   "Props",
+   "Scene work"
+  ],
+  "description": "Start a scene, and identify each of the characters by means of a hat.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-hats",
+  "name": "Hats",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Props",
+   "Scene work"
+  ],
+  "description": "A very silly game. 2 improvisers put on hats, preferably similarly sized.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-heave-ho",
+  "name": "Heave Ho",
+  "type": "exercise",
+  "categoryTags": [
+   "Group",
+   "Trust",
+   "Whole group"
+  ],
+  "description": "This is like an extended version of Tossing to be played with 16+ players.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-helping-hands",
+  "name": "Helping Hands",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Storytelling",
+   "Character",
+   "Scene work"
+  ],
+  "description": "Scene played by 4 players, playing 2 characters.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-he-said-she-said",
+  "name": "He Said She Said",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Exercise",
+   "Performance",
+   "Two-person"
+  ],
+  "description": "Excellent game to show how Endowment works. 2 players; each player will state the action the other player must perform, followed by his own line.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-hesitation",
+  "name": "Hesitation",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Suggestion-driven",
+   "Justification",
+   "Scene work"
+  ],
+  "description": "In this game a scene is played, in which at any time, any player may 'hesitate', and ask the audience for help.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-hijacker",
+  "name": "Hijacker",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Guessing",
+   "Look and Listen",
+   "Performance",
+   "Listening"
+  ],
+  "description": "Excellent game to train listening skills. 4 players, one leaves the room.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-hitch-hiker",
+  "name": "Hitch Hiker",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Performance",
+   "Emotion",
+   "Character",
+   "Props"
+  ],
+  "description": "Use 4 chairs to build the interior of a car. One player starts driving the car, and another player becomes a hitch hiker, hiking a ride.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-honey-walk",
+  "name": "Honey Walk",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Warm-up",
+   "Freeze",
+   "Movement"
+  ],
+  "description": "This is a group exercise. Tell the players they have an oxygen mask, and then talk them thru the exercise: players are to move about in successively thicker substances.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-horoscope",
+  "name": "Horoscope",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Audience on stage",
+   "Scene work"
+  ],
+  "description": "Take a magazine with a horoscope. Ask an audience member for their birthday, read their horoscope and then play a scene based on that horoscope.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-hot-spot",
+  "name": "Hot Spot",
+  "type": "warmup",
+  "categoryTags": [
+   "Group",
+   "SingSong",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Musical"
+  ],
+  "description": "All players in a circle. One player steps into the circle and starts singing a known song.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-human-props",
+  "name": "Human Props",
+  "type": "exercise",
+  "categoryTags": [
+   "Environment",
+   "Exercise",
+   "Group",
+   "Performance",
+   "Props"
+  ],
+  "description": "Excellent exercise for building environments.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-id",
+  "name": "ID",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Limitations",
+   "Performance",
+   "Character",
+   "Questions",
+   "Audience on stage",
+   "Scene work"
+  ],
+  "description": "Ask a number of Ids, driver's licences from audience members.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-i-love-you",
+  "name": "I Love You",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Rhyme",
+   "Movement",
+   "Character"
+  ],
+  "description": "A simple song structure for 2 singers. Singer 1 sings 4 lines; the first 3 are about the other character; line 4 is simply \"I love you\".",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-imitate",
+  "name": "Imitate",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Two-person",
+   "Character",
+   "Scene work"
+  ],
+  "description": "This is an exercise for characters. 2 players will play a scene in a shop.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-impro-match",
+  "name": "Impro Match",
+  "type": "main",
+  "categoryTags": [
+   "Format",
+   "Competitive"
+  ],
+  "description": "This format does not have a specific name and is mainly popular in French speaking countries.",
+  "durationMinutes": 30,
+  "groupSizeFit": "6",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-in-out",
+  "name": "In-Out",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Justification",
+   "Scene work"
+  ],
+  "description": "Every player gets a word from the audience. When that word is said by any player, this player must leave the scene if he's in it, or enter the scene if he was not in it (yet).",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-introducing-association",
+  "name": "Introducing Association",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Circle",
+   "Whole group",
+   "Names"
+  ],
+  "description": "This little technique can be used to show a new group how natural associating really is.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-invisibility",
+  "name": "Invisibility",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Character",
+   "Scene work"
+  ],
+  "description": "Scene in which one oe the characters in invisible to the audience.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-invocation",
+  "name": "Invocation",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Performance",
+   "Suggestion-driven",
+   "Gibberish",
+   "Character",
+   "Endowment"
+  ],
+  "description": "This is a kind of Opening for Long Form . It goes in three steps.",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-irish-drinking-song",
+  "name": "Irish Drinking Song",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Musical"
+  ],
+  "description": "4 players sing a song about a subject, given by the audience, on an Irish-souding tune, one line at a time.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-janus-dance",
+  "name": "Janus Dance",
+  "type": "exercise",
+  "categoryTags": [
+   "Look and Listen",
+   "Performance",
+   "Trust",
+   "Two-person",
+   "Physicality",
+   "Movement",
+   "Scene work"
+  ],
+  "description": "This is can be used as a Trust exercise, as well as in performance.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-jeopardy",
+  "name": "Jeopardy",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Verbal wit",
+   "Suggestion-driven",
+   "Questions"
+  ],
+  "description": "This games is not unlike Worlds Worst : have the players close/cover their ears.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-jump",
+  "name": "Jump",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Characters",
+   "Exercise",
+   "Warm-up",
+   "Whole group",
+   "Physicality",
+   "Character",
+   "Speed"
+  ],
+  "description": "This is at times a physical Warm-up , a physical association game, and a game for character work.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-just-gibberish",
+  "name": "Just Gibberish",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Gibberish",
+   "Narration",
+   "Performance",
+   "Storytelling",
+   "Silent",
+   "Scene work"
+  ],
+  "description": "Excellent exercise for players that suffer from chronic Waffling .",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-killer-bunny",
+  "name": "Killer Bunny",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Warm-up",
+   "Circle"
+  ],
+  "description": "This is like Bunny except that at any time, the middle bunny is allowed to lift her hands above her head, lunge to either right or left side and eat one of her own ears, after which the ear player...",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-king-game",
+  "name": "King Game",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Freeze"
+  ],
+  "description": "One player is the king or the queen. Other players are to try and pleas his/her Royal Highness.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kitty-in-the-corner",
+  "name": "Kitty in the Corner",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Warm-up",
+   "Two-person"
+  ],
+  "description": "Classic children's game. 4 to 6 players stand at corners of the playing area, one player in the middle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4-6",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-ksss",
+  "name": "Ksss",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Energy",
+   "Warm-up",
+   "Two-person"
+  ],
+  "description": "Nice warm-up, easier to play than to explain.",
+  "durationMinutes": 8,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-last-letter",
+  "name": "Last Letter",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Warm-up",
+   "Alphabet"
+  ],
+  "description": "This is an Association game, where instead of naming the first word you think of upon hearing a previous word, you name the first word you think of starting with the last letter of the previously...",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-last-letter-scene",
+  "name": "Last Letter Scene",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Die",
+   "Limitations",
+   "Performance",
+   "Alphabet",
+   "Scene work"
+  ],
+  "description": "A scene is played, in which every next line spoken needs to start with the last letter of the previous line.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-last-line",
+  "name": "Last Line",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Scene work"
+  ],
+  "description": "Get a line (any line) from the audience. Players play a scene that concludes with the given line.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-lcd",
+  "name": "LCD",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Gibberish",
+   "Guessing",
+   "Performance",
+   "Scene work"
+  ],
+  "description": "This game is called Location, Career, Death (LCD).",
+  "durationMinutes": 10,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-lets-not",
+  "name": "Lets Not",
+  "type": "exercise",
+  "categoryTags": [
+   "Narration",
+   "Two-person",
+   "Storytelling",
+   "Suggestion-driven"
+  ],
+  "description": "Excellent game to train narrative skills, but a bit controversial.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-letter-number-name",
+  "name": "Letter Number Name",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Introduction",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Physicality",
+   "Names",
+   "Counting"
+  ],
+  "description": "Warm-up game that's also good to get to know each other's names.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2-3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-line-mirror",
+  "name": "Line Mirror",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Whole group"
+  ],
+  "description": "This is an extension of the Mirror game. Have all players line up in two face-to face rows, about three feet apart, holding hands (within a row).",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-little-voice",
+  "name": "Little Voice",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Scene work"
+  ],
+  "description": "One player plays a scene. The other player(s) play the voice(s) of objects in the environment in which the first player plays.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-location",
+  "name": "Location",
+  "type": "main",
+  "categoryTags": [
+   "Limitations",
+   "Long Form",
+   "Performance",
+   "Character",
+   "Scene work"
+  ],
+  "description": "Get a location (say the Post Office). The whole long form is played in one and the same Post Office.",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-lotus",
+  "name": "Lotus",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Performance",
+   "Two-person",
+   "Scene work"
+  ],
+  "description": "This is just a series of scenes in which each new scene evolves out of the dynamics of the previous scene.",
+  "durationMinutes": 30,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-lounge-singer",
+  "name": "Lounge Singer",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Solo",
+   "Musical",
+   "Suggestion-driven"
+  ],
+  "description": "Ask for an unlikely place to find a lounge singer.",
+  "durationMinutes": 10,
+  "groupSizeFit": "1",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-machines",
+  "name": "Machines",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Performance"
+  ],
+  "description": "MC/trainer comes up with a (real or invented) machine.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-make-more-interesting",
+  "name": "Make More Interesting",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Scene work"
+  ],
+  "description": "Simple exercise, useful for players that are too verbal.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-making-faces",
+  "name": "Making Faces",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance"
+  ],
+  "description": "' A silly handle attributed to Keith Johnstone.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-malapropism",
+  "name": "Malapropism",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Warm-up",
+   "Movement"
+  ],
+  "description": "This game flexes your mind. Have the players walk about in the room, point to any object, and give it another name.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-man-overboard",
+  "name": "Man Overboard",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Warm-up",
+   "Whole group",
+   "Elimination"
+  ],
+  "description": "This is a nice elimination warm-up. Everyone spreads out in a staggered line, like in an aerobics class.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-mantra",
+  "name": "Mantra",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Spontaneity",
+   "Scene work"
+  ],
+  "description": "Let the players play a short scene. Then ask them to repeat the following mantra in their head, and replay the scene 'I'm so happy, I'm so happy'.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-mantra-introduction",
+  "name": "Mantra Introduction",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Spontaneity",
+   "Whole group",
+   "Movement",
+   "Names",
+   "Sound"
+  ],
+  "description": "Here's a way to make a point about blanking one's mind, subconscious thinking and spontaneity.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-marriage-counsel-endowment",
+  "name": "Marriage Counsel Endowment",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Guessing",
+   "Performance",
+   "Relationship"
+  ],
+  "description": "One player is sent out of the room while the host gets 2 relationship problems from the audience.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-marshmallow-mania",
+  "name": "Marshmallow Mania",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Scene work"
+  ],
+  "description": "Play a scene in which the audience is not supposed to laugh.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-maslow-s-hierarchy-of-needs",
+  "name": "Maslow's Hierarchy of Needs",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Performance",
+   "Two-person",
+   "Storytelling",
+   "Character",
+   "Props",
+   "Scene work"
+  ],
+  "description": "Begin with 2 players, each on a chair. In character they start to talk about what happened to them in the past.",
+  "durationMinutes": 30,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-massage",
+  "name": "Massage",
+  "type": "warmup",
+  "categoryTags": [
+   "Group",
+   "Introduction",
+   "Trust",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Place all players in a circle. Have everyone put their hands on their right neighbor's shoulders and give 'em a shoulder massage.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-master-servant-disaster",
+  "name": "Master Servant Disaster",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Narration",
+   "Status",
+   "Two-person",
+   "Questions"
+  ],
+  "description": "2 players, one is the master, the other is the servant.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-mega-replay",
+  "name": "Mega Replay",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Replay",
+   "Emotion",
+   "Storytelling",
+   "Gibberish",
+   "Scene work"
+  ],
+  "description": "Divide the players in 2 groups. A scene is played by the first group from a well known story, fairy tale, historic fact.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-mexican-name-wave",
+  "name": "Mexican Name Wave",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Names"
+  ],
+  "description": "Players in a circle. Let them do a Mexican Wave: one player lifts both arms in the air, and down again.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-micetro",
+  "name": "Micetro",
+  "type": "main",
+  "categoryTags": [
+   "Format",
+   "Whole group",
+   "Suggestion-driven",
+   "Props",
+   "Competitive",
+   "Scene work"
+  ],
+  "description": "Pronounce as 'Maestro'. Comparable to Gorilla Theatre , but a bit easier, and can be played with a fairly large number of players (up to 20), and 2 directors.",
+  "durationMinutes": 30,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-millipede",
+  "name": "Millipede",
+  "type": "warmup",
+  "categoryTags": [
+   "Group",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Speed"
+  ],
+  "description": "Great fun but be careful not to hurt each other.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-more-or-less",
+  "name": "More or Less",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Suggestion-driven",
+   "Sound",
+   "Scene work"
+  ],
+  "description": "This is a nice show format. Any number of players from 5 upwards.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-move-and-speak",
+  "name": "Move and Speak",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Environment",
+   "Exercise",
+   "Limitations",
+   "Performance",
+   "Scene work"
+  ],
+  "description": "Play a 2-player scene, in which no-one is allowed to talk unless they create a new object and a movement along with it.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-movie-review",
+  "name": "Movie Review",
+  "type": "exercise",
+  "categoryTags": [
+   "Narration",
+   "Two-person",
+   "Suggestion-driven"
+  ],
+  "description": "4-10 players. Ask the audience for a movie title.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-mr-so-and-so",
+  "name": "Mr. So and So",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Endowment",
+   "Exercise",
+   "Performance",
+   "Suggestion-driven",
+   "Physicality",
+   "Character",
+   "Language"
+  ],
+  "description": "This is a game that's more suited for rehearshal than for performance, though I can work on stage as well.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-my-fault",
+  "name": "My Fault",
+  "type": "exercise",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Two-person",
+   "Whole group",
+   "Movement"
+  ],
+  "description": "You need 2 plastic bottles, each with a little bit of water (not too much or they'd be too heavy).",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-name-6-circle",
+  "name": "Name 6 Circle",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Circle",
+   "Whole group",
+   "Suggestion-driven"
+  ],
+  "description": "You will need a tennis ball or a towel tied in a knot for this one.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-name-the-monster",
+  "name": "Name the Monster",
+  "type": "exercise",
+  "categoryTags": [
+   "Narration",
+   "Spontaneity",
+   "Two-person",
+   "Movement",
+   "Scene work"
+  ],
+  "description": "Play in pairs, one word at a time (see Word at a Time Scene ).",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-name-volley",
+  "name": "Name Volley",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Introduction"
+  ],
+  "description": "Divide the class into 2 groups, maximum 6 players per group.",
+  "durationMinutes": 15,
+  "groupSizeFit": "6",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-no-doubles-1-10",
+  "name": "No Doubles 1-10",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Look and Listen",
+   "Warm-up",
+   "Circle",
+   "Two-person",
+   "Whole group",
+   "Counting"
+  ],
+  "description": "Nice concentration game. Everyone in a circle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-non-sequitor",
+  "name": "Non Sequitor",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Gibberish",
+   "Warm-up",
+   "Two-person",
+   "Physicality"
+  ],
+  "description": "Place players in pairs, let them hold a casual conversation about their work, the weather, anything.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-no-p",
+  "name": "No P",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Die",
+   "Limitations",
+   "Performance",
+   "Suggestion-driven",
+   "Character",
+   "Alphabet",
+   "Scene work"
+  ],
+  "description": "Players play a scene (perhaps based on an audience suggestion) but they cannot use the letter 'P' (or any other letter).",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-nuclear-bomb-chicken",
+  "name": "Nuclear Bomb Chicken",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Character"
+  ],
+  "description": "You can do this only once with a new group. Tell them they are all chickens in a henhouse, and a nuclear bomb is about to drop on the henhouse within 30 seconds, Ask the players to play the...",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-object-morphing",
+  "name": "Object Morphing",
+  "type": "exercise",
+  "categoryTags": [
+   "Environment",
+   "Exercise",
+   "Two-person",
+   "Object Work"
+  ],
+  "description": "Good exercise on object work: players in pairs.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-object-narrative",
+  "name": "Object Narrative",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Narration",
+   "Performance",
+   "Storytelling",
+   "Suggestion-driven",
+   "Props",
+   "Monologue"
+  ],
+  "description": "Place one chair on stage. The group sits or stands to the sides so they can see what is going on.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-objects",
+  "name": "Objects",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Warm-up"
+  ],
+  "description": "Divide the class in 2 groups. Give one group the name of an object, and they become, as a group, the object.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-old-job-new-job",
+  "name": "Old Job New Job",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Performance",
+   "Two-person",
+   "Character",
+   "Scene work"
+  ],
+  "description": "Play a scene with 2 players, and give them a job (or let the audience provide the job).",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-one-duck",
+  "name": "One Duck",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Everyone in a circle. We are going to say a pattern, one word per player, going clockwise.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-one-eighty-five",
+  "name": "One Eighty Five",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Verbal wit",
+   "Movement"
+  ],
+  "description": "Not really improv theater but done by a quite a few troupes, and fun when done well.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-one-line-scene",
+  "name": "One Line Scene",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Limitations",
+   "Scene work"
+  ],
+  "description": "Play a one or two minute scene, where only one line of dialog can be spoken.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-one-mouth",
+  "name": "One Mouth",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Performance",
+   "Whole group",
+   "Character",
+   "Questions"
+  ],
+  "description": "One player (or the MC) is going to interview all other players, but the group of other players are really one character.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-one-two-three-four",
+  "name": "One Two Three Four",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up"
+  ],
+  "description": "Ok, this is harder to explain than it is to play.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-only-questions",
+  "name": "Only Questions",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Die",
+   "Exercise",
+   "Limitations",
+   "Narration",
+   "Performance",
+   "Character",
+   "Questions",
+   "Scene work"
+  ],
+  "description": "A scene is played, in which any sentence used by the players must be a question.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-open-offer",
+  "name": "Open Offer",
+  "type": "exercise",
+  "categoryTags": [
+   "Accepting",
+   "Association",
+   "Exercise",
+   "Scene work"
+  ],
+  "description": "One player starts a scene by making an offer that is not 'complete', in the sense that it is vague enough not to define the who/what/where right away.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-open-your-hand",
+  "name": "Open Your Hand",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Spontaneity",
+   "Movement"
+  ],
+  "description": "Let the players walk around the room leisurely.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-opposite-characters",
+  "name": "Opposite Characters",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Status",
+   "Character",
+   "Listening",
+   "Speed"
+  ],
+  "description": "This is basically the opposite to Imitate : for the shopkeeper, rather than imitating the customer's character, try and build a totally opposite character.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-opposites",
+  "name": "Opposites",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Status",
+   "Movement",
+   "Character",
+   "Silent"
+  ],
+  "description": "Let the players walk around the room in silence.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-overload",
+  "name": "Overload",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Look and Listen",
+   "Listening",
+   "Questions"
+  ],
+  "description": "Excellent exercise to train listening skills by means of sensory overload.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-parallel-universe",
+  "name": "Parallel Universe",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Two-person",
+   "Character",
+   "Scene work"
+  ],
+  "description": "Audience provides 2 different environments/locations.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-pass-ball",
+  "name": "Pass Ball",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Character"
+  ],
+  "description": "All players in a circle. Ask the players to pass a mimed ball to others (one ball at a time).",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-pass-clap",
+  "name": "Pass Clap",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Energy",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Classic warm-up. Everyone in a circle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-pass-yes",
+  "name": "Pass Yes",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Blind",
+   "Speed"
+  ],
+  "description": "This is a bit like Pass Clap and all it's variations.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-patterns",
+  "name": "Patterns",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Warm-up",
+   "Circle"
+  ],
+  "description": "This is a bit like Free Association Circle , except that player are not to freely associate on the previously heard word, but on the ensemble of what has been heard, thereby heightening is.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-pecking-order",
+  "name": "Pecking Order",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Status",
+   "Counting",
+   "Scene work"
+  ],
+  "description": "Every player picks a number between 1 and the number of players in the scene.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-peruvian-ball-game",
+  "name": "Peruvian Ball Game",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Whole group",
+   "Object Work"
+  ],
+  "description": "Everyone starts milling about the room, miming a particular kind of ball.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-pillars",
+  "name": "Pillars",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Scene work"
+  ],
+  "description": "Put one member of the audience on stage (the pillar).",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-play-tag",
+  "name": "Play Tag",
+  "type": "warmup",
+  "categoryTags": [
+   "Warm-up",
+   "Physicality"
+  ],
+  "description": "Just play tag. Excellent physical warm-up.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-pockets",
+  "name": "Pockets",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Limitations",
+   "Performance",
+   "Two-person",
+   "Suggestion-driven",
+   "Justification",
+   "Scene work"
+  ],
+  "description": "Before the show, ask the audience to write simple sentences on slips of paper.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-poetry-corner",
+  "name": "Poetry Corner",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Verbal wit"
+  ],
+  "description": "You may want to practice this one: 1 player starts with the first line of a poem; player 2 adds second line, and so forth.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-poet-translator",
+  "name": "Poet Translator",
+  "type": "exercise",
+  "categoryTags": [
+   "Gibberish",
+   "Performance",
+   "Rhyme",
+   "Language"
+  ],
+  "description": "A simple translation game. The setup is a foreign language poet, who performs some of his work in Gibberish .",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-point-of-view",
+  "name": "Point of View",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Replay",
+   "Character",
+   "Scene work",
+   "Relationship"
+  ],
+  "description": "Play a simple scene. Then the scene is replayed, from the point of view of one of the characters.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-popcorn",
+  "name": "Popcorn",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Group",
+   "Warm-up",
+   "Whole group"
+  ],
+  "description": "Everyone finds themselves a nice spot, and squat down.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-presents",
+  "name": "Presents",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Spontaneity",
+   "Warm-up",
+   "Two-person"
+  ],
+  "description": "Great warm-up exercise that helps you blank your mind.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-press-conference",
+  "name": "Press Conference",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Performance",
+   "Questions"
+  ],
+  "description": "3 to 8 players. One player leaves the room, while the audience provides the name of a famous or historical person.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-primal-screams",
+  "name": "Primal Screams",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Physicality",
+   "Sound"
+  ],
+  "description": "All players in a circle. On player steps into the circle, making a big gesture and a loud sound.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-props",
+  "name": "Props",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Performance",
+   "Props"
+  ],
+  "description": "In this game the players need to come up with an original/funny use of a prop.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-protest-song",
+  "name": "Protest Song",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Suggestion-driven",
+   "Character"
+  ],
+  "description": "Ask the audience for something that pisses them off.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-puppets",
+  "name": "Puppets",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Performance",
+   "Two-person",
+   "Scene work"
+  ],
+  "description": "4 players. 2 players will be puppets; these players offer the lines of dialog in the scene, but they are not allowed to move about themselves.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-rash",
+  "name": "Rash",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Warm-up"
+  ],
+  "description": "Make sure you have as many pieces of paper as there are players.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-real-estate-broker",
+  "name": "Real Estate Broker",
+  "type": "exercise",
+  "categoryTags": [
+   "Environment",
+   "Exercise",
+   "Justification",
+   "Questions"
+  ],
+  "description": "One player is a real estate broker and shows a second player (or multiple players) around a space, given by the audience/trainer.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-receiver-right-clap",
+  "name": "Receiver Right Clap",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Physicality",
+   "Sound"
+  ],
+  "description": "Nice concentration and warmup exercise. All players in a circle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-repair-shop",
+  "name": "Repair Shop",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Guessing",
+   "Performance"
+  ],
+  "description": "One player leaves the stage (or gets a headphone).",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-repeater",
+  "name": "Repeater",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Look and Listen",
+   "Listening"
+  ],
+  "description": "Listening exercise. Any player that wants to offer a piece of dialog needs to repeat the entire dialog the last player did (ignoring that player's repetition of previous dialog) before she can...",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-replay-gibberish",
+  "name": "Replay Gibberish",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Gibberish",
+   "Replay",
+   "Two-person",
+   "Scene work"
+  ],
+  "description": "Exercise on Jabbertalk . Have 2 players do a short scene (1 minute or so).",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-reverse-chair-dance",
+  "name": "Reverse Chair Dance",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Introduction",
+   "Circle",
+   "Whole group",
+   "Movement",
+   "Props"
+  ],
+  "description": "You will need music for this exercise; provide a tape deck or a ghetto blaster, and a bunch of chairs.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-reverse-trivial-pursuit",
+  "name": "Reverse Trivial Pursuit",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Verbal wit",
+   "Suggestion-driven",
+   "Questions"
+  ],
+  "description": "Like most of the games in the Verbal wit category, no exactly theater, but fun if played well.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-rhymes",
+  "name": "Rhymes",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Die",
+   "Limitations",
+   "Narration",
+   "Performance",
+   "Verbal wit",
+   "Rhyme",
+   "Storytelling",
+   "Scene work"
+  ],
+  "description": "Scene played in verses. The idea is that the first player offers a line, and the second player rhymes to that.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-rituals",
+  "name": "Rituals",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance"
+  ],
+  "description": "Get an everyday activity from the audience. Then play this activity as if it were a ritual.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-rumors",
+  "name": "Rumors",
+  "type": "warmup",
+  "categoryTags": [
+   "Accepting",
+   "Association",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Everyone in a circle. One person starts by saying \"Did you hear about ...\" and points to someone else.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-samurai",
+  "name": "Samurai",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Physicality"
+  ],
+  "description": "This is an excellent physical warm up. All players in a circle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-satellite-radio",
+  "name": "Satellite Radio",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Look and Listen",
+   "Two-person",
+   "Storytelling",
+   "Listening"
+  ],
+  "description": "Excellent listening exercise. Players in pairs.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-satellite-tv",
+  "name": "Satellite TV",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Look and Listen",
+   "Two-person"
+  ],
+  "description": "Same as Satellite Radio , but with movements.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-scene-in-the-dark",
+  "name": "Scene in the Dark",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Look and Listen",
+   "Performance",
+   "Scene work"
+  ],
+  "description": "Fairly obvious: a scene is played in the dark.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-scene-painting",
+  "name": "Scene Painting",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Two-person",
+   "Freeze",
+   "Character",
+   "Scene work"
+  ],
+  "description": "Technique for building/advancing scenes. To be used sparingly.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-scene-replay",
+  "name": "Scene Replay",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Replay",
+   "Timed",
+   "Two-person",
+   "Emotion",
+   "Suggestion-driven",
+   "Gibberish",
+   "Scene work"
+  ],
+  "description": "Ask 2 players to play a short scene. One could limit the scene to 8 lines of dialog per player.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-scene-to-music",
+  "name": "Scene To Music",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Emotion",
+   "Character",
+   "Silent",
+   "Scene work"
+  ],
+  "description": "A silent scene is played, in which the characters' emotions are controlled by the music.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-scorpion",
+  "name": "Scorpion",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Trust",
+   "Blind",
+   "Elimination"
+  ],
+  "description": "A number of players stand in the middle of the room, eyes closed the others stand by the walls.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-sculptors",
+  "name": "Sculptors",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Works best with an even number of players. Split the group in 2.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-seven-up",
+  "name": "Seven Up",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Counting"
+  ],
+  "description": "Everyone in a circle, start counting to 7 while waving right arm up and down to the same rhythm you're counting.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-shootout",
+  "name": "Shootout",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Energy",
+   "Introduction",
+   "Warm-up",
+   "Circle",
+   "Elimination",
+   "Names",
+   "Sound",
+   "Speed"
+  ],
+  "description": "Excellent game to get to know each other's names.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-sideways",
+  "name": "Sideways",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Scene work"
+  ],
+  "description": "In this game we play a scene, in which the back wall is the 'floor', and the floor is a wall.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-silly-stinky-sexy",
+  "name": "Silly Stinky Sexy",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Performance",
+   "Suggestion-driven",
+   "Scene work"
+  ],
+  "description": "4 players. Each player endows each of the other players with either sexy-ness, silly-ness or stinky-ness.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-simon-says",
+  "name": "Simon Says",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Elimination"
+  ],
+  "description": "You are Simon, and you tell the players to do exactly what Simon tells them to do, but only if Simon's sentence starts with \"Simon says\".",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-simple-continuation",
+  "name": "Simple Continuation",
+  "type": "exercise",
+  "categoryTags": [
+   "Continuation",
+   "Performance",
+   "Storytelling",
+   "Character",
+   "Scene work"
+  ],
+  "description": "A scene is started, played by 2 to 4 players.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2-4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-sitting-standing-lying",
+  "name": "Sitting Standing Lying",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Limitations",
+   "Performance",
+   "Justification",
+   "Scene work",
+   "Speed"
+  ],
+  "description": "Silly game to teach fast acting. 3 players play a scene.",
+  "durationMinutes": 15,
+  "groupSizeFit": "3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-six-episodes",
+  "name": "Six Episodes",
+  "type": "exercise",
+  "categoryTags": [
+   "Accepting",
+   "Exercise",
+   "Group",
+   "Narration"
+  ],
+  "description": "Excellent game to teach group storytelling. Give a big task, like 'The launch of a new flavor of coke', or 'Building a new clubhouse for the girl scouts'.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-slappy-face",
+  "name": "Slappy Face",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Concentration",
+   "Two-person"
+  ],
+  "description": "A simple word association played in pairs. If a player is too slow, of goed 'Erm...' the other slaps him in the face (gently).",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-slap-take",
+  "name": "Slap Take",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Two-person",
+   "Scene work"
+  ],
+  "description": "Very silly. But hey we're an encyclopedia; some folks really do this on stage, so here we go: 2 players do a scene.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-slide-show",
+  "name": "Slide Show",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Narration",
+   "Performance"
+  ],
+  "description": "Give one player a big activity, perhaps a trip through the jungle, or the construction of a home.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-slomo-samurai",
+  "name": "SloMo Samurai",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Warm-up"
+  ],
+  "description": "Tell the players they are Samurai, and their right forearm is a poisoned sword.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-slomo-tag",
+  "name": "SloMo Tag",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Warm-up",
+   "Movement"
+  ],
+  "description": "Play tag, but in slow motion. Immensely entertaining if played well; players are not to escape the tagger by making a sudden movement, and the tagger cannot lash out to tag another player.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-soap-series",
+  "name": "Soap Series",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Performance",
+   "Whole group",
+   "Storytelling",
+   "Character"
+  ],
+  "description": "Play an episode from a soap series. This can be done as a Long Form , but can also be used in short form.",
+  "durationMinutes": 30,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-solitaire",
+  "name": "Solitaire",
+  "type": "exercise",
+  "categoryTags": [
+   "Group",
+   "Trust",
+   "Whole group",
+   "Sound"
+  ],
+  "description": "All players but one spread along opposing edges of a wide surface.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-solo-doors",
+  "name": "Solo Doors",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Environment",
+   "Exercise",
+   "Solo",
+   "Character",
+   "Speed"
+  ],
+  "description": "A Solo exercise. Enter, as a character, through a door.",
+  "durationMinutes": 15,
+  "groupSizeFit": "1",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-sound-circle",
+  "name": "Sound Circle",
+  "type": "warmup",
+  "categoryTags": [
+   "Accepting",
+   "Exercise",
+   "Spontaneity",
+   "Warm-up",
+   "Circle",
+   "Physicality",
+   "Sound"
+  ],
+  "description": "Everybody in a big circle. One player starts the game by making a gesture and a sound to his right neighbor.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-sound-effects",
+  "name": "Sound Effects",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Sound",
+   "Scene work"
+  ],
+  "description": "A scene is played, and one or more off-scene players provide all the sounds.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-sounds-like-a-song",
+  "name": "Sounds Like a Song",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Sound",
+   "Scene work"
+  ],
+  "description": "Play a scene (or series of scenes). At any time, anyone can stop the scene and say 'Sounds like a song', after which the player(s) sing a song based on the last line that was spoken, or last...",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-space-jump",
+  "name": "Space Jump",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Performance",
+   "Two-person",
+   "Object Work",
+   "Freeze",
+   "Scene work"
+  ],
+  "description": "This is like an extended Freeze Tag game. 4 players.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-spit-take",
+  "name": "Spit Take",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Two-person",
+   "Scene work"
+  ],
+  "description": "Very silly. But hey we're an encyclopedia so here we go: 2 players do a scene, each holding a glass of water (or coke, or beer).",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-split-screen",
+  "name": "Split Screen",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Limitations",
+   "Performance",
+   "Character",
+   "Scene work"
+  ],
+  "description": "Divide the stage in a left and a right half. The right part becomes the left and vice versa, and the division in the middle becomes a 'wall'.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-sportz-center",
+  "name": "Sportz Center",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance"
+  ],
+  "description": "3 players, and an every day activity (brushing your teeth, washing your car).",
+  "durationMinutes": 10,
+  "groupSizeFit": "3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-squeezer",
+  "name": "Squeezer",
+  "type": "warmup",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Get everyone into a circle, holding hands. One player starts the game by squeezing the hand of one of his neighbors.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-story-spine",
+  "name": "Story Spine",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Narration",
+   "Storytelling"
+  ],
+  "description": "This is an idea about the spine of any story.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-story-story-die",
+  "name": "Story Story Die",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Die",
+   "Narration",
+   "Performance",
+   "Storytelling",
+   "Genre"
+  ],
+  "description": "Players form a line on the stage. A title for a story, and a story genre is obtained from the audience.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-story-to-a-chair",
+  "name": "Story To A Chair",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Solo",
+   "Storytelling",
+   "Character",
+   "Props"
+  ],
+  "description": "A Solo character exercise. Tell a story to a few chairs.",
+  "durationMinutes": 15,
+  "groupSizeFit": "1",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-stretching",
+  "name": "Stretching",
+  "type": "warmup",
+  "categoryTags": [
+   "Warm-up",
+   "Whole group"
+  ],
+  "description": "As a warm-up, let's do some simple stretching exercises.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-stunt-double",
+  "name": "Stunt Double",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Two-person",
+   "Freeze",
+   "Scene work"
+  ],
+  "description": "A scene is played by 2 players. Every time a player needs to do something difficult/unpleasant, another player jumps in as a stunt double.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-sung-story-die",
+  "name": "Sung Story Die",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Die",
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Storytelling",
+   "Suggestion-driven",
+   "Elimination"
+  ],
+  "description": "This is like Story Story Die , but sung. Get a suggestions, and sing a song to that suggestion.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-superman-jam",
+  "name": "Superman Jam",
+  "type": "warmup",
+  "categoryTags": [
+   "Audience Participation",
+   "Warm-up",
+   "Performance",
+   "Musical"
+  ],
+  "description": "Divide the audience into three groups; label them Group 1, 2, 3, (or any other labeling).",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-supermen",
+  "name": "Supermen",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Performance",
+   "Status",
+   "Character",
+   "Scene work"
+  ],
+  "description": "A great Pimping game. 4 players.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-supernova",
+  "name": "Supernova",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Warm-up",
+   "Whole group",
+   "Blind"
+  ],
+  "description": "Nice energy builder. All players dispersed around the room, have everyone stand up comfortably, feet apart, eyes closed.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-surprise-movement",
+  "name": "Surprise Movement",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Spontaneity",
+   "Whole group",
+   "Physicality",
+   "Movement",
+   "Sound"
+  ],
+  "description": "Have everyone walk around leisurely. Tel them to stop and start make a movement, a gesture, a sound, anything really.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-survivor",
+  "name": "Survivor",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Concentration",
+   "Die",
+   "Exercise",
+   "Look and Listen",
+   "Performance",
+   "Character",
+   "Monologue",
+   "Scene work"
+  ],
+  "description": "Four to six players play a scene. Then the audience chooses one of the players to get \"voted off the island.\" The remaining players do the scene again, covering everything that happened the first...",
+  "durationMinutes": 15,
+  "groupSizeFit": "4-6",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-swedish-sculptors",
+  "name": "Swedish Sculptors",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Trust"
+  ],
+  "description": "This one is an extension of Sculptors . Divide the class in 2 groups, same number of players in every group.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-switcheroo",
+  "name": "Switcheroo",
+  "type": "exercise",
+  "categoryTags": [
+   "Continuation",
+   "Performance",
+   "Props",
+   "Scene work"
+  ],
+  "description": "This is like Simple Continuation , except that the MC interrupts the scene several times, and at each interruption all actors in the scene get switched; no new actors join in, and no actors leave.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-switch-gibberish",
+  "name": "Switch Gibberish",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Gibberish",
+   "Performance",
+   "Storytelling"
+  ],
+  "description": "Jabbertalk exercise: let a player tell a store.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-sybil",
+  "name": "Sybil",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Performance",
+   "Solo",
+   "Character",
+   "Names",
+   "Monologue"
+  ],
+  "description": "This is basically a one-person Long Form . In this format the player plays all characters.",
+  "durationMinutes": 30,
+  "groupSizeFit": "1",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-synchro-clap",
+  "name": "Synchro Clap",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Energy",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "All players in a circle. One player starts the game by making eye contact with another player.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-telltales",
+  "name": "TellTales",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Physicality",
+   "Character"
+  ],
+  "description": "In this format a cast of five gets one ask-for each at the top of the show, and then each person is free to play solo scenes with invisible characters, addressing the audience, musing to...",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-theatresports",
+  "name": "Theatresports",
+  "type": "main",
+  "categoryTags": [
+   "Format",
+   "Names",
+   "Competitive",
+   "Scene work"
+  ],
+  "description": "Theatre Sports is really a collection of formats.",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-the-bag",
+  "name": "The Bag",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Character",
+   "Props",
+   "Questions"
+  ],
+  "description": "This is a group exercise for building Characters .",
+  "durationMinutes": 15,
+  "groupSizeFit": "5",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-the-bat",
+  "name": "The Bat",
+  "type": "main",
+  "categoryTags": [
+   "Limitations",
+   "Long Form",
+   "Performance"
+  ],
+  "description": "This is a Long Form format based on Blind Harold .",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-the-gerbil",
+  "name": "The Gerbil",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Storytelling"
+  ],
+  "description": "Invent a silly dramatic story, and explain it to the audience.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-the-good-the-bad-and-the-ugly-advice",
+  "name": "The Good, the Bad and the Ugly Advice",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Die",
+   "Performance",
+   "Verbal wit",
+   "Whole group",
+   "Questions"
+  ],
+  "description": "3 players, form a line (or sit down). The audience provides questions or problems for which they need advice.",
+  "durationMinutes": 10,
+  "groupSizeFit": "3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-the-magnet",
+  "name": "The Magnet",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Group",
+   "Trust",
+   "Two-person",
+   "Blind"
+  ],
+  "description": "Played in pairs. One player becomes a sculpture, standing still, while his partner closes her eyes.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-the-party",
+  "name": "The Party",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Guessing",
+   "Performance",
+   "Character"
+  ],
+  "description": "One player plays a character that is having a party.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-the-scream",
+  "name": "The Scream",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Warm-up",
+   "Circle",
+   "Two-person"
+  ],
+  "description": "Everybody in a circle, watch the ground. On your sign, everybody lifts their head and either looks straight, left or right.",
+  "durationMinutes": 8,
+  "groupSizeFit": "1-2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-three-line-environment",
+  "name": "Three Line Environment",
+  "type": "exercise",
+  "categoryTags": [
+   "Environment",
+   "Exercise",
+   "Two-person"
+  ],
+  "description": "Played with 2 players. They get 3 lines (first player gets 2 lines, second one gets one line).",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-three-line-solo",
+  "name": "Three Line Solo",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Solo",
+   "Character",
+   "Scene work",
+   "Speed"
+  ],
+  "description": "This is a Solo exercise. Play a 3 line scene with 2 characters.",
+  "durationMinutes": 15,
+  "groupSizeFit": "1",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-three-melodies",
+  "name": "Three Melodies",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Suggestion-driven",
+   "Character",
+   "Scene work"
+  ],
+  "description": "Ask for 2 occupations. Then do a 4-beat scene as follows: Player 1 sings about how great and satisfying her job is, but she's missing something critical, or has a minor little problem with it...",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-three-noses",
+  "name": "Three Noses",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Exercise",
+   "Introduction",
+   "Warm-up",
+   "Whole group",
+   "Movement"
+  ],
+  "description": "A fun and silly game. Let everyone walk leisurely around the room.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-three-rules",
+  "name": "Three Rules",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Questions",
+   "Scene work"
+  ],
+  "description": "Get 3 rules from the audience, e.g. players have only one arm, players can't use a word that contains an 's' and after every question uttered players needs to yell 'Yess!'.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-three-sentence-story",
+  "name": "Three Sentence Story",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Narration",
+   "Two-person",
+   "Storytelling"
+  ],
+  "description": "2 players. 3 unconnected sentences are provided by one player; the other builds the shortest possible story incorporating the 3 sentences.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-timed-scenes",
+  "name": "Timed Scenes",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Timed",
+   "Audience on stage",
+   "Scene work"
+  ],
+  "description": "Here are a couple of different ways to time scenes (apart from using your watch) time a player can keep his head immersed in a bucket of water time it takes the audience to throw 20 socks onto the...",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-timeline",
+  "name": "Timeline",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Storytelling",
+   "Character",
+   "Justification",
+   "Scene work"
+  ],
+  "description": "A scene is played, number of players unlimited.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-tossing",
+  "name": "Tossing",
+  "type": "exercise",
+  "categoryTags": [
+   "Group",
+   "Trust"
+  ],
+  "description": "Eight players form 2 lines, facing each other, and mesh their forearms together, to form a platform to 'launch' another player up in the air and catch him again.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-touch-to-talk",
+  "name": "Touch to Talk",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Scene work"
+  ],
+  "description": "In this handle players play a scene in which they can only use speech when they touch each other.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-translate-gibberish",
+  "name": "Translate Gibberish",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Gibberish",
+   "Spontaneity",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "This is best played with an odd number of players.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-translation-for-the-deaf",
+  "name": "Translation for the Deaf",
+  "type": "exercise",
+  "categoryTags": [
+   "Experts",
+   "Performance"
+  ],
+  "description": "We need 3 players for this game. One will be an expert on a topic provided by the audience; another will be the interviewer.",
+  "durationMinutes": 10,
+  "groupSizeFit": "3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-triple-play",
+  "name": "Triple Play",
+  "type": "main",
+  "categoryTags": [
+   "Long Form",
+   "Performance",
+   "Suggestion-driven"
+  ],
+  "description": "This is really a series of 3 3-act plays mixed.",
+  "durationMinutes": 30,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-trivial-pursuit",
+  "name": "Trivial Pursuit",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Verbal wit",
+   "Props",
+   "Questions"
+  ],
+  "description": "MC asks the audience to pick Trivial Pursuit cards.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-tug-o-war",
+  "name": "Tug-O-War",
+  "type": "exercise",
+  "categoryTags": [
+   "Accepting",
+   "Exercise",
+   "Group",
+   "Object Work"
+  ],
+  "description": "Divide the class in 2 groups and have them mime a Tug-o-war fight.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-turning-circle",
+  "name": "Turning Circle",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Warm-up",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Fun game to warm up those muscles and get the blood pumping.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-tv-news",
+  "name": "TV News",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Character"
+  ],
+  "description": "3 players, who play characters in a TV newscast.",
+  "durationMinutes": 10,
+  "groupSizeFit": "3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-typewriter",
+  "name": "Typewriter",
+  "type": "exercise",
+  "categoryTags": [
+   "Narration",
+   "Performance",
+   "Storytelling",
+   "Character",
+   "Names",
+   "Scene work"
+  ],
+  "description": "This is a nice handle to structure scenes. One of the players is the Narrator.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-verses",
+  "name": "Verses",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Rhyme",
+   "Scene work"
+  ],
+  "description": "Scene is played in verses, that is, every player need to rhyme to herself.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-virus",
+  "name": "Virus",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Warm-up",
+   "Movement"
+  ],
+  "description": "Use one empty plastic soft drink bottle. Whichever player has the bottle is the virus.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-voices-from-heaven",
+  "name": "Voices From Heaven",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Narration",
+   "Performance",
+   "Suggestion-driven",
+   "Character"
+  ],
+  "description": "Excellent game for building characters and group-storytelling.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-walking-by-numbers",
+  "name": "Walking by Numbers",
+  "type": "warmup",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Look and Listen",
+   "Warm-up",
+   "Freeze",
+   "Movement",
+   "Counting"
+  ],
+  "description": "Every player finds himself a spot in the room, make sure players can see each other.",
+  "durationMinutes": 8,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-walkout",
+  "name": "Walkout",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Two-person",
+   "Movement",
+   "Justification",
+   "Scene work"
+  ],
+  "description": "You need at least 3 players for this one. Give each player a word.",
+  "durationMinutes": 10,
+  "groupSizeFit": "3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-walk-over-association",
+  "name": "Walk-over Association",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Whole group",
+   "Movement"
+  ],
+  "description": "Another way of playing association games. Place all players at one end of the room.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-warehouse",
+  "name": "Warehouse",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Spontaneity",
+   "Object Work",
+   "Movement"
+  ],
+  "description": "Let the players walk around leisurely. Tell them they are in a big warehouse, with lots of shelves and cabinets, packed with junk.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-what-happens-next",
+  "name": "What Happens Next",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Narration",
+   "Storytelling"
+  ],
+  "description": "One player in the middle, the others sit aside.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-what-has-changed",
+  "name": "What Has Changed",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Exercise",
+   "Look and Listen",
+   "Two-person"
+  ],
+  "description": "Played in pairs. One player observes another closely.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-what-would-she-be-if",
+  "name": "What would she be if",
+  "type": "exercise",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Names"
+  ],
+  "description": "Choose one player and let her stand in front of the class.",
+  "durationMinutes": 15,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-whoosh",
+  "name": "Whoosh",
+  "type": "warmup",
+  "categoryTags": [
+   "Energy",
+   "Warm-up",
+   "Circle",
+   "Sound"
+  ],
+  "description": "Everybody in a circle. Start with one person, who waves both hands to his/her neighbor, saying 'Whoosh'.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-who-where-why-am-i",
+  "name": "Who Where Why Am I",
+  "type": "exercise",
+  "categoryTags": [
+   "Endowment",
+   "Performance",
+   "Physicality",
+   "Scene work"
+  ],
+  "description": "One player leaves the room. The audience provides: where we are, and when (what era)",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-without-sound",
+  "name": "Without Sound",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Silent",
+   "Sound",
+   "Scene work"
+  ],
+  "description": "A scene in played, in which no talk of no sounds are allowed.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-without-words",
+  "name": "Without Words",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Silent",
+   "Sound",
+   "Scene work"
+  ],
+  "description": "A scene is played, in which the players are not allowed to talk.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-word-at-a-time-expert",
+  "name": "Word at a Time Expert",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Questions"
+  ],
+  "description": "3 players: one is the interviewer, and the other 2 are an expert on a subject chosen by the audience.",
+  "durationMinutes": 10,
+  "groupSizeFit": "3",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-word-at-a-time-letter",
+  "name": "Word at a Time Letter",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Narration",
+   "Two-person",
+   "Props",
+   "Alphabet"
+  ],
+  "description": "Play in pairs. The 2 players will compose a letter, one word at a time.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-word-at-a-time-scene",
+  "name": "Word at a Time Scene",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "Two-person",
+   "Storytelling",
+   "Scene work"
+  ],
+  "description": "This is like Word at a Time Expert , but with a bit more scene work.",
+  "durationMinutes": 10,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-word-at-a-time-song",
+  "name": "Word at a Time Song",
+  "type": "exercise",
+  "categoryTags": [
+   "Limitations",
+   "Performance",
+   "SingSong",
+   "Musical",
+   "Scene work",
+   "Speed"
+  ],
+  "description": "This is like Word at a Time Scene , but here the players improvise a song.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-word-at-a-time-story",
+  "name": "Word at a Time Story",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Group",
+   "Narration",
+   "Circle",
+   "Whole group",
+   "Storytelling"
+  ],
+  "description": "This is an exercise to train group narrative.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-word-ball",
+  "name": "Word Ball",
+  "type": "warmup",
+  "categoryTags": [
+   "Association",
+   "Exercise",
+   "Warm-up",
+   "Circle",
+   "Whole group",
+   "Alphabet"
+  ],
+  "description": "Another association game. All players in a circle.",
+  "durationMinutes": 8,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-worlds-worst",
+  "name": "Worlds Worst",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Verbal wit"
+  ],
+  "description": "Not exactly theater, but fun if played well. Players line up, and the audience provides verbs, hobbies and occupations.",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-yes-lets-or-rather-not",
+  "name": "Yes Lets - or Rather Not",
+  "type": "exercise",
+  "categoryTags": [
+   "Accepting",
+   "Group",
+   "Narration",
+   "Whole group",
+   "Suggestion-driven"
+  ],
+  "description": "This is a bit controversial, and you probably don't want to do this with newbies.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-you",
+  "name": "You",
+  "type": "exercise",
+  "categoryTags": [
+   "Exercise",
+   "Look and Listen",
+   "Circle",
+   "Whole group"
+  ],
+  "description": "Everyone in a circle. Everyone raises their right hand.",
+  "durationMinutes": 15,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-you-re-fired",
+  "name": "You're Fired",
+  "type": "exercise",
+  "categoryTags": [
+   "Characters",
+   "Exercise",
+   "Limitations",
+   "Performance",
+   "Two-person",
+   "Scene work"
+  ],
+  "description": "This is a scene with 2 players, in which the lines are scripted.",
+  "durationMinutes": 15,
+  "groupSizeFit": "2",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-zapping",
+  "name": "Zapping",
+  "type": "exercise",
+  "categoryTags": [
+   "Concentration",
+   "Performance"
+  ],
+  "description": "4 players, each chooses a TV format, like the News, a documentary, a Pokemon show, you name it.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-zoom-in-zoom-out",
+  "name": "Zoom-In Zoom-Out",
+  "type": "exercise",
+  "categoryTags": [
+   "Continuation",
+   "Performance",
+   "Character",
+   "Scene work"
+  ],
+  "description": "A scene is played; at any time the MC or host calls \"zoom-out\" - at that point, the scene continues, but is played with finger puppets (as if the audience is watching the scene from fart away, and...",
+  "durationMinutes": 10,
+  "groupSizeFit": "any",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-zulu-1",
+  "name": "Zulu(1)",
+  "type": "exercise",
+  "categoryTags": [
+   "Performance",
+   "Verbal wit",
+   "Whole group"
+  ],
+  "description": "All players form a line, facing the audience.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-zulu-2",
+  "name": "Zulu(2)",
+  "type": "exercise",
+  "categoryTags": [
+   "Audience Participation",
+   "Die",
+   "Performance",
+   "Verbal wit",
+   "Whole group",
+   "Elimination"
+  ],
+  "description": "All players form a line, facing the audience.",
+  "durationMinutes": 10,
+  "groupSizeFit": "4+",
+  "source": "Improv Encyclopedia"
+ }
+]

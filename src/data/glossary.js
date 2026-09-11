@@ -9,7 +9,10 @@
  * back to English at read time.
  */
 
-export const GLOSSARY = [
+import ENCYCLOPEDIA_KEYWORDS from './encyclopedia-keywords.json';
+import ENCYCLOPEDIA_ENTRIES from './encyclopedia-entries.json';
+
+const CURATED_TERMS = [
   {
     id: 'gl-status',
     term: { en: 'Status', de: '' },
@@ -230,6 +233,25 @@ export const GLOSSARY = [
     relatedTerms: ['gl-format-vs-game', 'gl-four-corners'],
     sourceReference: 'Sandro original (Format Forge)',
   },
+];
+
+/**
+ * Curated terms, then the Improv Encyclopedia keyword list, then its
+ * encyclopedia entries. `group` splits the tab into Terms, Improvisers,
+ * Books and Philosophy; curated entries are all terms.
+ */
+export const GLOSSARY = [
+  ...CURATED_TERMS.map((entry) => ({ ...entry, group: 'term' })),
+  ...ENCYCLOPEDIA_KEYWORDS,
+  ...ENCYCLOPEDIA_ENTRIES,
+];
+
+export const GLOSSARY_GROUPS = [
+  { id: 'all', label: 'All' },
+  { id: 'term', label: 'Terms' },
+  { id: 'improviser', label: 'Improvisers' },
+  { id: 'book', label: 'Books' },
+  { id: 'philosophy', label: 'Philosophy' },
 ];
 
 export const glossaryById = (id) => GLOSSARY.find((g) => g.id === id) || null;

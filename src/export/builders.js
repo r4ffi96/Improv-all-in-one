@@ -7,7 +7,7 @@
 
 import { B, buildDocument, formatMinutes, prettyDate, quote } from './docModel.js';
 import { getStrings } from './labels.js';
-import { byId } from '../data/library.js';
+import { fullById } from '../data/library.js';
 import forgeData from '../data/format-forge-steps.json';
 
 const SESSION_ADJUSTMENTS = [
@@ -33,7 +33,7 @@ function sessionItemsResolved(session) {
     if (item.kind === 'break') {
       return { ...item, lib: null, name: item.label || 'Break' };
     }
-    const lib = byId(item.libraryId);
+    const lib = fullById(item.libraryId);
     return { ...item, lib, name: lib ? lib.name : item.label || 'Removed library item' };
   });
 }

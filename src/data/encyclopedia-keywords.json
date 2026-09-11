@@ -1,0 +1,1420 @@
+[
+ {
+  "id": "ie-kw-accepting",
+  "group": "term",
+  "term": {
+   "en": "Accepting",
+   "de": ""
+  },
+  "definition": {
+   "en": "Embracing each Offer made by other players to advance the scene. A good thing.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-advancing",
+  "group": "term",
+  "term": {
+   "en": "Advancing",
+   "de": ""
+  },
+  "definition": {
+   "en": "The process of moving a scene forward. Generally a good thing, as opposed to Waffling, Blocking, Commenting, Sidetracking and Postponing (to name just a few:-))",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-blocking",
+   "ie-kw-commenting",
+   "ie-kw-postponing",
+   "ie-kw-sidetracking",
+   "ie-kw-waffling"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-agreement",
+  "group": "term",
+  "term": {
+   "en": "Agreement",
+   "de": ""
+  },
+  "definition": {
+   "en": "Improvisors need to create a reality that is not really there, without knowing what other reality the other players have in mind. In order to clearly establish one united reality, improvisors should be Accepting any Offer from each other. If offers are accepted we say there is Agreement. The opposite is Denial.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-accepting",
+   "ie-kw-denial"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-ask-for-continued",
+  "group": "term",
+  "term": {
+   "en": "Ask-for Continued",
+   "de": ""
+  },
+  "definition": {
+   "en": "Here are more ideas for Ask-fors (Continued from Ask-for).\n\nIf you're tired of asking the same old stuff over and over again, buy a summary history book (you know - something like \"History of the 19th Century\" - a book that summarizes the historical highlights of every year within a century), ask for a page number and pick anything off that page. You'll get plenty of different locations, characters, objects (the invention of the light bulb) and so on.\n\nInstead of asking for something specific, you can also just start talking they mention as a scene starter. Asking for that much information may even be necessary for games like Day in the Life. Be creative with the actual use of suggestions in a scene. Classic example is using the location 'Bathroom' only to step through the mirror into a kind of Alice in Wonderland location. Instead of just asking for suggestions before a scene, why not ask the audience to write down suggestions on slips of paper before the performance? Put these in a hat and just draw suggestions before the scene. Or stick them on a dartboard and have an audience pick the suggestion by 'darting' it.\n\nThere is a long list of ask-fors at LearnImprov.com. On YesAnd.com you'll find the Ask-For Superstore (http://www.yesand.com/phpBB2/viewtopic.php?t=5275).",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-ask-for"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-ask-for",
+  "group": "term",
+  "term": {
+   "en": "Ask-for",
+   "de": ""
+  },
+  "definition": {
+   "en": "Question asked of the audience to get some input to steer a scene. See Audience Participation. Here are some 'classic questions':\n\n- Can I have a non-geographical location?\n\n- Please give me an occupation, a hobby?\n\n- Can I have a room in a building?\n\n- Can I have a title for a book/a song?\n\n- Please give me an emotion?\n\n- A genre of film/literature/theatre/song?\n\n- A relationship between 2 people?\n\n- An item you would find in the kitchen/garage/attic?\n\n- A problem that needs to be solved?\n\n- An important moment in history?\n\n- An era? A year?\n\n- A mode of transportation?\n\n- A foreign country? (see Gibberish)\n\n- An animal? (see Animalistics)\n\nIf you want to be a little more original try things like\n\n- What did you want to be when you grew up?\n\n- What is this? (open your hands or arms as if you hold something)\n\n- Give me a place where you have been lost\n\n- Why was my spouse limping this morning?\n\n- Give me a place you would not want to be alone at night\n\n- What would be a nasty/annoying habit?\n\n- Give me a place where you would likely meet unusual people?\n\n- What would you never want to hear from your 4 year old daughter?\n\n- Can I have a state of mind?\n\n- What was the best birthday present you ever got?\n\n- If I kissed you now how would that feel?\n\n- What are the things your spouse does to drive you crazy?\n\n- Can I have a non-green vegetable?\n\n- What is a tradition in your family?\n\n- What is the opposite of green (or any other color)?\n\n- Give me something you would want but would never buy yourself\n\n- Can you give me an annoying personal habit?\n\n- What would the eleventh commandment be?\n\n- Can I have an excuse for not having sex?\n\n- Where would you (never) want to go on vacation?\n\n- What would be a poor choice of venue for a first date?\n\n- Can I have a problem that a repairman can fix?\n\n- What would be your grandfather's hobby?\n\n- Give me an occupation what involves (no) risk of physical harm?\n\n- What do you have in your basement/attic/boot of your car?\n\n- What would be a lousy excuse for not getting a speeding ticket?\n\nMore on Ask-for Continued!",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-ask-for-continued",
+   "ie-kw-questions"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-backline",
+  "group": "term",
+  "term": {
+   "en": "Backline",
+   "de": ""
+  },
+  "definition": {
+   "en": "The back of the actual stage.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-beat",
+  "group": "term",
+  "term": {
+   "en": "Beat",
+   "de": ""
+  },
+  "definition": {
+   "en": "A unit of action in a scene or item in a series of connected scenes. A Harold is generally composed of 3 beats.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-blackout",
+  "group": "term",
+  "term": {
+   "en": "Blackout",
+   "de": ""
+  },
+  "definition": {
+   "en": "A blackout is when the lights in the theater are turned off and the stage is dark. Blackouts can be used by a director to indicate the end of a scene.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-blocking",
+  "group": "term",
+  "term": {
+   "en": "Blocking",
+   "de": ""
+  },
+  "definition": {
+   "en": "Not Accepting other players' offers, and actually destroying these offers. Not the same as Ignoring.\n\nNot a good thing.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-accepting",
+   "ie-kw-ignoring"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-blue",
+  "group": "term",
+  "term": {
+   "en": "Blue",
+   "de": ""
+  },
+  "definition": {
+   "en": "Term referring to sexual, nasty or generally unaccepted material.\n\nThe term comes from the early days of movie-making, in which \"blue movies\" had the same meaning.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-breaking-the-routine",
+  "group": "term",
+  "term": {
+   "en": "Breaking The Routine",
+   "de": ""
+  },
+  "definition": {
+   "en": "Interrupting a (routine) action with another one in order to advance the scene. Generally a good thing.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-bulldozing",
+  "group": "term",
+  "term": {
+   "en": "Bulldozing",
+   "de": ""
+  },
+  "definition": {
+   "en": "Bulldozing is moving through a scene with attention to the other players' Offer's and to push only your own ideas into the scene. Not a good thing.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-canadian-cross",
+  "group": "term",
+  "term": {
+   "en": "Canadian Cross",
+   "de": ""
+  },
+  "definition": {
+   "en": "A Canadian Cross is when a player crosses the scene, without actually taking the focus in the story, as to add something to the scene. Classics are:\n\n- for a scene on the beach, cross the scene as a shark in the water (in the background). Unless the shark becomes part of the story, it won't be the focus.\n\n- for a scene on a camp ground, cross the scene being chased by a swarm of mosquitoes.\n\nIf you intention is not to steal the focus, either cross from the back/side, and indicate (eye contact) to the other players that you're just adding to the platform, not stealing focus. Fun when done well, but use sparingly.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-focus"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-canceling",
+  "group": "term",
+  "term": {
+   "en": "Canceling",
+   "de": ""
+  },
+  "definition": {
+   "en": "Canceling is destroying what has been established. Better is to use all elements that have been introduced - see Reincorporating.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-reincorporating"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-character-journal",
+  "group": "term",
+  "term": {
+   "en": "Character Journal",
+   "de": ""
+  },
+  "definition": {
+   "en": "Keep a list on paper, of fleshed out characters. You want to document POV, voice, background, mental state, physical behavior, status, you name it. Controversial - some folks claim this actually un-frees your mind when playing, others find it helpful as part of their Bag-O-Tricks. Your mileage may very.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-chivalry",
+  "group": "term",
+  "term": {
+   "en": "Chivalry",
+   "de": ""
+  },
+  "definition": {
+   "en": "Chivalry means not clinging to your own ideas, your own Status, or even your own life (as a character). Chivalry is daring to give up control. As Keith Johnstone teaches, players should allow themselves to be changed by other players. Be happy to be forced to change, and change. Obviously a good thing.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-comedia-dell-arte-characters",
+  "group": "term",
+  "term": {
+   "en": "Comedia dell arte characters",
+   "de": ""
+  },
+  "definition": {
+   "en": "Following is a list of the original Italian characters, with other English or French names, or descendant characters (in parentheses), and the towns/regions to which they are eventually associated: Arlecchino (Harlequin)\n\n- Arlecchino (Harlequin), is Pantalone's servant. He is extremely poor. The famous Harlequin costume, with its lozenge pattern of red, green, and blue diamonds, is a stylised representation of clothes that are so old and patched as to have lost their original colour and material. If he were a character of today, he would be on minimum benefit/wage (frauding of course!), or in the US, working three jobs. He is a peasant with no instruction (he can't read or write), who has left his native Bergamo to seek his fortune in the city of Venice, as it grows rich from its commerce with the orient. This often causes amusement, as no-one can understand his dialect. He is an acrobat and a clown, he carries a baton which he sometimes uses to bash other characters, leading to the modern term slapstick. Harlequin is not really a villain; he just tries to get by. There are three types of Harlequin mask, the cat, the pig and the monkey (some say the bull too). The lozenge costume has given its name to the fashion motif, the mask to a shape for eyeglass frames: see Harlequin.\n\n- Brighella (Figaro, Molière's Scapin), Bergamo, a money-grubbing villain, a partner of Arlecchino. He is a self made man, who has become comfortably off by starting his own business, despite humble beginnings. He is often the proprietor of the local tavern. He is a ladies' man, who has a lot of success with them. If he were a character of today, he would own a flashy car and have lots of flashy clothes and jewelry. He's a typical Latin macho man, with all the charm that involves, and all the drawbacks.\n\n- Columbina (Colombina, the Servant, Columbine, Harlequine, Pierrette), Venice, maidservant to the Innamorata and lover of Arlecchino, usually involved in intrigue. She is rather intelligent.\n\n- Il Capitano (the Captain), boastful he-man soldier, but a coward underneath Dottore (usually called Dottore Balanzone or Dottore Graziano, the Doctor), Bologna, The Doctor is the local aristocrat, who went all the way to Bologna to read for his degree. He is extremely rich, with \"old\" money. He adores food and good wines, thus he is a little round... Gianduia, Turin, a well-mannered Piedmontese peasant.\n\n- Innamorata (the Lover), the leading woman, who wore no mask (see innamorati) Innamorato (the Lover), the leading man, who wore no mask (see innamorati)-his partner is also called a lover.\n\n- Isabella (Lucinda, Cornelia, Silvia, Rosaura), Pantalone's daughter. She is very headstrong, flirtatious, sensuous, and articulate. Men are constantly falling hopelessly in love with her. She loves to tease and test the men. Her father always tries to control her life by arranging meetings and agreements with inappropriate overaged gentlemen suitors.\n\n- Mezzetin, a French figure, painted by Antoine Watteau\n\n- Pagliaccio (the Clown), a forerunner of today's clowns. The opera I Pagliacci centers around a commedia troupe.\n\n- Pantalone (Pantalon de' Bisognosi, Pantaloon), Venice, a rich and miserly merchant who is the father of Isabella. He also employs Arlecchino and treats him cruelly. Pedrolino (or Pierino, Vicenza, and most commonly nowadays known as Pierrot a dreamer with a white mask, now considered the French version of a clown).\n\n- Pulcinella, Naples, a hunchback who still chases women, he was the model for Punch in the English variation Punch and Judy.\n\n- La Ruffiana (old woman), usually a mother or gossipy townswoman who intrudes into the lives of the Lovers\n\n- Scaramuccia (see also Scaramouche), a roguish adventurer and swordsman who replaced Il Capitano in later troupes. Was the servant for another character. He wears a black velvet mask and black trousers, shirt and hat.\n\n- Zanni, Venice, a threadbare old servant from Bergamo.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-comedia-dell-arte",
+  "group": "term",
+  "term": {
+   "en": "Comedia dell arte",
+   "de": ""
+  },
+  "definition": {
+   "en": "Commedia dell'arte, (Italian, meaning \"comedy of professional artists\") was a form of improvisational theater which began in the 16th century and was popular until the 18th century, although it is still performed today. Traveling teams of players would set up an outdoor stage and provide amusement in the form of juggling, acrobatics, and, more typically, humorous plays based on a repertoire of established characters with a rough storyline, called Canovaccio. Troupes occasionally would perform directly from the back of their traveling wagon, but this is more typical of Carro di Tespi, a sort of travelling theater that dates back to antiquity. The performances were improvised around a repertory of stock conventional situations, adultery, jealousy, old age, love, some of which can be traced in Roman comedies of Plautus and Terence. The dialogue and action could easily be made topical and adjusted to satirize local scandals, current events, or regional tastes, mixed with ancient jokes and punchlines. Characters were identified by costume, masks, and even props, such as the slapstick. See Comedia dell arte characters for a list of classic characters.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-comedia-dell-arte-characters",
+   "ie-kw-props"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-commenting",
+  "group": "term",
+  "term": {
+   "en": "Commenting",
+   "de": ""
+  },
+  "definition": {
+   "en": "Stepping out of the scene and commenting on what's going on. Use sparingly. This is basically the handle for Asides.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-handle"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-conflict",
+  "group": "term",
+  "term": {
+   "en": "Conflict",
+   "de": ""
+  },
+  "definition": {
+   "en": "Conflict usually makes a story; once you've established a Platform you will probably use a conflict to advance the scene.\n\nA good thing if the conflict fits within the platform, and if it advances the scene, but you usually do not want to start a scene with Instant Trouble.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-instant-trouble"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-cross-fade",
+  "group": "term",
+  "term": {
+   "en": "Cross Fade",
+   "de": ""
+  },
+  "definition": {
+   "en": "Start of a new scene while the previous scene is winding down. Both scenes run at the same for a brief time, and the transition from old to new scene is smooth. An Edit technique.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-denial",
+  "group": "term",
+  "term": {
+   "en": "Denial",
+   "de": ""
+  },
+  "definition": {
+   "en": "We have Denial when players are not Accepting each other's Offer's. Obviously not a good thing.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-accepting"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-edit",
+  "group": "term",
+  "term": {
+   "en": "Edit",
+   "de": ""
+  },
+  "definition": {
+   "en": "An edit is the act of interrupting or ending a scene. Sometimes, the host or director will edit scenes to cut them short. In Long Form, players can edit a scene to start a new scene.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-long-form"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-embodying",
+  "group": "term",
+  "term": {
+   "en": "Embodying",
+   "de": ""
+  },
+  "definition": {
+   "en": "Embodying is, as a player, physically becoming something inhuman. One can embody a bird by flappping wings and squeeking, one can embody a table by going on all fours.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-endowing",
+  "group": "term",
+  "term": {
+   "en": "Endowing",
+   "de": ""
+  },
+  "definition": {
+   "en": "Assigning attributes to another performer's character. A good thing if it helps the other player to establish his or her character (and if it is accepted. obviously).",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-focus",
+  "group": "term",
+  "term": {
+   "en": "Focus",
+   "de": ""
+  },
+  "definition": {
+   "en": "The center of the attention of the audience. Focus should be in one place at any time - if more than one action/plot is going on simultaneously the focus is split. Less experienced improvisers often tend to steal the focus (i.e. split the focus and draw it to something unnecessarily new they introduce).",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-freezing",
+  "group": "term",
+  "term": {
+   "en": "Freezing",
+   "de": ""
+  },
+  "definition": {
+   "en": "Freezing is physically stop moving, usually verbally shutting up as well. Several games have this technique as a Handle. (see Freeze Tag, Final Freeze, Blind Freeze for examples).",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-handle"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-fuck-your-fear",
+  "group": "term",
+  "term": {
+   "en": "Fuck Your Fear",
+   "de": ""
+  },
+  "definition": {
+   "en": "This is a central theme in Mick Napier's book Improvise - Scene from the inside out. The idea is the improvisors fear the consequences of their own actions (or the actions of their characters) and as a result, freeze, or stick to safe-but-boring actions and scenes. Napier urges us to fuck our fear, and just do something, anything, and see where it leads us while improvising.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-gagging",
+  "group": "term",
+  "term": {
+   "en": "Gagging",
+   "de": ""
+  },
+  "definition": {
+   "en": "Joking, doing funny things, using Verbal wit without advancing the scene. Might make you popular with the audience but not with your fellow players. Not a good thing.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-advancing"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-give-and-take",
+  "group": "term",
+  "term": {
+   "en": "Give and Take",
+   "de": ""
+  },
+  "definition": {
+   "en": "Improvised dialog going back and fourth between the players. In scenes where players interrupt each other, ignore each other, does not show good Give and Take.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-gossiping",
+  "group": "term",
+  "term": {
+   "en": "Gossiping",
+   "de": ""
+  },
+  "definition": {
+   "en": "Talking about the action instead of doing it. Or talking about what other people do, or about things in the past or the future.\n\nNot a good thing. Try and stick to the motto \"Play it, don't say it\".",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-guerilla-improv",
+  "group": "term",
+  "term": {
+   "en": "Guerilla Improv",
+   "de": ""
+  },
+  "definition": {
+   "en": "Improv that is not performed on a stage. A kind of street theater, in which one attempts to use the rules and techniques of improv.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-improv"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-handle",
+  "group": "term",
+  "term": {
+   "en": "Handle",
+   "de": ""
+  },
+  "definition": {
+   "en": "A Handle is the premise for a scene. Most of the games in the Games section are actually game handles.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-hedging",
+  "group": "term",
+  "term": {
+   "en": "Hedging",
+   "de": ""
+  },
+  "definition": {
+   "en": "Making smalltalk rather than forwarding the action. See Gossiping.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-gossiping"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-hoedown",
+  "group": "term",
+  "term": {
+   "en": "Hoedown",
+   "de": ""
+  },
+  "definition": {
+   "en": "A hoedown is a square dance, or a gathering where a square dance is featured. The word is commonly used to describe any country or hillbilly type gathering, generally one with fiddle and banjo music. Hoedowns were originally harvest festivals of sorts, a gathering held in the fall as the crops were brought in. The farmers who attended would put their hoes down and come to a dance, hence the word \"hoedown\".\n\nIn the Improv world, Hoedown refers to a song structure made popular by the TV show Who'se Line Is It Anyway. It's a simple melody, with 4 lines to a verse, and no chorus. Rhyme pattern in the verse is usually ABCB.\n\nYou'll find a MIDI version of the WLIIA song, as well as sheet music for a simplified version on our [music] page.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-improv"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-host",
+  "group": "term",
+  "term": {
+   "en": "Host",
+   "de": ""
+  },
+  "definition": {
+   "en": "The Host is the person who welcomes the audience and introduces the players. Some troupes have the host actually MC the performance, whereas other troupes use a separate director.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-ignoring",
+  "group": "term",
+  "term": {
+   "en": "Ignoring",
+   "de": ""
+  },
+  "definition": {
+   "en": "Ignoring others' offers. Not a nice thing to do. Note that this is even worse than Blocking.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-blocking"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-impro",
+  "group": "term",
+  "term": {
+   "en": "Impro",
+   "de": ""
+  },
+  "definition": {
+   "en": "Same as Improv. The standard word for improvised theater outside of the USA.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-improv"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-improv",
+  "group": "term",
+  "term": {
+   "en": "Improv",
+   "de": ""
+  },
+  "definition": {
+   "en": "Same as Impro, in the USA. Synonyms are improvisation and improvised theater.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-impro"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-instant-trouble",
+  "group": "term",
+  "term": {
+   "en": "Instant Trouble",
+   "de": ""
+  },
+  "definition": {
+   "en": "Starting the scene with an offer that creates a problem of a conflict. Usually frowned upon. It is usually better to first establish a decent Platform,so we know who the characters are, where they are, what their Status is, and how the relationships between them are define. After that, a Conflict can be dealt with far more interestingly.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-conflict"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-jabbertalk",
+  "group": "term",
+  "term": {
+   "en": "Jabbertalk",
+   "de": ""
+  },
+  "definition": {
+   "en": "A nonsense language. Also called Gibberish Invented on the spot. See Gibberish for games that use Gibberish.\n\nFun fact: French speakers call this 'Yaourt' (yoghurt).",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-joining",
+  "group": "term",
+  "term": {
+   "en": "Joining",
+   "de": ""
+  },
+  "definition": {
+   "en": "Having the same reactions as your fellow players. This is basically a security blanket that avoids changing the Status between players.\n\nA quote from Keith Johnstone: \"Never accept joining as proof that the players are working well together.\" See Mr. Nice Guy, Tilts and Status.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-mr-nice-guy",
+   "ie-kw-tilts"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-justifying",
+  "group": "term",
+  "term": {
+   "en": "Justifying",
+   "de": ""
+  },
+  "definition": {
+   "en": "Finding a solution for every Offer and every element introduced in the scene. The idea it to justify everything. A good thing, obviously.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-kabuki",
+  "group": "term",
+  "term": {
+   "en": "Kabuki",
+   "de": ""
+  },
+  "definition": {
+   "en": "Kabuki is a form of traditional Japanese theater. Kabuki is sometimes translated as \"the art of singing and dancing.\" The word kabuki is believed to derive from the verb kabuku, meaning \"to lean\", \"to be out of the ordinary\". Kabuki theater is known for the stylization of its drama and for the elaborate make-up worn by its performers.\n\nWhen players ask for a theater style and get Kabuki, they better know what it means. See Wikipedia for more information.\n\nAlso a Long Form style.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-long-form"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-line-game",
+  "group": "term",
+  "term": {
+   "en": "Line Game",
+   "de": ""
+  },
+  "definition": {
+   "en": "Any game in which all players line up, and in turn step forward and do/say something. Examples are Worlds Worst and One Eighty Five.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-long-form",
+  "group": "term",
+  "term": {
+   "en": "Long Form",
+   "de": ""
+  },
+  "definition": {
+   "en": "Category of improvised theater, in which a long play is improvised. As opposed to Short Form. The Long Form link gives a list of Long Form formats.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-short-form"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-mc",
+  "group": "term",
+  "term": {
+   "en": "MC",
+   "de": ""
+  },
+  "definition": {
+   "en": "Master of Ceremony. The host of the show. In some cases the host is also the director.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-monologue",
+  "group": "term",
+  "term": {
+   "en": "Monologue",
+   "de": ""
+  },
+  "definition": {
+   "en": "To speak to an audience by yourself. Can be done in character or as oneself. Monologues are particularly popular in Long Form, and are often used as openers, in which a player/character explores the audience suggestion. Monologues can also be used to break series of fast-paced scenes.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-long-form"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-mr-nice-guy",
+  "group": "term",
+  "term": {
+   "en": "Mr. Nice Guy",
+   "de": ""
+  },
+  "definition": {
+   "en": "A good improv player is one that makes it easy for other players to play with him or her. This encompasses Accepting what your fellow players have to Offer, and some Chivalry. This does not mean you always need to play nice characters. You can still be an evil character and be easy to play with!\n\nAlso known as Mrs. Nice Girl.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-accepting",
+   "ie-kw-chivalry",
+   "ie-kw-improv"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-mugging",
+  "group": "term",
+  "term": {
+   "en": "Mugging",
+   "de": ""
+  },
+  "definition": {
+   "en": "Making silly faces instead of acting truthfully. Usually frowned upon.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-narrative",
+  "group": "term",
+  "term": {
+   "en": "Narrative",
+   "de": ""
+  },
+  "definition": {
+   "en": "The actual story told by the scene. Scenes should generally have a decent beginning, middle and end. See Narration for games/exercises that focus specifically on narrative.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-focus"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-never-ending-story",
+  "group": "term",
+  "term": {
+   "en": "Never-ending Story",
+   "de": ""
+  },
+  "definition": {
+   "en": "A scene that continues to introduce so many new ideas that it becomes impossible to tie the story together.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-notes",
+  "group": "term",
+  "term": {
+   "en": "Notes",
+   "de": ""
+  },
+  "definition": {
+   "en": "Notes is the term used to indicate the Post Mortem: after a show the director or MC discusses the scenes played, analyzing what went wel land what went wrong (and who did it, and why).",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-post-mortem"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-object-work",
+  "group": "term",
+  "term": {
+   "en": "Object Work",
+   "de": ""
+  },
+  "definition": {
+   "en": "Miming the objects and Props used in the scene.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-props"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-offer-from-space",
+  "group": "term",
+  "term": {
+   "en": "Offer from Space",
+   "de": ""
+  },
+  "definition": {
+   "en": "A bizarre action or statement, seemingly coming from nowhere, as an Offer in the scene. To be avoided in general, as it tends to break the reality of the scene.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-opening",
+  "group": "term",
+  "term": {
+   "en": "Opening",
+   "de": ""
+  },
+  "definition": {
+   "en": "An opening is the start of a Long Form performance. The opening can be anything (a monologue, word association, song), and is used to set the theme around which players will be improvising.\n\nOpenings can be skipped altogether. Not all longform formats have or need an opening.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-long-form",
+   "ie-kw-monologue"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-out-of-your-head",
+  "group": "term",
+  "term": {
+   "en": "Out Of Your Head",
+   "de": ""
+  },
+  "definition": {
+   "en": "The expression 'getting out of your head' refers to not thinking, letting go of preconceived ideas (which your co-players obviously are painfully unaware of). Goes with the expression 'being in your head': not being 'in' the scene, but thinking about what you should be doing/saying/playing. Improv works best if you just let it happen and don't think about it too much or too hard. It works best is you're not in hour head.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-improv"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-overloading",
+  "group": "term",
+  "term": {
+   "en": "Overloading",
+   "de": ""
+  },
+  "definition": {
+   "en": "Overloading is throwing unnecessary elements into a scene; this will usually lead to Sidetracking. Another common cause of overloading is often the introduction of a new and un-needed character, which will usually prevent whatever was going to happen from happening.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-sidetracking"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-pimping",
+  "group": "term",
+  "term": {
+   "en": "Pimping",
+   "de": ""
+  },
+  "definition": {
+   "en": "Playfully getting another player to do something unpleasant or difficult. Not really a good thing as it doesn't show much Chivalry. Used sparingly if can be quite funny (if accepted).",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-chivalry"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-playlist",
+  "group": "term",
+  "term": {
+   "en": "Playlist",
+   "de": ""
+  },
+  "definition": {
+   "en": "List of games / Handle s to be used in a performance. Usually different for every performance. If you're playing Long Form then you probably won't have a playlist.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-handle",
+   "ie-kw-long-form"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-post-mortem",
+  "group": "term",
+  "term": {
+   "en": "Post Mortem",
+   "de": ""
+  },
+  "definition": {
+   "en": "Discussion of the show by the performers (and the director or MC) to identify problems that arose as well as things that worked out well.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-postponing",
+  "group": "term",
+  "term": {
+   "en": "Postponing",
+   "de": ""
+  },
+  "definition": {
+   "en": "Postponing is the opposite of advancing. Not a good thing to do. There are 2 kinds of postponing: Waffling by lack of ideas\n\nWimping, as if being afraid to do anything with the other players' offers.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-advancing",
+   "ie-kw-waffling",
+   "ie-kw-wimping"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-props",
+  "group": "term",
+  "term": {
+   "en": "Props",
+   "de": ""
+  },
+  "definition": {
+   "en": "Objects used to improvise with. Note that most improv performances are done without props, and players mime any objects they might need (see Object Work and Space Object). Sometimes it may be practical to mime all objects needed in the scene, except for objects that might support an actor. So some troupes may have e.g. chairs on stage, and mime everthing else.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-improv",
+   "ie-kw-object-work",
+   "ie-kw-space-object"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-questions",
+  "group": "term",
+  "term": {
+   "en": "Questions",
+   "de": ""
+  },
+  "definition": {
+   "en": "Questions are generally frowned upon in improv, though they are not always a bad thing. A question that gives no information and leaves the rest of the action/the story to be defined by the other players is a form of Wimping. But a question that implies a lot of information about how the story might continue can be quite useful - assuming of course, that all replies to questions are positive, in the sense of Accepting the information in the question.\n\nSee also Only Questions.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-accepting",
+   "ie-kw-improv",
+   "ie-kw-wimping"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-raising-the-stakes",
+  "group": "term",
+  "term": {
+   "en": "Raising The Stakes",
+   "de": ""
+  },
+  "definition": {
+   "en": "A good technique for Advancing the scene: make the events in the scene have greater consequences for the characters in the scene.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-advancing"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-rehearsal",
+  "group": "term",
+  "term": {
+   "en": "Rehearsal",
+   "de": ""
+  },
+  "definition": {
+   "en": "In Improv, rehearsal is not the same as in traditional scripted theater. In rehearsal players exercise basic improv skills. In Improv, rehearsal is not intended to develop material to play on scene.\n\nPerhaps a better term for rehearsal in Improv would be 'Training'.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-improv"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-reincorporating",
+  "group": "term",
+  "term": {
+   "en": "Reincorporating",
+   "de": ""
+  },
+  "definition": {
+   "en": "Recycling or re-using ideas or situations from earlier in the scene, or from previous scenes. While it's always interesting to use elements that were introduced earlier and were neglected or forgotten, you don't want to overdo this, and turn things into running gags.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-running-gag",
+  "group": "term",
+  "term": {
+   "en": "Running Gag",
+   "de": ""
+  },
+  "definition": {
+   "en": "Recycling a situation or character from a previously played scene. Can be funny but use sparingly.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-self-edit",
+  "group": "term",
+  "term": {
+   "en": "Self Edit",
+   "de": ""
+  },
+  "definition": {
+   "en": "To drop out of your character and leave the stage. Often combined with some other kind of Edit, like a Sweep Edit or Tag Out to clear the rest of the stage.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-sweep-edit",
+   "ie-kw-tag-out"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-setup",
+  "group": "term",
+  "term": {
+   "en": "Setup",
+   "de": ""
+  },
+  "definition": {
+   "en": "Explaining the handle of the scene to the audience before the scene starts. Also involves doing an ask-for.\n\nDone by the Host or MC. Some troupes have players do the setup; in that case typically the performer who does the setup doesn't play the scene as well.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-ask-for",
+   "ie-kw-handle"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-shelving",
+  "group": "term",
+  "term": {
+   "en": "Shelving",
+   "de": ""
+  },
+  "definition": {
+   "en": "Acknowledging an offer, but not using it right away, with the intent of using it later. If later ever comes before the scene is over.\n\nAlternatively: stacking an idea or an interesting character for use in later scenes (or even later performances).",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-short-form",
+  "group": "term",
+  "term": {
+   "en": "Short Form",
+   "de": ""
+  },
+  "definition": {
+   "en": "Style of improvised theater in which short and typically unrelated scenes are played. As opposed to Long Form, Short Form Improv is often more gimmickey and more based on silly games or handles, and less based on solid narrative and characters.\n\nBoth styles of Improv (long form and short form) have their zealots. There should be no discussion about which is best - both can be fun, both can be rewarding, and preference is based on personal likes or dislikes.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-improv",
+   "ie-kw-long-form",
+   "ie-kw-narrative"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-sidecoaching",
+  "group": "term",
+  "term": {
+   "en": "Sidecoaching",
+   "de": ""
+  },
+  "definition": {
+   "en": "Sidecoaching is done by the director, or by other players. Sidecoaching consists of providing a player with additional information about the scene or the character. A sidecoaching might be something like You're an old man, you're in love, you want the other character's money.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-sideline",
+  "group": "term",
+  "term": {
+   "en": "Sideline",
+   "de": ""
+  },
+  "definition": {
+   "en": "The lineup of players in a troupe, when they are not participating in a scene. Usually done at one of the sides of the stage.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-sidetracking",
+  "group": "term",
+  "term": {
+   "en": "Sidetracking",
+   "de": ""
+  },
+  "definition": {
+   "en": "Sidetracking is changing the main story line for no reason. Happens usually for one of 2 reasons: Overloading because of introduction of unnecessary characters/elements\n\nGagging",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-gagging",
+   "ie-kw-overloading"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-space-object",
+  "group": "term",
+  "term": {
+   "en": "Space Object",
+   "de": ""
+  },
+  "definition": {
+   "en": "An object that's used in the scene but which doesn't really exist. A mimed object. In general, anything that doesn't support weight (like a chair) should be a space object. See Props.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-props"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-space-work",
+  "group": "term",
+  "term": {
+   "en": "Space Work",
+   "de": ""
+  },
+  "definition": {
+   "en": "Miming the space or the environment where the scene takes place.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-storytelling",
+  "group": "term",
+  "term": {
+   "en": "Storytelling",
+   "de": ""
+  },
+  "definition": {
+   "en": "In any scene we (and the audience) will want to see something happen, or a story developing. In Improv Handbook for the Actor, Greg Atkins states the improv is 'Storytelling on your Feet'. More accurately, improv should be 'Storytelling on each other's Feet', as several players will be trying to build one story, although none of them will know which direction the others might be going.\n\nIn that respect, improv is Group storytelling.\n\nFor most stories, we will want to know who/what/where we are (Platform), and then something should happen (Tilts, Conflict), that perhaps changes the Status between characters. Finally we want a solution, to conclude the scene.\n\nSince we are playing theatre, we should not be afraid of a little Truthfulness in our stories. After all, the truth is funny (see Truth in Comedy).",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-conflict",
+   "ie-kw-improv",
+   "ie-kw-tilts",
+   "ie-kw-truthfulness"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-subtext",
+  "group": "term",
+  "term": {
+   "en": "Subtext",
+   "de": ""
+  },
+  "definition": {
+   "en": "A character's subtext is the character's underlying drive, goals, ambitions and sense of self-esteem or Status.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-sweep-edit",
+  "group": "term",
+  "term": {
+   "en": "Sweep Edit",
+   "de": ""
+  },
+  "definition": {
+   "en": "Happens when someone (player, director or MC) walk over the scene as a kind of Edit, indicating that all players should leave and make way for the next scene. Often followed by a Blackout.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-blackout"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-tag-out",
+  "group": "term",
+  "term": {
+   "en": "Tag Out",
+   "de": ""
+  },
+  "definition": {
+   "en": "Tapping a player on the shoulder during a scene, thus removing them. You assume their position. See Freeze Tag for an example.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-taking-care-of-yourself",
+  "group": "term",
+  "term": {
+   "en": "Taking Care of Yourself",
+   "de": ""
+  },
+  "definition": {
+   "en": "Another pet peeve of Mick Napier (see Improvise - Scene from the inside out). The idea is that if you take care of yourself, in the sense of know what your character is all about, have the character's goals and Subtext clear in your mind, makes it easier for you to actually play and do something.\n\nThis may sound contradictory to the Mr. Nice Guy and Chivalry principles, but it is not: if you take care of yourself, you'll play free-er, be more playful, and hence be more fun to play with for the other players, as they'll feel more supported.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-chivalry",
+   "ie-kw-mr-nice-guy",
+   "ie-kw-subtext"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-talking-heads",
+  "group": "term",
+  "term": {
+   "en": "Talking Heads",
+   "de": ""
+  },
+  "definition": {
+   "en": "A scene in which there is little action, and in which the characters mainly talk, talk, talk, almost telling the story (if you're lucky) rather than playing it. See Gossiping, Waffling, Commenting.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-commenting",
+   "ie-kw-gossiping",
+   "ie-kw-waffling"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-tilts",
+  "group": "term",
+  "term": {
+   "en": "Tilts",
+   "de": ""
+  },
+  "definition": {
+   "en": "Interesting twitch to advance a scene, or to cause status change. A classic tilt would be a couple at the breakfast table, where the woman announces out of the blue that she's pregnant. There is an interesting list of tilts in the appendix section of Impro for Storytellers.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-impro"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-time-dash",
+  "group": "term",
+  "term": {
+   "en": "Time Dash",
+   "de": ""
+  },
+  "definition": {
+   "en": "In the course of a scene (or a whole performance), show the characters at a different point in (story) time than the one in which they were introduced. See Fast Forward.",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-transaction-scene",
+  "group": "term",
+  "term": {
+   "en": "Transaction Scene",
+   "de": ""
+  },
+  "definition": {
+   "en": "A transaction scene is a scene in which nothing happens but a simple transaction. For beginners, transaction scenes are a dangerous pitfall. When the scene Setup is e.g. a shoe-shop, it is tempting to play a scene about buying shoes, but such a scene is not likely to be very interesting. Transaction scenes need not be boring, but then we want to see something else happening but the actual transaction. An interesting Subtext may help.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-setup",
+   "ie-kw-subtext"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-truthfulness",
+  "group": "term",
+  "term": {
+   "en": "Truthfulness",
+   "de": ""
+  },
+  "definition": {
+   "en": "We play theater, and theatre is supposed to somehow touch the audience, and that's usually done by creating recognizable situations. Audiences naturally laugh when they recognize things they do, or things they know others do. Hence keeping things truthful is pretty powerful. Absurdity is usually cheap and not very interesting (very few of us are Ionesco's after all).",
+   "de": ""
+  },
+  "relatedTerms": [],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-waffling",
+  "group": "term",
+  "term": {
+   "en": "Waffling",
+   "de": ""
+  },
+  "definition": {
+   "en": "Waffling is Postponing by lack of ideas; you just keep on babbling in the hope you'll have an idea. Another example of waffling is Wimping, when you accept the other's Offer but babble about them without doing anything constructive with the offer.\n\nNot a good thing, obviously.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-postponing",
+   "ie-kw-wimping"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-walk-through",
+  "group": "term",
+  "term": {
+   "en": "Walk-Through",
+   "de": ""
+  },
+  "definition": {
+   "en": "Entering a scene, making a strong offer that advances or Tilts the scene, and then exiting. May indeed help advancing the scene, but should be used sparingly.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-advancing",
+   "ie-kw-tilts"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-wimping",
+  "group": "term",
+  "term": {
+   "en": "Wimping",
+   "de": ""
+  },
+  "definition": {
+   "en": "Wimping is accepting offers but refusing to do anything with them. Examples are\n\n- asking open Questions, thus leaving the action to be decided by the other player Waffling, babbling without accomplishing any action.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-accepting",
+   "ie-kw-questions",
+   "ie-kw-waffling"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ },
+ {
+  "id": "ie-kw-yes-and",
+  "group": "term",
+  "term": {
+   "en": "Yes And",
+   "de": ""
+  },
+  "definition": {
+   "en": "Common method of Advancing scenes: accept everything said and/or done and do something with it. Also used as a verb: Yes-anding.",
+   "de": ""
+  },
+  "relatedTerms": [
+   "ie-kw-advancing"
+  ],
+  "sourceReference": "Improv Encyclopedia"
+ }
+]

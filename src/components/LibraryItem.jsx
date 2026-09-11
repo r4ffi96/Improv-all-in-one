@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { ensureLibraryDetails, withDetails } from '../data/library.js';
 import { CheckBox, Tag } from './ui.jsx';
 
 const TYPE_TONE = { warmup: 'good', exercise: 'accent', main: 'gold', theory: 'warn' };
@@ -7,6 +8,16 @@ const TYPE_SHORT = { warmup: 'Warm-up', exercise: 'Exercise', main: 'Main', theo
 /** One library block, selectable and expandable. Shared by builder and archive. */
 export default function LibraryItem({ item, selected, onToggle, defaultOpen = false }) {
   const [open, setOpen] = useState(defaultOpen);
+  const [detail, setDetail] = useState(() => withDetails(item));
+
+  // Encyclopedia instructions are fetched the first time a card is opened.
+  useEffect(() => {
+    setDetail(withDetails(item));
+    if (!open || !item.detailsPending) return undefined;
+    let alive = true;
+    ensureLibraryDetails().then(() => { if (alive) setDetail(withDetails(item)); });
+    return () => { alive = false; };
+  }, [open, item]);
 
   return (
     <div className={`pick${selected ? ' is-selected' : ''}`}>
@@ -41,34 +52,39 @@ export default function LibraryItem({ item, selected, onToggle, defaultOpen = fa
 
       {open ? (
         <div className="pick__detail">
-          {item.setup ? (
+          {detail.detailsPending ? <p style={{ margin: 0 }}>Loading instructions&hellip;</p> : null}
+          {detail.setup ? (
             <>
               <h5>Setup</h5>
-              <p className="pre-wrap" style={{ margin: 0 }}>{item.setup}</p>
+              <p className="pre-wrap" style={{ margin: 0 }}>{detail.setup}</p>
             </>
           ) : null}
-          <h5>Instructions</h5>
-          <p className="pre-wrap" style={{ margin: 0 }}>{item.fullText}</p>
-          {item.coachingNotes.length ? (
+          {detail.fullText ? (
+            <>
+              <h5>Instructions</h5>
+              <p className="pre-wrap" style={{ margin: 0 }}>{detail.fullText}</p>
+            </>
+          ) : null}
+          {detail.coachingNotes.length ? (
             <>
               <h5>Coaching focus</h5>
-              <ul>{item.coachingNotes.map((note, i) => <li key={i}>{note}</li>)}</ul>
+              <ul>{detail.coachingNotes.map((note, i) => <li key={i}>{note}</li>)}</ul>
             </>
           ) : null}
-          {item.variations.length ? (
+          {detail.variations.length ? (
             <>
               <h5>Variations</h5>
-              <ul>{item.variations.map((v, i) => <li key={i}>{v}</li>)}</ul>
+              <ul>{detail.variations.map((v, i) => <li key={i}>{v}</li>)}</ul>
             </>
           ) : null}
-          {item.debriefQuestions && item.debriefQuestions.length ? (
+          {detail.debriefQuestions && detail.debriefQuestions.length ? (
             <>
               <h5>Debrief questions</h5>
-              <ul>{item.debriefQuestions.map((q, i) => <li key={i}>&laquo;{q}&raquo;</li>)}</ul>
+              <ul>{detail.debriefQuestions.map((q, i) => <li key={i}>&laquo;{q}&raquo;</li>)}</ul>
             </>
           ) : null}
           <h5>Source</h5>
-          <p style={{ margin: 0 }}>{item.source}</p>
+          <p style={{ margin: 0 }}>{detail.source}</p>
         </div>
       ) : null}
     </div>

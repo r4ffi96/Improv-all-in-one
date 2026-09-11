@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { LIBRARY, TYPE_LABELS, TYPE_ORDER, FREEZE_TAG_ID, byId } from '../data/library.js';
+import {
+  LIBRARY, TYPE_LABELS, TYPE_ORDER, FREEZE_TAG_ID, byId, ensureLibraryDetails,
+} from '../data/library.js';
 import { useApp } from '../context/AppContext.jsx';
 import {
   DURATION_PRESETS, applyFreezeTag, emptySession, findCandidates, groupByType,
@@ -49,6 +51,8 @@ export default function SessionBuilder({ navigate, setSubtitle }) {
     return () => setSubtitle('');
   }, [setSubtitle, total, target, session]);
 
+  const hidden = useMemo(() => new Set(state.hidden.library), [state.hidden.library]);
+
   const candidates = useMemo(
     () => (session && session.topic ? findCandidates(session.topic) : []),
     [session],
@@ -57,14 +61,17 @@ export default function SessionBuilder({ navigate, setSubtitle }) {
     const pool = browseAll || candidates.length === 0
       ? LIBRARY.filter((i) => i.id !== FREEZE_TAG_ID)
       : candidates;
-    return groupByType(pool);
-  }, [browseAll, candidates]);
+    // Blocks switched off in settings stay out of the picker, but items
+    // already in a session (or an archived one) still resolve by id.
+    return groupByType(pool.filter((i) => !hidden.has(i.id)));
+  }, [browseAll, candidates, hidden]);
 
   if (!session) return <Empty>Loading&hellip;</Empty>;
 
   const selectedIds = new Set(
     session.items.filter((i) => i.kind === 'library').map((i) => i.libraryId),
   );
+  const visibleCount = TYPE_ORDER.reduce((sum, type) => sum + visibleLibrary[type].length, 0);
 
   const toggleLibraryItem = (libraryItem) => {
     setSession((prev) => {
@@ -111,6 +118,7 @@ export default function SessionBuilder({ navigate, setSubtitle }) {
   const doExport = async (kind, format) => {
     setBusy(`${kind}-${format}`);
     try {
+      await ensureLibraryDetails();
       const doc = kind === 'trainer'
         ? buildTrainerGuide({ ...session, title: session.title || 'Training Session' })
         : buildPlayerGuide({ ...session, title: session.title || 'Training Session' });
@@ -217,7 +225,7 @@ export default function SessionBuilder({ navigate, setSubtitle }) {
           <div className="row row--tight" style={{ marginTop: 10 }}>
             <Tag tone="accent">{session.topic}</Tag>
             <span className="tiny faint">
-              {candidates.length} matching block{candidates.length === 1 ? '' : 's'}
+              {visibleCount} matching block{visibleCount === 1 ? '' : 's'}
             </span>
           </div>
         ) : null}

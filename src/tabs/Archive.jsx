@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { byId } from '../data/library.js';
+import { byId, ensureLibraryDetails } from '../data/library.js';
 import { useApp } from '../context/AppContext.jsx';
 import { summarise, sessionTags, totalMinutes } from '../lib/session.js';
 import { FORGE, formatFromCard, forgeSummary, forgeTotalMinutes, stepDuration } from '../lib/forge.js';
@@ -65,6 +65,7 @@ export default function Archive({ route, navigate, setSubtitle }) {
   const doExport = async (entry, kind, format) => {
     setBusy(`${entry.id}-${kind}-${format}`);
     try {
+      await ensureLibraryDetails();
       let doc;
       if (kind === 'forge') doc = buildForgeWorksheet(entry);
       else if (kind === 'trainer') doc = buildTrainerGuide(entry);

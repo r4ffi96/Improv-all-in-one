@@ -16,6 +16,7 @@ export function defaultState() {
     theme: 'dark',
     archive: [],
     formats: [],   // entries sent over from a Format Forge day
+    hidden: { library: [], formats: [] },  // ids switched off in settings
     builder: null,
     forge: null,
     suggestions: {
@@ -60,6 +61,10 @@ export function migrate(input) {
     theme: input.theme === 'light' ? 'light' : 'dark',
     archive: Array.isArray(input.archive) ? input.archive : [],
     formats: Array.isArray(input.formats) ? input.formats : [],
+    hidden: {
+      library: Array.isArray(input.hidden?.library) ? input.hidden.library : [],
+      formats: Array.isArray(input.hidden?.formats) ? input.hidden.formats : [],
+    },
     suggestions: { ...base.suggestions, ...(input.suggestions || {}) },
   };
 }

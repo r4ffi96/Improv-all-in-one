@@ -1,12 +1,16 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useApp } from '../context/AppContext.jsx';
 import { exportAll, parseImport, defaultState } from '../lib/storage.js';
 import { Sheet, Switch, ConfirmButton } from './ui.jsx';
-import { IconDownload, IconMoon, IconSun, IconUpload } from './Icons.jsx';
+import HiddenManager from './HiddenManager.jsx';
+import { LIBRARY } from '../data/library.js';
+import { FORMATS } from '../data/formats.js';
+import { IconChevron, IconDownload, IconMoon, IconSun, IconUpload } from './Icons.jsx';
 
 export default function SettingsSheet({ onClose }) {
   const { state, patch, replaceAll, showToast } = useApp();
   const fileRef = useRef(null);
+  const [manage, setManage] = useState(null);
 
   const sessions = state.archive.filter((a) => a.type === 'session').length;
   const forgeDays = state.archive.filter((a) => a.type === 'format-forge').length;
@@ -87,6 +91,41 @@ export default function SettingsSheet({ onClose }) {
         </div>
 
         <div className="card card--flat">
+          <div className="bold" style={{ marginBottom: 4 }}>Library</div>
+          <div className="small muted" style={{ marginBottom: 10 }}>
+            Hide blocks you never use. Hiding is reversible and never touches archived sessions.
+          </div>
+          <button
+            type="button"
+            className="btn btn--block"
+            style={{ justifyContent: 'space-between' }}
+            onClick={() => setManage('library')}
+          >
+            <span>Games &amp; exercises</span>
+            <span className="row row--tight">
+              <span className="tiny faint">
+                {state.hidden.library.length} / {LIBRARY.length} hidden
+              </span>
+              <IconChevron />
+            </span>
+          </button>
+          <button
+            type="button"
+            className="btn btn--block"
+            style={{ justifyContent: 'space-between', marginTop: 8 }}
+            onClick={() => setManage('formats')}
+          >
+            <span>Formats</span>
+            <span className="row row--tight">
+              <span className="tiny faint">
+                {state.hidden.formats.length} / {FORMATS.length} hidden
+              </span>
+              <IconChevron />
+            </span>
+          </button>
+        </div>
+
+        <div className="card card--flat">
           <div className="bold" style={{ marginBottom: 6 }}>Reset</div>
           <div className="small muted" style={{ marginBottom: 10 }}>
             Deletes archived sessions, debriefs, the Format Forge run in progress and starred suggestions.
@@ -105,6 +144,8 @@ export default function SettingsSheet({ onClose }) {
           Improv All-in-One &middot; built for Sandro Raffaele &middot; no accounts, no backend, no tracking.
         </div>
       </div>
+
+      {manage ? <HiddenManager kind={manage} onClose={() => setManage(null)} /> : null}
     </Sheet>
   );
 }

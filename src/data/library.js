@@ -9,10 +9,13 @@
  * Optional extras used by the Trainer Guide export:
  *   setup: string, debriefQuestions: string[]
  *
- * This file is the single place to extend the library. No in-app editor in v1.
+ * This file holds the hand-written blocks. Everything imported from the
+ * Improv Encyclopedia lives in encyclopedia-games.json and is merged in below.
  */
 
-export const LIBRARY = [
+import ENCYCLOPEDIA_INDEX from './encyclopedia-games.json';
+
+const CURATED = [
   /* ------------------------------------------------------------------ */
   /* WARM-UPS                                                            */
   /* ------------------------------------------------------------------ */
@@ -1208,6 +1211,59 @@ export const LIBRARY = [
   },
 ];
 
+/**
+ * The full library: curated blocks first, then everything imported from the
+ * Improv Encyclopedia. Nine encyclopedia games that duplicate a curated block
+ * were dropped at import time, so every name appears once.
+ */
+const ENCYCLOPEDIA_GAMES = ENCYCLOPEDIA_INDEX.map((item) => ({
+  ...item,
+  fullText: '',
+  coachingNotes: [],
+  variations: [],
+  detailsPending: true,
+}));
+
+export const LIBRARY = [...CURATED, ...ENCYCLOPEDIA_GAMES];
+
+export const CURATED_LIBRARY = CURATED;
+
+/*
+ * The encyclopedia instructions are about 240 kB, which is most of the app's
+ * payload and is only needed once a block is opened or exported. The index
+ * above (name, tags, duration, summary) is enough to search and pick, so the
+ * bodies load on demand and are cached for the rest of the session.
+ */
+let DETAILS = null;
+let detailsPromise = null;
+
+export function libraryDetailsLoaded() {
+  return DETAILS !== null;
+}
+
+export function ensureLibraryDetails() {
+  if (DETAILS) return Promise.resolve(DETAILS);
+  if (!detailsPromise) {
+    detailsPromise = import('./encyclopedia-games-details.json')
+      .then((mod) => {
+        DETAILS = mod.default;
+        return DETAILS;
+      })
+      .catch((err) => {
+        detailsPromise = null;
+        throw err;
+      });
+  }
+  return detailsPromise;
+}
+
+/** An item with its instructions filled in, if they have been loaded. */
+export function withDetails(item) {
+  if (!item || !item.detailsPending) return item;
+  const found = DETAILS && DETAILS[item.id];
+  return found ? { ...item, ...found, detailsPending: false } : item;
+}
+
 export const TYPE_LABELS = {
   warmup: 'Warm-ups',
   exercise: 'Exercises',
@@ -1220,6 +1276,9 @@ export const TYPE_ORDER = ['warmup', 'exercise', 'main', 'theory'];
 export const FREEZE_TAG_ID = 'ex-freeze-tag';
 
 export const byId = (id) => LIBRARY.find((item) => item.id === id) || null;
+
+/** Look up a block with its instructions attached. */
+export const fullById = (id) => withDetails(byId(id));
 
 export const ALL_TAGS = Array.from(
   new Set(LIBRARY.flatMap((item) => item.categoryTags)),

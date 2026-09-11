@@ -5,11 +5,21 @@ import { useApp } from '../context/AppContext.jsx';
 import { Card, ConfirmButton, Empty, Tag } from '../components/ui.jsx';
 import { IconBack, IconChevron } from '../components/Icons.jsx';
 
+/** First sentence of the summary, for the list card. */
+function summarise(format) {
+  const text = String(format.structureSummary || '').replace(/\s+/g, ' ').trim();
+  const stop = text.search(/(?<!e\.g|i\.e|etc)\.\s/);
+  const first = stop > 30 ? text.slice(0, stop + 1) : text;
+  return first.length > 190 ? `${first.slice(0, 187).trimEnd()}...` : first;
+}
+
 export default function Formats({ route, navigate, setSubtitle }) {
   const { state, patch, showToast } = useApp();
+  const hidden = useMemo(() => new Set(state.hidden.formats), [state.hidden.formats]);
   const all = useMemo(
-    () => [...state.formats.map((f) => ({ ...f, userAdded: true })), ...FORMATS],
-    [state.formats],
+    () => [...state.formats.map((f) => ({ ...f, userAdded: true })), ...FORMATS]
+      .filter((f) => !hidden.has(f.id)),
+    [state.formats, hidden],
   );
   const openId = route.params[0] || null;
   const current = openId ? all.find((f) => f.id === openId) : null;
@@ -32,22 +42,27 @@ export default function Formats({ route, navigate, setSubtitle }) {
           <div className="row row--tight" style={{ marginTop: 10 }}>
             <Tag tone="gold">{current.typicalDuration}</Tag>
             {current.userAdded ? <Tag tone="accent">From a forge day</Tag> : null}
+            {(current.categoryTags || []).map((tag) => <Tag key={tag}>{tag}</Tag>)}
           </div>
           <div className="divider" />
-          <p style={{ margin: 0, fontSize: 15 }}>{current.structureSummary}</p>
+          <p className="pre-wrap" style={{ margin: 0, fontSize: 15 }}>{current.structureSummary}</p>
         </Card>
 
-        <div className="section-title">Structure</div>
-        <Card>
-          <div className="beat-list">
-            {current.stages.map((stage, i) => (
-              <div className="beat" key={`${stage.name}-${i}`}>
-                <div className="beat__name">{stage.name}</div>
-                <div className="beat__desc">{stage.description}</div>
+        {current.stages.length ? (
+          <>
+            <div className="section-title">Structure</div>
+            <Card>
+              <div className="beat-list">
+                {current.stages.map((stage, i) => (
+                  <div className="beat" key={`${stage.name}-${i}`}>
+                    <div className="beat__name">{stage.name}</div>
+                    <div className="beat__desc">{stage.description}</div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </Card>
+            </Card>
+          </>
+        ) : null}
 
         {current.notes ? (
           <>

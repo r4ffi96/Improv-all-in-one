@@ -5,9 +5,13 @@
  * Schema: id, name, origin, structureSummary,
  *         stages: { name, description }[], typicalDuration, notes,
  *         relatedTheory: string[]  (ids from data/glossary.js)
+ *
+ * Imported encyclopedia entries carry an extra categoryTags array.
  */
 
-export const FORMATS = [
+import ENCYCLOPEDIA_FORMATS from './encyclopedia-formats.json';
+
+const CURATED_FORMATS = [
   {
     id: 'fmt-harold',
     name: 'Harold',
@@ -229,5 +233,8 @@ export const FORMATS = [
     relatedTheory: ['gl-invocation', 'gl-offer'],
   },
 ];
+
+/** Curated formats first, then the Long Form and Format entries of the encyclopedia. */
+export const FORMATS = [...CURATED_FORMATS, ...ENCYCLOPEDIA_FORMATS];
 
 export const formatById = (id) => FORMATS.find((f) => f.id === id) || null;
