@@ -6,6 +6,8 @@ const AppContext = createContext(null);
 export function AppProvider({ children }) {
   const [state, setState] = useState(() => (typeof window === 'undefined' ? defaultState() : loadState()));
   const [toast, setToast] = useState(null);
+  // Deliberately not persisted: saving re-locks when the app is reloaded.
+  const [archiveUnlocked, setArchiveUnlocked] = useState(false);
   const toastTimer = useRef(null);
 
   // Persist on every change. The payload is small enough that a plain
@@ -43,8 +45,12 @@ export function AppProvider({ children }) {
   useEffect(() => () => clearTimeout(toastTimer.current), []);
 
   const value = useMemo(
-    () => ({ state, patch, replaceAll, toggleFavourite, toast, showToast, setToast }),
-    [state, patch, replaceAll, toggleFavourite, toast, showToast],
+    () => ({
+      state, patch, replaceAll, toggleFavourite,
+      archiveUnlocked, setArchiveUnlocked,
+      toast, showToast, setToast,
+    }),
+    [state, patch, replaceAll, toggleFavourite, archiveUnlocked, toast, showToast],
   );
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

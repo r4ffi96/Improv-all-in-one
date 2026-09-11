@@ -57,6 +57,19 @@ thumb, and per-item `overrides` that adapt a library block for that run (a
 different prompt, its own debrief questions) without forking the library
 entry.
 
+### Archive lock
+
+Saving to the archive is behind a passphrase, in both the Session Builder and
+the Format Forge. Unlocking lasts until the app is reloaded; browsing,
+exporting, duplicating and debriefing are never gated.
+
+This is a casual gate, not security. The app is client-side only, so anyone
+with browser devtools can read the bundle, skip the check or write to
+localStorage directly. It stops someone picking up the phone in a rehearsal
+room and nothing more. The passphrase is stored as a salted hash rather than
+in plain text purely so it is not readable in the bundle; `src/lib/archiveLock.js`
+documents how to change it.
+
 ### Hiding and favourites
 
 Games, formats and glossary entries can be switched off individually under
