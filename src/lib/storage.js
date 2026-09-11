@@ -8,6 +8,7 @@
  */
 
 import { PRESET_SESSIONS } from '../data/preset-sessions.js';
+import { defaultSync } from './sync.js';
 
 export const STORAGE_KEY = 'improv-all-in-one:v1';
 export const SCHEMA_VERSION = 1;
@@ -21,6 +22,7 @@ export function defaultState() {
     hidden: { library: [], formats: [] },      // ids switched off in settings
     favourites: { library: [], formats: [] },  // starred blocks and formats
     seededPresets: [],                     // preset sessions already placed in the archive
+    sync: defaultSync(),                   // per-device server settings, never synced
     builder: null,
     forge: null,
     suggestions: {
@@ -82,6 +84,7 @@ export function migrate(input) {
     archive: Array.isArray(input.archive) ? input.archive : [],
     formats: Array.isArray(input.formats) ? input.formats : [],
     seededPresets: Array.isArray(input.seededPresets) ? input.seededPresets : [],
+    sync: { ...defaultSync(), ...(input.sync || {}) },
     hidden: {
       library: Array.isArray(input.hidden?.library) ? input.hidden.library : [],
       formats: Array.isArray(input.hidden?.formats) ? input.hidden.formats : [],
@@ -94,10 +97,17 @@ export function migrate(input) {
   };
 }
 
-/** Serialise everything for the "Export all data" button. */
+/**
+ * Serialise everything for the "Export all data" button.
+ *
+ * The sync block is left out: it holds this device's server address and
+ * token, which should not travel in a backup file or onto another device.
+ */
 export function exportAll(state) {
+  const { sync, ...data } = state;
+  void sync;
   return JSON.stringify(
-    { app: 'improv-all-in-one', version: SCHEMA_VERSION, exportedAt: new Date().toISOString(), data: state },
+    { app: 'improv-all-in-one', version: SCHEMA_VERSION, exportedAt: new Date().toISOString(), data },
     null,
     2,
   );
@@ -107,11 +117,13 @@ export function exportAll(state) {
  * Parse an exported file. Accepts both the wrapped envelope and a bare
  * state object, so a hand-edited backup still imports.
  */
-export function parseImport(text) {
+export function parseImport(text, keepSync = null) {
   const parsed = JSON.parse(text);
   const data = parsed && parsed.data ? parsed.data : parsed;
   if (!data || typeof data !== 'object') throw new Error('File does not contain app data.');
-  return migrate(data);
+  const next = migrate(data);
+  // An imported file carries no server settings, so keep this device's.
+  return keepSync ? { ...next, sync: keepSync } : next;
 }
 
 export function uid(prefix = 'id') {

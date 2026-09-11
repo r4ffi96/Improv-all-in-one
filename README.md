@@ -37,6 +37,33 @@ Everything the user creates lives in `localStorage` under `improv-all-in-one:v1`
 Settings has an **Export all data (JSON)** / **Import data (JSON)** pair so a
 backup can be moved between devices by hand.
 
+### Sync
+
+Optionally, the app can back itself up to a small server of your own and share
+data between your devices: **Settings → Server & sync**. Without it each browser
+keeps its own separate copy, and iOS Safari can evict that copy after about a
+week of not opening the app.
+
+The server is `server/improv-sync.mjs`, a single dependency-free Node file meant
+to sit on a machine that stays on, reachable over Tailscale. See
+[`server/README.md`](server/README.md) for setup, the launchd service and the API.
+
+The client side is deliberately conservative:
+
+- localStorage stays the source of truth. Everything works with the server down;
+  a failed push is reported, never fatal, and retries when the connection or the
+  tab comes back.
+- Pushes are automatic and debounced (1.5 s after the last change); pulls are
+  always explicit.
+- A push carries the server version it was based on. If another device wrote in
+  the meantime the server refuses it with 409, and the panel asks which side to
+  keep rather than overwriting either. The losing side stays in the version list.
+- Pushes are serialised, so two overlapping ones cannot report a conflict
+  against the device's own write.
+- The server address and token live under `state.sync`, which is stripped from
+  the JSON export and from everything sent to the server, so they never travel
+  to another device.
+
 ### Sessions that ship with the app
 
 Three sessions are seeded into the archive on first run, each reproducing a
@@ -104,6 +131,8 @@ npm install
 npm run dev      # http://localhost:5173
 npm run build    # -> dist/
 npm run preview
+
+node server/improv-sync.mjs   # optional sync server, see server/README.md
 ```
 
 ## Deployment

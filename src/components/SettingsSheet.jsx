@@ -3,14 +3,25 @@ import { useApp } from '../context/AppContext.jsx';
 import { exportAll, parseImport, defaultState } from '../lib/storage.js';
 import { Sheet, Switch, ConfirmButton } from './ui.jsx';
 import HiddenManager from './HiddenManager.jsx';
+import SyncPanel from './SyncPanel.jsx';
 import { LIBRARY } from '../data/library.js';
 import { FORMATS } from '../data/formats.js';
 import { IconChevron, IconDownload, IconMoon, IconSun, IconUpload } from './Icons.jsx';
+
+/** The address is whatever was typed, so never assume it parses. */
+function syncHost(url) {
+  try {
+    return new URL(url).hostname;
+  } catch {
+    return url;
+  }
+}
 
 export default function SettingsSheet({ onClose }) {
   const { state, patch, replaceAll, showToast } = useApp();
   const fileRef = useRef(null);
   const [manage, setManage] = useState(null);
+  const [syncOpen, setSyncOpen] = useState(false);
 
   const sessions = state.archive.filter((a) => a.type === 'session').length;
   const forgeDays = state.archive.filter((a) => a.type === 'format-forge').length;
@@ -33,7 +44,7 @@ export default function SettingsSheet({ onClose }) {
     const file = event.target.files && event.target.files[0];
     if (!file) return;
     try {
-      const next = parseImport(await file.text());
+      const next = parseImport(await file.text(), state.sync);
       replaceAll(next);
       showToast('Data imported');
       onClose();
@@ -88,6 +99,29 @@ export default function SettingsSheet({ onClose }) {
             onChange={doImport}
             style={{ display: 'none' }}
           />
+        </div>
+
+        <div className="card card--flat">
+          <div className="bold" style={{ marginBottom: 4 }}>Sync</div>
+          <div className="small muted" style={{ marginBottom: 10 }}>
+            {state.sync.url && state.sync.enabled
+              ? `Backing up to ${syncHost(state.sync.url)}.`
+              : 'Not set up. Everything stays in this browser only.'}
+          </div>
+          <button
+            type="button"
+            className="btn btn--block"
+            style={{ justifyContent: 'space-between' }}
+            onClick={() => setSyncOpen(true)}
+          >
+            <span>Server &amp; sync</span>
+            <span className="row row--tight">
+              <span className="tiny faint">
+                {state.sync.enabled && state.sync.url ? 'on' : 'off'}
+              </span>
+              <IconChevron />
+            </span>
+          </button>
         </div>
 
         <div className="card card--flat">
@@ -150,6 +184,7 @@ export default function SettingsSheet({ onClose }) {
       </div>
 
       {manage ? <HiddenManager kind={manage} onClose={() => setManage(null)} /> : null}
+      {syncOpen ? <SyncPanel onClose={() => setSyncOpen(false)} /> : null}
     </Sheet>
   );
 }
