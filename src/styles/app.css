@@ -630,3 +630,9 @@ input[type='search']::-webkit-search-decoration { -webkit-appearance: none; appe
   border: 1px dashed var(--border); border-radius: var(--r-sm);
   padding: 8px; background: var(--surface-2);
 }
+
+.ts-explain {
+  margin-top: 6px; font-size: 12px; line-height: 1.4;
+  color: var(--text-dim); border-left: 2px solid var(--border);
+  padding-left: 8px;
+}

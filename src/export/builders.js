@@ -411,6 +411,26 @@ export function buildTheatresportsPlan(plan, dateISO = null) {
     blocks.push(B.bullets(lines));
   }
 
+  // Short "how to explain it" lines, so a game the teams have not played is
+  // still runnable. Only games that carry an explanation are listed.
+  const explained = [];
+  const seen = new Set();
+  plan.matches.forEach((match) => match.rows.forEach((row) => {
+    const take = (cell) => {
+      if (!cell || !cell.explain || cell.include === false) return;
+      const key = String(cell.game || '').trim().toLowerCase();
+      if (!key || seen.has(key)) return;
+      seen.add(key);
+      explained.push([cell.game, cell.explain]);
+    };
+    if (row.kind === 'split') { take(row.a); take(row.b); }
+    else if (row.kind === 'joint' || row.kind === 'group') take(row);
+  }));
+  if (explained.length) {
+    blocks.push(B.section('Spielerklärungen'));
+    blocks.push(B.kv(explained));
+  }
+
   const date = dateISO || plan.createdAt || null;
   return buildDocument({
     title: 'Theatersport-Showplan',

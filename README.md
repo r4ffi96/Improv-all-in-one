@@ -135,12 +135,19 @@ one round is a joint scene, one is a *Teamwunsch* (the teams choose), and the
 final match ends on a whole-group game. No game is used twice in an evening, and
 the starting side alternates.
 
-The games come from the manual's own Spielesammlung (`src/data/theatresports.js`),
-grouped into 14 themes, not from the Improv Encyclopedia library the Session
-Builder uses. In the editor every game can be re-rolled, swapped within its
-theme, deselected, or given an inspiration prompt; team names, warm-up, rounds
-and moderation notes are editable. Export is PDF or DOCX in the manual's
-purple-table layout, with the back-up lists and moderation notes appended. The
+The theme structure and the curated games come from the manual's own
+Spielesammlung (`src/data/theatresports.js`), grouped into 14 themes. A **wide
+pool** toggle (on by default) widens each theme with short-form stage games from
+the Improv Encyclopedia library the Session Builder uses, mapped in by category
+tag and marked with ◇; those carry a short explanation so the moderator can
+introduce a game the teams have not played (the manual's own principle). Turn
+the toggle off for curated-only evenings. A Charaktere theme is
+encyclopedia-only, since the manual's collection has no character bucket.
+
+In the editor every game can be re-rolled, swapped within its theme, deselected,
+or given an inspiration prompt; team names, warm-up, rounds and moderation notes
+are editable. Export is PDF or DOCX in the manual's purple-table layout, with
+the back-up lists, moderation notes and per-game explanations appended. The
 current plan is stored in `state.theatresports` and is included in sync.
 
 - `src/data/theatresports.js` — the Spielesammlung, themes, warm-ups, back-ups, moderation notes

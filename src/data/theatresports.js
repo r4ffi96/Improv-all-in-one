@@ -184,13 +184,45 @@ export const TS_THEMES = [
       g('Freie Szene'),
     ],
   },
+  {
+    id: 'character',
+    label: 'Charaktere',
+    // No games in the manual's collection; this theme exists to surface the
+    // encyclopedia's large set of character games in the wide pool.
+    inspirations: ['Beruf', 'Beziehung', 'Emotion'],
+    games: [],
+  },
 ];
+
+/**
+ * Encyclopedia category tags that belong to each theme. Used only when the
+ * wide pool is on, to widen a theme with short-form stage games from the
+ * Session Builder library. Themes left out (or mapped to []) stay curated:
+ * their character is too specific to fill reliably from tags.
+ */
+export const TS_THEME_TAGS = {
+  sprache: ['Gibberish', 'Verbal wit'],
+  wechsel: ['Speed', 'Freeze', 'Continuation'],
+  naehe: ['Physicality', 'Movement', 'Trust'],
+  ratespiele: ['Guessing', 'Questions'],
+  kommunikation: ['Endowment'],
+  replay: ['Continuation'],
+  erzaehlen: ['Storytelling', 'Narration'],
+  emotionen: ['Emotion'],
+  musik: ['Musical', 'SingSong', 'Sound'],
+  publikum: ['Audience Participation'],
+  character: ['Character'],
+};
 
 export const TS_THEME_BY_ID = Object.fromEntries(TS_THEMES.map((t) => [t.id, t]));
 
-/** Themes usable for a normal split round (two distinct games needed). */
+/**
+ * Themes usable for a normal split round. Whether a theme actually has room
+ * for a round depends on the active pool (curated only vs. wide), so this is
+ * just the structural list; availability is checked at generation time.
+ */
 export const TS_SPLIT_THEME_IDS = TS_THEMES
-  .filter((t) => !t.joint && !t.group && t.games.length >= 2)
+  .filter((t) => !t.joint && !t.group)
   .map((t) => t.id);
 
 /** Themes that see how impro works, good for the opener. */
