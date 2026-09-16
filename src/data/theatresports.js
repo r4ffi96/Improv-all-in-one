@@ -258,11 +258,13 @@ export const TS_FINALE_GAMES = [
   'Teamwechsel',
 ];
 
+// Audience warm-ups first, so a four-team evening gives each match a
+// different one across the break.
 export const TS_WARMUPS = [
   'Filmtitel raten mit dem Publikum und beiden Teams',
+  '«Sommer oder Winter»-Rufspiel mit dem Publikum',
   'Alle stellen sich mit Namen vor und beantworten die gleiche Frage (z.B. «Welches Haushaltsgerät wärst du?»)',
   'Gemeinsames Aufwärmen: Körper, Stimme und Inspirationen',
-  '«Sommer oder Winter»-Rufspiel mit dem Publikum',
 ];
 
 export const TS_BACKUP_JOINT = [

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useApp } from '../context/AppContext.jsx';
 import {
-  generateEvening, rerollSplitGame, rerollSingleGame, patchMatch,
+  generateEvening, rerollSplitGame, rerollSingleGame, patchMatch, replaceRow,
   poolForTheme, availableSplitThemes, setSplitGame, setSingleGame,
   changeSplitTheme, addSplitRound, removeRow, usedGameNames,
 } from '../lib/theatresports.js';
@@ -17,6 +17,16 @@ import { IconDice, IconDownload, IconTrash, IconPlus } from './Icons.jsx';
 
 const norm = (s) => String(s || '').trim().toLowerCase();
 
+const setCellField = (plan, mi, rowId, side, partial) => replaceRow(
+  plan, mi, rowId, (r) => ({ ...r, [side]: { ...r[side], ...partial } }),
+);
+const setRowField = (plan, mi, rowId, partial) => replaceRow(
+  plan, mi, rowId, (r) => ({ ...r, ...partial }),
+);
+
+/* ---- module-scope subcomponents (stable types, so a background re-render
+   never remounts them and closes an open <select>) ---- */
+
 function GameSelect({ value, pool, plan, onChange, ariaLabel }) {
   const used = usedGameNames(plan);
   const known = new Set(pool.map((g) => norm(g.name)));
@@ -28,7 +38,7 @@ function GameSelect({ value, pool, plan, onChange, ariaLabel }) {
         const mark = gspec.source === 'encyclopedia' ? ' ◇' : '';
         return (
           <option key={gspec.name} value={gspec.name}>
-            {gspec.name}{mark}{isUsed ? ' · schon geplant' : ''}
+            {gspec.name}{mark}{isUsed ? ' · already planned' : ''}
           </option>
         );
       })}
@@ -41,11 +51,113 @@ function InspirationInput({ value, onChange, ariaLabel }) {
     <input
       className="input"
       list="ts-inspirations"
-      placeholder="Inspiration"
+      placeholder="Suggestion"
       value={value || ''}
       aria-label={ariaLabel}
       onChange={(e) => onChange(e.target.value)}
     />
+  );
+}
+
+function CellEditor({ plan, setPlan, mi, row, side, teamName }) {
+  const cell = row[side];
+  const letter = (side === 'a') === row.startLeft ? 'A' : 'B';
+  const pool = poolForTheme(row.themeId, plan.widePool);
+  return (
+    <div className={`ts-cell${cell.include ? '' : ' ts-cell--off'}`}>
+      <div className="row row--tight" style={{ marginBottom: 4 }}>
+        <span className="ts-badge">{letter}</span>
+        <span className="tiny bold" style={{ flex: 1, minWidth: 0 }}>{teamName}</span>
+        <CheckBox checked={cell.include} onChange={(v) => setPlan(setCellField(plan, mi, row.id, side, { include: v }))} ariaLabel={`${teamName}: include this game`} />
+      </div>
+      <div className="row row--tight">
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <GameSelect value={cell.game} pool={pool} plan={plan} ariaLabel={`${teamName}: game`} onChange={(v) => setPlan(setSplitGame(plan, mi, row.id, side, v))} />
+        </div>
+        <button type="button" className="btn btn--icon" aria-label={`${teamName}: re-roll game`} onClick={() => setPlan(rerollSplitGame(plan, mi, row.id, side))}>
+          <IconDice />
+        </button>
+      </div>
+      {cell.explain ? <div className="ts-explain">{cell.explain}</div> : null}
+      <div style={{ marginTop: 6 }}>
+        <InspirationInput value={cell.inspiration} ariaLabel={`${teamName}: suggestion`} onChange={(v) => setPlan(setCellField(plan, mi, row.id, side, { inspiration: v }))} />
+      </div>
+    </div>
+  );
+}
+
+function RowEditor({
+  plan, setPlan, mi, row, teamA, teamB, themeOptions,
+}) {
+  const header = (
+    <div className="row row--tight ts-rowhead">
+      <span className="bold" style={{ flex: 1, minWidth: 0 }}>{row.label}</span>
+      <label className="tiny faint ts-flex">
+        <CheckBox checked={Boolean(row.flexible)} onChange={(v) => setPlan(setRowField(plan, mi, row.id, { flexible: v }))} ariaLabel="Flexible round" />
+        flexible (*)
+      </label>
+      <button type="button" className="btn btn--icon" aria-label="Remove round" onClick={() => setPlan(removeRow(plan, mi, row.id))}>
+        <IconTrash />
+      </button>
+    </div>
+  );
+
+  if (row.kind === 'split') {
+    return (
+      <div className="ts-row">
+        {header}
+        <div className="field" style={{ marginTop: 2 }}>
+          <select className="input" value={row.themeId} aria-label="Round theme" onChange={(e) => setPlan(changeSplitTheme(plan, mi, row.id, e.target.value))}>
+            {themeOptions.map((id) => <option key={id} value={id}>{TS_THEME_BY_ID[id].label}</option>)}
+          </select>
+        </div>
+        <div className="ts-cells">
+          <CellEditor plan={plan} setPlan={setPlan} mi={mi} row={row} side="a" teamName={teamA} />
+          <CellEditor plan={plan} setPlan={setPlan} mi={mi} row={row} side="b" teamName={teamB} />
+        </div>
+      </div>
+    );
+  }
+
+  if (row.kind === 'teamwunsch') {
+    return (
+      <div className="ts-row">
+        {header}
+        <div className="ts-span small muted">
+          Team choice (Teamwunsch): both teams pick their own game. Starting side alternates.
+        </div>
+      </div>
+    );
+  }
+
+  const isJoint = row.kind === 'joint';
+  const pool = isJoint
+    ? TS_JOINT_THEME_IDS.flatMap((id) => poolForTheme(id, plan.widePool))
+    : TS_FINALE_GAMES.map((name) => ({ name, source: 'sammlung' }));
+  return (
+    <div className="ts-row">
+      {header}
+      <div className="ts-span">
+        <div className="tiny bold" style={{ marginBottom: 4 }}>{isJoint ? 'Joint scene (Gemeinsame Szene)' : 'Group finale'}</div>
+        <div className="row row--tight">
+          <label className="ts-flex tiny faint" style={{ marginRight: 4 }}>
+            <CheckBox checked={row.include !== false} onChange={(v) => setPlan(setRowField(plan, mi, row.id, { include: v }))} ariaLabel="Include this scene" />
+          </label>
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <GameSelect value={row.game} pool={pool} plan={plan} ariaLabel="Game" onChange={(v) => setPlan(setSingleGame(plan, mi, row.id, v))} />
+          </div>
+          <button type="button" className="btn btn--icon" aria-label="re-roll game" onClick={() => setPlan(rerollSingleGame(plan, mi, row.id))}>
+            <IconDice />
+          </button>
+        </div>
+        {row.explain ? <div className="ts-explain">{row.explain}</div> : null}
+        {isJoint ? (
+          <div style={{ marginTop: 6 }}>
+            <InspirationInput value={row.inspiration} ariaLabel="Suggestion" onChange={(v) => setPlan(setRowField(plan, mi, row.id, { inspiration: v }))} />
+          </div>
+        ) : null}
+      </div>
+    </div>
   );
 }
 
@@ -65,40 +177,25 @@ export default function TheatresportsGenerator({ onClose }) {
     try {
       await exportDocument(buildTheatresportsPlan(plan), format);
     } catch (err) {
-      showToast(`Export fehlgeschlagen: ${err.message}`);
+      showToast(`Export failed: ${err.message}`);
     } finally {
       setExporting('');
     }
   };
 
-  const updateCell = (mi, rowIdValue, side, partial) => setPlan({
-    ...plan,
-    matches: plan.matches.map((m, i) => (i !== mi ? m : {
-      ...m,
-      rows: m.rows.map((r) => (r.id === rowIdValue ? { ...r, [side]: { ...r[side], ...partial } } : r)),
-    })),
-  });
-  const updateRow = (mi, rowIdValue, partial) => setPlan({
-    ...plan,
-    matches: plan.matches.map((m, i) => (i !== mi ? m : {
-      ...m,
-      rows: m.rows.map((r) => (r.id === rowIdValue ? { ...r, ...partial } : r)),
-    })),
-  });
-
   /* ----- intro / setup ----- */
 
   if (!plan) {
     return (
-      <Sheet title="Theatersport-Abend" subtitle="Einen Showplan generieren" onClose={onClose}>
+      <Sheet title="Theatresports evening" subtitle="Generate a show plan" onClose={onClose}>
         <div className="stack">
           <Card className="card--flat">
             <p className="small" style={{ marginTop: 0 }}>
-              Erzeugt einen zufälligen Showplan im Stil des Moderationsleitfadens: pro
-              Team-Paarung eine Tabelle mit Aufwärmen und mehreren Runden. In den meisten
-              Runden spielen beide Teams je ein anderes Spiel aus dem gleichen Thema, dazu
-              kommen eine gemeinsame Szene, eine Teamwunsch-Runde und ein Gruppen-Finale.
-              Kein Spiel wird zweimal gespielt.
+              Creates a random show plan in the style of the moderation guide: one table per
+              team pairing, with a warm-up row and several rounds. In most rounds both teams
+              play a different game from the same theme; there is also a joint scene
+              (Gemeinsame Szene), a team-choice round (Teamwunsch) and a whole-group finale.
+              No game is played twice.
             </p>
           </Card>
 
@@ -106,24 +203,24 @@ export default function TheatresportsGenerator({ onClose }) {
             <Switch
               checked={widePool}
               onChange={setWidePool}
-              label="Grosser Spielpool"
-              hint="Zusätzlich zu den Spielen aus dem Leitfaden auch passende Kurzform-Spiele aus der Encyclopedia-Bibliothek (mit ◇ markiert, inklusive kurzer Erklärung für die Moderation)."
+              label="Wider game pool"
+              hint="Also include short-form stage games from the Encyclopedia library (marked ◇), each with a short explanation for the moderator. Turn off for the guide's own game collection only."
             />
           </Card>
 
           <Card className="card--flat">
             <div className="field">
-              <span className="label">Anzahl Teams</span>
+              <span className="label">Number of teams</span>
               <div className="row row--tight">
                 {[2, 4].map((n) => (
                   <button key={n} type="button" className={`chip${teamCount === n ? ' is-active' : ''}`} onClick={() => setTeamCount(n)} aria-pressed={teamCount === n}>
-                    {n} Teams
+                    {n} teams
                   </button>
                 ))}
               </div>
             </div>
             <div className="field" style={{ marginTop: 10 }}>
-              <span className="label">Runden pro Match</span>
+              <span className="label">Rounds per match</span>
               <div className="row row--tight">
                 {[3, 4, 5, 6, 7].map((n) => (
                   <button key={n} type="button" className={`chip${rounds === n ? ' is-active' : ''}`} onClick={() => setRounds(n)} aria-pressed={rounds === n}>
@@ -135,7 +232,7 @@ export default function TheatresportsGenerator({ onClose }) {
           </Card>
 
           <button type="button" className="btn btn--primary btn--block" onClick={generate}>
-            <IconDice /> Showplan generieren
+            <IconDice /> Generate show plan
           </button>
         </div>
       </Sheet>
@@ -146,108 +243,8 @@ export default function TheatresportsGenerator({ onClose }) {
 
   const themeOptions = availableSplitThemes(plan);
 
-  const CellEditor = ({ mi, row, side, teamName }) => {
-    const cell = row[side];
-    const letter = (side === 'a') === row.startLeft ? 'A' : 'B';
-    const pool = poolForTheme(row.themeId, plan.widePool);
-    return (
-      <div className={`ts-cell${cell.include ? '' : ' ts-cell--off'}`}>
-        <div className="row row--tight" style={{ marginBottom: 4 }}>
-          <span className="ts-badge">{letter}</span>
-          <span className="tiny bold" style={{ flex: 1, minWidth: 0 }}>{teamName}</span>
-          <CheckBox checked={cell.include} onChange={(v) => updateCell(mi, row.id, side, { include: v })} ariaLabel={`${teamName}: Spiel einplanen`} />
-        </div>
-        <div className="row row--tight">
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <GameSelect value={cell.game} pool={pool} plan={plan} ariaLabel={`${teamName}: Spiel`} onChange={(v) => setPlan(setSplitGame(plan, mi, row.id, side, v))} />
-          </div>
-          <button type="button" className="btn btn--icon" aria-label={`${teamName}: anderes Spiel würfeln`} onClick={() => setPlan(rerollSplitGame(plan, mi, row.id, side))}>
-            <IconDice />
-          </button>
-        </div>
-        {cell.explain ? <div className="ts-explain">{cell.explain}</div> : null}
-        <div style={{ marginTop: 6 }}>
-          <InspirationInput value={cell.inspiration} ariaLabel={`${teamName}: Inspiration`} onChange={(v) => updateCell(mi, row.id, side, { inspiration: v })} />
-        </div>
-      </div>
-    );
-  };
-
-  const RowEditor = ({ mi, row, teamA, teamB }) => {
-    const header = (
-      <div className="row row--tight ts-rowhead">
-        <span className="bold" style={{ flex: 1, minWidth: 0 }}>{row.label}</span>
-        <label className="tiny faint ts-flex">
-          <CheckBox checked={Boolean(row.flexible)} onChange={(v) => updateRow(mi, row.id, { flexible: v })} ariaLabel="Flexible Runde" />
-          flexibel (*)
-        </label>
-        <button type="button" className="btn btn--icon" aria-label="Runde entfernen" onClick={() => setPlan(removeRow(plan, mi, row.id))}>
-          <IconTrash />
-        </button>
-      </div>
-    );
-
-    if (row.kind === 'split') {
-      return (
-        <div className="ts-row">
-          {header}
-          <div className="field" style={{ marginTop: 2 }}>
-            <select className="input" value={row.themeId} aria-label="Thema der Runde" onChange={(e) => setPlan(changeSplitTheme(plan, mi, row.id, e.target.value))}>
-              {themeOptions.map((id) => <option key={id} value={id}>{TS_THEME_BY_ID[id].label}</option>)}
-            </select>
-          </div>
-          <div className="ts-cells">
-            <CellEditor mi={mi} row={row} side="a" teamName={teamA} />
-            <CellEditor mi={mi} row={row} side="b" teamName={teamB} />
-          </div>
-        </div>
-      );
-    }
-
-    if (row.kind === 'teamwunsch') {
-      return (
-        <div className="ts-row">
-          {header}
-          <div className="ts-span small muted">
-            Teamwunsch (Spielwahlrunde): beide Teams wählen selbst. Startseite wechselt.
-          </div>
-        </div>
-      );
-    }
-
-    const isJoint = row.kind === 'joint';
-    const pool = isJoint
-      ? TS_JOINT_THEME_IDS.flatMap((id) => poolForTheme(id, plan.widePool))
-      : TS_FINALE_GAMES.map((name) => ({ name, source: 'sammlung' }));
-    return (
-      <div className="ts-row">
-        {header}
-        <div className="ts-span">
-          <div className="tiny bold" style={{ marginBottom: 4 }}>{isJoint ? 'Gemeinsame Szene' : 'Gruppen-Finale'}</div>
-          <div className="row row--tight">
-            <label className="ts-flex tiny faint" style={{ marginRight: 4 }}>
-              <CheckBox checked={row.include !== false} onChange={(v) => updateRow(mi, row.id, { include: v })} ariaLabel="Szene einplanen" />
-            </label>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <GameSelect value={row.game} pool={pool} plan={plan} ariaLabel="Spiel" onChange={(v) => setPlan(setSingleGame(plan, mi, row.id, v))} />
-            </div>
-            <button type="button" className="btn btn--icon" aria-label="anderes Spiel würfeln" onClick={() => setPlan(rerollSingleGame(plan, mi, row.id))}>
-              <IconDice />
-            </button>
-          </div>
-          {row.explain ? <div className="ts-explain">{row.explain}</div> : null}
-          {isJoint ? (
-            <div style={{ marginTop: 6 }}>
-              <InspirationInput value={row.inspiration} ariaLabel="Inspiration" onChange={(v) => updateRow(mi, row.id, { inspiration: v })} />
-            </div>
-          ) : null}
-        </div>
-      </div>
-    );
-  };
-
   return (
-    <Sheet title="Theatersport-Abend" subtitle="Showplan bearbeiten" onClose={onClose}>
+    <Sheet title="Theatresports evening" subtitle="Edit the show plan" onClose={onClose}>
       <datalist id="ts-inspirations">
         {TS_INSPIRATIONS.map((i) => <option key={i} value={i} />)}
       </datalist>
@@ -255,19 +252,19 @@ export default function TheatresportsGenerator({ onClose }) {
       <div className="stack">
         <Card className="card--flat">
           <button type="button" className="btn btn--primary btn--block" onClick={generate}>
-            <IconDice /> Neu generieren
+            <IconDice /> Regenerate
           </button>
           <div style={{ marginTop: 10 }}>
-            <Switch checked={widePool} onChange={setWidePool} label="Grosser Spielpool" hint="Auch Kurzform-Spiele aus der Encyclopedia (◇). Wirkt beim nächsten «Neu generieren» und beim Würfeln." />
+            <Switch checked={widePool} onChange={setWidePool} label="Wider game pool" hint="Also short-form stage games from the Encyclopedia (◇). Applies on the next Regenerate and when re-rolling." />
           </div>
           <div className="field" style={{ marginTop: 10 }}>
-            <span className="label">Teams & Runden</span>
+            <span className="label">Teams & rounds</span>
             <div className="row row--tight">
               {[2, 4].map((n) => (
-                <button key={n} type="button" className={`chip${teamCount === n ? ' is-active' : ''}`} onClick={() => setTeamCount(n)}>{n} Teams</button>
+                <button key={n} type="button" className={`chip${teamCount === n ? ' is-active' : ''}`} onClick={() => setTeamCount(n)}>{n} teams</button>
               ))}
               {[3, 4, 5, 6, 7].map((n) => (
-                <button key={n} type="button" className={`chip${rounds === n ? ' is-active' : ''}`} onClick={() => setRounds(n)}>{n} Rd.</button>
+                <button key={n} type="button" className={`chip${rounds === n ? ' is-active' : ''}`} onClick={() => setRounds(n)}>{n} rds</button>
               ))}
             </div>
           </div>
@@ -276,18 +273,20 @@ export default function TheatresportsGenerator({ onClose }) {
         {plan.matches.map((match, mi) => (
           <Card key={mi} className="card--flat">
             <div className="ts-cells" style={{ marginBottom: 8 }}>
-              <TextInput label="Team links" value={match.teamA} onChange={(e) => setPlan(patchMatch(plan, mi, { teamA: e.target.value }))} />
-              <TextInput label="Team rechts" value={match.teamB} onChange={(e) => setPlan(patchMatch(plan, mi, { teamB: e.target.value }))} />
+              <TextInput label="Left team" value={match.teamA} onChange={(e) => setPlan(patchMatch(plan, mi, { teamA: e.target.value }))} />
+              <TextInput label="Right team" value={match.teamB} onChange={(e) => setPlan(patchMatch(plan, mi, { teamB: e.target.value }))} />
             </div>
             <div className="field">
-              <span className="label">Aufwärmen</span>
-              <input className="input" list="ts-warmups" value={match.warmup || ''} onChange={(e) => setPlan(patchMatch(plan, mi, { warmup: e.target.value }))} aria-label="Aufwärmspiel" />
+              <span className="label">Warm-up</span>
+              <input className="input" list="ts-warmups" value={match.warmup || ''} onChange={(e) => setPlan(patchMatch(plan, mi, { warmup: e.target.value }))} aria-label="Warm-up game" />
             </div>
             <div className="stack-sm" style={{ marginTop: 8 }}>
-              {match.rows.map((row) => <RowEditor key={row.id} mi={mi} row={row} teamA={match.teamA} teamB={match.teamB} />)}
+              {match.rows.map((row) => (
+                <RowEditor key={row.id} plan={plan} setPlan={setPlan} mi={mi} row={row} teamA={match.teamA} teamB={match.teamB} themeOptions={themeOptions} />
+              ))}
             </div>
             <button type="button" className="btn btn--ghost btn--sm btn--block" style={{ marginTop: 8 }} onClick={() => setPlan(addSplitRound(plan, mi))}>
-              <IconPlus /> Runde hinzufügen
+              <IconPlus /> Add round
             </button>
           </Card>
         ))}
@@ -297,21 +296,21 @@ export default function TheatresportsGenerator({ onClose }) {
         </datalist>
 
         <Card className="card--flat">
-          <div className="bold" style={{ marginBottom: 6 }}>Back-up-Spiele</div>
-          <div className="small muted">Gemeinsame Szenen: {(plan.backupJoint || []).join(', ') || '—'}</div>
-          <div className="small muted" style={{ marginTop: 4 }}>Einzelne Szenen: {(plan.backupSolo || []).join(', ') || '—'}</div>
+          <div className="bold" style={{ marginBottom: 6 }}>Back-up games</div>
+          <div className="small muted">Joint scenes: {(plan.backupJoint || []).join(', ') || '—'}</div>
+          <div className="small muted" style={{ marginTop: 4 }}>Solo scenes: {(plan.backupSolo || []).join(', ') || '—'}</div>
         </Card>
 
         <Card className="card--flat">
-          <TextArea label="Moderationsnotizen" hint="Erscheinen im PDF. Frei anpassbar." rows={8} value={plan.notes || ''} onChange={(e) => setPlan({ ...plan, notes: e.target.value })} />
+          <TextArea label="Moderator notes" hint="Shown in the PDF. Freely editable." rows={8} value={plan.notes || ''} onChange={(e) => setPlan({ ...plan, notes: e.target.value })} />
         </Card>
 
         <div className="btn-grid">
           <button type="button" className="btn btn--primary" disabled={exporting === 'pdf'} onClick={() => doExport('pdf')}>
-            <IconDownload /> {exporting === 'pdf' ? 'Erzeuge…' : 'PDF'}
+            <IconDownload /> {exporting === 'pdf' ? 'Generating…' : 'PDF'}
           </button>
           <button type="button" className="btn" disabled={exporting === 'docx'} onClick={() => doExport('docx')}>
-            <IconDownload /> {exporting === 'docx' ? 'Erzeuge…' : 'DOCX'}
+            <IconDownload /> {exporting === 'docx' ? 'Generating…' : 'DOCX'}
           </button>
         </div>
       </div>

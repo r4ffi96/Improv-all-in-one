@@ -174,7 +174,7 @@ function pickSplitTheme(used, prevThemeId, usedThemes, opener, widePool) {
   return any[0] || null;
 }
 
-function buildMatch(teamA, teamB, rounds, isFinal, used, widePool) {
+function buildMatch(teamA, teamB, rounds, isFinal, used, widePool, warmup) {
   const kinds = Array.from({ length: rounds }, () => 'split');
   if (rounds >= 2) kinds[1] = 'joint';
   if (rounds >= 3) kinds[2] = 'teamwunsch';
@@ -236,7 +236,7 @@ function buildMatch(teamA, teamB, rounds, isFinal, used, widePool) {
     startLeft = !startLeft;
   });
 
-  return { teamA, teamB, warmup: TS_WARMUPS[0], rows };
+  return { teamA, teamB, warmup: warmup || TS_WARMUPS[0], rows };
 }
 
 export function generateEvening({ teamCount = 4, rounds = 5, widePool = true } = {}) {
@@ -248,6 +248,9 @@ export function generateEvening({ teamCount = 4, rounds = 5, widePool = true } =
 
   const matches = pairs.map(([x, y], idx) => buildMatch(
     teams[x], teams[y], r, idx === pairs.length - 1, used, widePool,
+    // A different audience warm-up per match, so the second half after the
+    // break does not repeat the first.
+    TS_WARMUPS[idx % TS_WARMUPS.length],
   ));
 
   return {

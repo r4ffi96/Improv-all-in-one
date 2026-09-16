@@ -67,13 +67,13 @@ export default function Formats({ route, navigate, setSubtitle }) {
 
         {current.id === THEATRESPORTS_ID ? (
           <Card>
-            <div className="bold" style={{ marginBottom: 4 }}>Abend generieren</div>
+            <div className="bold" style={{ marginBottom: 4 }}>Generate an evening</div>
             <div className="small muted" style={{ marginBottom: 10 }}>
-              Erzeugt einen zufälligen Showplan mit thematisch gepaarten Spielen und
-              exportiert ihn als PDF mit Moderationsnotizen.
+              Builds a random show plan with thematically paired games and exports it as a
+              PDF with moderator notes.
             </div>
             <button type="button" className="btn btn--primary btn--block" onClick={() => setGeneratorOpen(true)}>
-              <IconDice /> Theatersport-Abend generieren
+              <IconDice /> Generate a show plan
             </button>
           </Card>
         ) : null}
