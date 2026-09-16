@@ -192,6 +192,21 @@ export const TS_THEMES = [
     inspirations: ['Beruf', 'Beziehung', 'Emotion'],
     games: [],
   },
+  {
+    id: 'endowment',
+    label: 'Wer oder was bin ich?',
+    // Endowment games: a player discovers who or what they are from how the
+    // others treat them. Encyclopedia-only, wide pool.
+    inspirations: ['Beruf', 'Gegenstand', 'Beziehung'],
+    games: [],
+  },
+  {
+    id: 'objektraum',
+    label: 'Objekt- & Raumarbeit',
+    // Mime, space objects and environment. Encyclopedia-only, wide pool.
+    inspirations: ['Ort', 'Gegenstand', 'Tätigkeit'],
+    games: [],
+  },
 ];
 
 /**
@@ -205,13 +220,16 @@ export const TS_THEME_TAGS = {
   wechsel: ['Speed', 'Freeze', 'Continuation'],
   naehe: ['Physicality', 'Movement', 'Trust'],
   ratespiele: ['Guessing', 'Questions'],
-  kommunikation: ['Endowment'],
+  // 'Kommunikation teilen' is about shared control, not discovery, so it has
+  // no clean encyclopedia tag and stays curated-only.
   replay: ['Continuation'],
   erzaehlen: ['Storytelling', 'Narration'],
   emotionen: ['Emotion'],
   musik: ['Musical', 'SingSong', 'Sound'],
   publikum: ['Audience Participation'],
-  character: ['Character'],
+  character: ['Character', 'Characters'],
+  endowment: ['Endowment'],
+  objektraum: ['Props', 'Object Work', 'Environment'],
 };
 
 export const TS_THEME_BY_ID = Object.fromEntries(TS_THEMES.map((t) => [t.id, t]));
