@@ -268,6 +268,7 @@ class PdfRenderer {
       case 'kv': return this.blockKv(block);
       case 'agenda': return this.blockAgenda(block);
       case 'table': return this.blockTable(block);
+      case 'showplan': return this.blockShowplan(block);
       case 'diagram': return this.blockDiagram(block);
       case 'rule': return this.blockRule();
       case 'space': return this.blockSpace(block);
@@ -568,6 +569,87 @@ class PdfRenderer {
       this.y = top - rh;
       this.line(this.left, this.y, this.right, this.y, C.tableLine, 0.5);
     }
+    this.y -= this.blockGap;
+  }
+
+  /**
+   * A Theatresports show plan, laid out like the manual's example: a narrow
+   * label column and two purple-headed team columns, with joint scenes and the
+   * group finale spanning both team columns.
+   */
+  blockShowplan(block) {
+    const labelW = 80;
+    const teamW = (this.width - labelW) / 2;
+    const padX = 5;
+    const padY = 5;
+    const size = this.S.small;
+    const hintSize = this.S.small - 1;
+    const lh = size * 1.32;
+    const hlh = hintSize * 1.28;
+    const cx = { label: this.left + labelW / 2, a: this.left + labelW + teamW / 2, b: this.left + labelW + teamW * 1.5, span: this.left + labelW + teamW };
+
+    const cellLines = (cell, font) => {
+      if (!cell) return { lines: [], hint: [] };
+      const lines = this.wrap(cell.text || '', font, size, teamW - padX * 2);
+      const hint = cell.hint ? this.wrap(cell.hint, this.f.italic || this.f.regular, hintSize, teamW - padX * 2) : [];
+      return { lines, hint };
+    };
+
+    const centre = (str, font, sz, colour, centreX, y) => {
+      const w = this.measure(str, font, sz);
+      this.text(str, centreX - w / 2, y, { font, size: sz, color: colour });
+    };
+
+    const drawHeader = () => {
+      const hh = lh + padY * 2;
+      this.need(hh);
+      const top = this.y;
+      this.rect(this.left, top - hh, labelW, hh, { fill: C.planLabelBg, border: C.planLine, borderWidth: 0.7 });
+      this.rect(this.left + labelW, top - hh, teamW, hh, { fill: C.planHeadBg, border: C.planLine, borderWidth: 0.7 });
+      this.rect(this.left + labelW + teamW, top - hh, teamW, hh, { fill: C.planHeadBg, border: C.planLine, borderWidth: 0.7 });
+      const ty = top - padY - size;
+      centre(block.teamA, this.f.bold, size, C.planHeadText, cx.a, ty);
+      centre(block.teamB, this.f.bold, size, C.planHeadText, cx.b, ty);
+      this.y = top - hh;
+    };
+
+    const drawRow = (row) => {
+      const isSpan = row.kind !== 'split';
+      let a; let b; let span;
+      if (isSpan) span = cellLines(row.span, this.f.regular);
+      else { a = cellLines(row.a, this.f.regular); b = cellLines(row.b, this.f.regular); }
+
+      const heightOf = (c) => (c ? c.lines.length * lh + (c.hint.length ? c.hint.length * hlh + 2 : 0) : 0);
+      const contentH = isSpan ? heightOf(span) : Math.max(heightOf(a), heightOf(b), lh);
+      const rh = Math.max(contentH + padY * 2, lh + padY * 2);
+
+      if (this.y - rh < this.bottom) { this.newPage(); drawHeader(); }
+      const top = this.y;
+
+      // label cell
+      this.rect(this.left, top - rh, labelW, rh, { fill: C.planLabelBg, border: C.planLine, borderWidth: 0.7 });
+      centre(row.label, this.f.bold, size, C.planHeadText, cx.label, top - rh / 2 - size / 2 + 1);
+
+      const drawCell = (content, x, w, centreX) => {
+        this.rect(x, top - rh, w, rh, { border: C.planLine, borderWidth: 0.7 });
+        let ty = top - padY - size;
+        content.lines.forEach((line) => { centre(line, this.f.regular, size, C.body, centreX, ty); ty -= lh; });
+        content.hint.forEach((line, i) => {
+          centre(line, this.f.italic || this.f.regular, hintSize, C.planHint, centreX, ty - (i === 0 ? 2 : 0));
+          ty -= hlh;
+        });
+      };
+
+      if (isSpan) drawCell(span, this.left + labelW, teamW * 2, cx.span);
+      else {
+        drawCell(a, this.left + labelW, teamW, cx.a);
+        drawCell(b, this.left + labelW + teamW, teamW, cx.b);
+      }
+      this.y = top - rh;
+    };
+
+    drawHeader();
+    block.rows.forEach(drawRow);
     this.y -= this.blockGap;
   }
 

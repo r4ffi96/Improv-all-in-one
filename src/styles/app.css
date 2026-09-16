@@ -600,3 +600,33 @@ input[type='search']::-webkit-search-decoration { -webkit-appearance: none; appe
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
 }
+
+/* ---------- theatresport generator ---------- */
+
+.ts-cells { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 540px) { .ts-cells { grid-template-columns: 1fr; } }
+
+.ts-row {
+  border: 1px solid var(--border-soft); border-radius: var(--r-md);
+  padding: 10px; background: var(--surface);
+}
+.ts-rowhead { align-items: center; gap: 8px; }
+.ts-flex { display: inline-flex; align-items: center; gap: 5px; }
+
+.ts-cell {
+  border: 1px solid var(--border-soft); border-radius: var(--r-sm);
+  padding: 8px; background: var(--surface-2);
+}
+.ts-cell--off { opacity: 0.5; }
+
+.ts-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent);
+  font-size: 11px; font-weight: 700; flex: 0 0 auto;
+}
+
+.ts-span {
+  border: 1px dashed var(--border); border-radius: var(--r-sm);
+  padding: 8px; background: var(--surface-2);
+}

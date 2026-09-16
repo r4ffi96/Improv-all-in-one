@@ -3,7 +3,11 @@ import { FORMATS } from '../data/formats.js';
 import { GLOSSARY } from '../data/glossary.js';
 import { useApp } from '../context/AppContext.jsx';
 import { Card, ConfirmButton, Empty, Tag } from '../components/ui.jsx';
-import { IconBack, IconChevron, IconStar, IconStarFilled } from '../components/Icons.jsx';
+import { IconBack, IconChevron, IconStar, IconStarFilled, IconDice } from '../components/Icons.jsx';
+import TheatresportsGenerator from '../components/TheatresportsGenerator.jsx';
+
+/** The Theatresports format gets a bespoke evening generator. */
+const THEATRESPORTS_ID = 'iefmt-theatresports';
 
 /** First sentence of the summary, for the list card. */
 function summarise(format) {
@@ -16,6 +20,7 @@ function summarise(format) {
 export default function Formats({ route, navigate, setSubtitle }) {
   const { state, patch, showToast, toggleFavourite } = useApp();
   const [favouritesOnly, setFavouritesOnly] = useState(false);
+  const [generatorOpen, setGeneratorOpen] = useState(false);
   const hidden = useMemo(() => new Set(state.hidden.formats), [state.hidden.formats]);
   const favourites = useMemo(() => new Set(state.favourites.formats), [state.favourites.formats]);
   const all = useMemo(
@@ -59,6 +64,21 @@ export default function Formats({ route, navigate, setSubtitle }) {
           <div className="divider" />
           <p className="pre-wrap" style={{ margin: 0, fontSize: 15 }}>{current.structureSummary}</p>
         </Card>
+
+        {current.id === THEATRESPORTS_ID ? (
+          <Card>
+            <div className="bold" style={{ marginBottom: 4 }}>Abend generieren</div>
+            <div className="small muted" style={{ marginBottom: 10 }}>
+              Erzeugt einen zufälligen Showplan mit thematisch gepaarten Spielen und
+              exportiert ihn als PDF mit Moderationsnotizen.
+            </div>
+            <button type="button" className="btn btn--primary btn--block" onClick={() => setGeneratorOpen(true)}>
+              <IconDice /> Theatersport-Abend generieren
+            </button>
+          </Card>
+        ) : null}
+
+        {generatorOpen ? <TheatresportsGenerator onClose={() => setGeneratorOpen(false)} /> : null}
 
         {current.stages.length ? (
           <>

@@ -10,7 +10,7 @@ and terminology. Everything runs client-side; there is no backend and no account
 | --- | --- |
 | **Session Builder** | Pick a duration and a focus, choose warm-ups, exercises, a main long-form block and theory blocks from a 441-block library, order them, insert breaks, and export a Trainer Guide and a Player Guide as PDF or DOCX. Blocks can be starred and the picker filtered to favourites only. |
 | **Suggestions** | Random scene-suggestion generator: 13 categories, 50 entries each, per-card reroll, auto-reroll on a timer, and a starred list you can copy or download as plain text. |
-| **Formats** | 32 whole-show structures, starrable and filterable to favourites, (Harold, BIG.BANG.IMPRO, Emotion Experiment, Theatresports, Gorilla Theatre, Micetro, Soap Series, Armando, Montage, La Ronde, Deconstruction, Invocation and more) with their stage breakdowns. |
+| **Formats** | 32 whole-show structures, starrable and filterable to favourites, (Harold, BIG.BANG.IMPRO, Emotion Experiment, Theatresports, Gorilla Theatre, Micetro, Soap Series, Armando, Montage, La Ronde, Deconstruction, Invocation and more) with their stage breakdowns. The Theatresports entry has a bespoke **evening generator** (see below). |
 | **Archive** | Saved sessions and Format Forge days, filterable and sortable, each re-exportable, duplicable into the builder, and debriefable (debriefs are stored as a list, so a session can be run more than once). Three written-up sessions ship with the app and are seeded here on first run. |
 | **Format Forge** | Live facilitation tool for the nine-step format development method: stepper, per-step timer, live notes, the on-the-fly adjustment reference, a format card, and a worksheet export. |
 | **Glossary** | 130 entries in four groups: Terms, Improvisers, Books and Philosophy. Search covers every definition, related terms cross-link, and each entry has a copy button. |
@@ -123,6 +123,30 @@ Schemas for the Suggestion Generator and the Glossary carry `{ en, de }` fields
 so German can be added later without restructuring. v1 seeds English only and
 has no language toggle; empty German arrays and strings fall back to English at
 read time.
+
+## Theatersport evening generator
+
+The **Theatresports** format page (and only that one) has a *Theatersport-Abend
+generieren* button that builds a randomised show plan in the style of Daniela
+Landert's «Theatersport moderieren» manual: per team pairing a table with a
+warm-up row and several rounds. Most rounds are *split* (both teams play a
+different game from the same theme, so one audience suggestion gives two takes);
+one round is a joint scene, one is a *Teamwunsch* (the teams choose), and the
+final match ends on a whole-group game. No game is used twice in an evening, and
+the starting side alternates.
+
+The games come from the manual's own Spielesammlung (`src/data/theatresports.js`),
+grouped into 14 themes, not from the Improv Encyclopedia library the Session
+Builder uses. In the editor every game can be re-rolled, swapped within its
+theme, deselected, or given an inspiration prompt; team names, warm-up, rounds
+and moderation notes are editable. Export is PDF or DOCX in the manual's
+purple-table layout, with the back-up lists and moderation notes appended. The
+current plan is stored in `state.theatresports` and is included in sync.
+
+- `src/data/theatresports.js` — the Spielesammlung, themes, warm-ups, back-ups, moderation notes
+- `src/lib/theatresports.js` — the generator and the pure edit helpers
+- `src/components/TheatresportsGenerator.jsx` — the editor (opened from the format page)
+- `src/export/builders.js` `buildTheatresportsPlan`, plus the `showplan` block in the PDF and DOCX renderers
 
 ## Development
 

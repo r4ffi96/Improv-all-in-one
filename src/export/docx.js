@@ -217,6 +217,68 @@ function tableBlock(block) {
   return [fullWidthTable([head, ...body]), spacer()];
 }
 
+/** A Theatresports show plan: label column + two purple team columns. */
+function showplanBlock(block) {
+  const border = {
+    top: solid(C.planLine, 4), bottom: solid(C.planLine, 4),
+    left: solid(C.planLine, 4), right: solid(C.planLine, 4),
+  };
+  const labelCell = (text, { header = false } = {}) => new TableCell({
+    children: [para(text, {
+      bold: true, size: S.small, color: C.planHeadText,
+      align: AlignmentType.CENTER, after: 0,
+    })],
+    width: { size: 18, type: WidthType.PERCENTAGE },
+    shading: shading(header ? C.planHeadBg : C.planLabelBg),
+    verticalAlign: VerticalAlign.CENTER,
+    borders: border,
+  });
+  const contentParas = (cell) => {
+    if (!cell) return [para('', { size: S.small, after: 0 })];
+    const out = [para(cell.text || '', { size: S.small, color: C.body, align: AlignmentType.CENTER, after: cell.hint ? 1 : 0 })];
+    if (cell.hint) {
+      out.push(para(cell.hint, {
+        italics: true, size: S.small - 1, color: C.planHint,
+        align: AlignmentType.CENTER, after: 0,
+      }));
+    }
+    return out;
+  };
+  const teamCell = (cell, span) => new TableCell({
+    children: contentParas(cell),
+    width: { size: span === 2 ? 82 : 41, type: WidthType.PERCENTAGE },
+    columnSpan: span,
+    verticalAlign: VerticalAlign.CENTER,
+    borders: border,
+  });
+  const headCell = (text) => new TableCell({
+    children: [para(text, { bold: true, size: S.small, color: C.planHeadText, align: AlignmentType.CENTER, after: 0 })],
+    width: { size: 41, type: WidthType.PERCENTAGE },
+    shading: shading(C.planHeadBg),
+    verticalAlign: VerticalAlign.CENTER,
+    borders: border,
+  });
+
+  const rows = [
+    new TableRow({
+      tableHeader: true,
+      children: [labelCell('', { header: true }), headCell(block.teamA), headCell(block.teamB)],
+    }),
+  ];
+  for (const row of block.rows) {
+    if (row.kind === 'split') {
+      rows.push(new TableRow({
+        children: [labelCell(row.label), teamCell(row.a, 1), teamCell(row.b, 1)],
+      }));
+    } else {
+      rows.push(new TableRow({
+        children: [labelCell(row.label), teamCell(row.span, 2)],
+      }));
+    }
+  }
+  return [fullWidthTable(rows), spacer()];
+}
+
 /** Harold structure as a shaded grid, the DOCX counterpart of the drawn diagram. */
 function haroldDiagram() {
   const cell = (text, span, accent) =>
@@ -312,6 +374,7 @@ function renderBlock(block, strings) {
     case 'kv': return kvBlock(block);
     case 'agenda': return agendaBlock(block);
     case 'table': return tableBlock(block);
+    case 'showplan': return showplanBlock(block);
     case 'diagram':
       if (block.kind === 'harold') return haroldDiagram();
       if (block.kind === 'funnel') return funnelDiagram();

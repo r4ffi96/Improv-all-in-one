@@ -25,6 +25,7 @@ export function defaultState() {
     sync: defaultSync(),                   // per-device server settings, never synced
     builder: null,
     forge: null,
+    theatresports: null,   // last generated Theatresports evening plan
     suggestions: {
       activeCategories: null, // null = pick a sensible default on first run
       current: {},            // categoryId -> currently shown suggestion

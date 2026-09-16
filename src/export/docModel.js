@@ -18,6 +18,7 @@
  *   { t: 'kv',       rows: [[k, v]] }        label / value lines
  *   { t: 'agenda',   rows: [{label, duration, note?}] }
  *   { t: 'table',    head: [], rows: [[]] }
+ *   { t: 'showplan', teamA, teamB, warmup?, rows: PlanRow[] }   Theatresports plan
  *   { t: 'diagram',  kind: 'harold' }
  *   { t: 'rule' }
  *   { t: 'space',    h? }
@@ -35,6 +36,7 @@ export const B = {
   kv: (rows) => ({ t: 'kv', rows: rows.filter((r) => r && r[1]) }),
   agenda: (rows) => ({ t: 'agenda', rows }),
   table: (head, rows) => ({ t: 'table', head, rows }),
+  showplan: ({ teamA, teamB, warmup, rows }) => ({ t: 'showplan', teamA, teamB, warmup, rows }),
   diagram: (kind) => ({ t: 'diagram', kind }),
   rule: () => ({ t: 'rule' }),
   space: (h = 6) => ({ t: 'space', h }),
@@ -47,7 +49,7 @@ export function compact(blocks) {
     if (!b) return false;
     if (b.t === 'bullets' || b.t === 'numbered' || b.t === 'coaching') return b.items.length > 0;
     if (b.t === 'kv') return b.rows.length > 0;
-    if (b.t === 'agenda' || b.t === 'table') return b.rows.length > 0;
+    if (b.t === 'agenda' || b.t === 'table' || b.t === 'showplan') return b.rows.length > 0;
     if (b.t === 'p' || b.t === 'callout' || b.t === 'sub') return Boolean(String(b.text || '').trim());
     return true;
   });

@@ -321,3 +321,106 @@ function slugTitle(title) {
     .toLowerCase()
     .slice(0, 50) || 'session';
 }
+
+/* ---------------------------- Theatersport ---------------------------- */
+
+const startLetters = (startLeft) => (startLeft ? ['A', 'B'] : ['B', 'A']);
+
+const hintText = (label, value) => (value ? `${label}: ${value}` : '');
+
+/** One export row (label + cells) from an app plan row. */
+function planRowToExport(row) {
+  const label = row.flexible ? `${row.label} *` : row.label;
+
+  if (row.kind === 'split') {
+    const [la, lb] = startLetters(row.startLeft);
+    const cell = (side, letter) => {
+      const c = row[side];
+      if (!c || !c.include) return { text: `${letter}: —` };
+      return { text: `${letter}: ${c.game}`, hint: hintText('Inspiration', c.inspiration) };
+    };
+    return { kind: 'split', label, a: cell('a', la), b: cell('b', lb) };
+  }
+
+  if (row.kind === 'teamwunsch') {
+    const [la, lb] = startLetters(row.startLeft);
+    return {
+      kind: 'split',
+      label,
+      a: { text: `${la}: Teamwunsch` },
+      b: { text: `${lb}: Teamwunsch` },
+    };
+  }
+
+  if (row.kind === 'joint') {
+    return {
+      kind: 'joint',
+      label,
+      span: row.include === false
+        ? { text: 'Gemeinsame Szene' }
+        : { text: `Gemeinsame Szene: ${row.game}`, hint: hintText('Inspirationen', row.inspiration) },
+    };
+  }
+
+  // group finale
+  return {
+    kind: 'group',
+    label,
+    span: row.include === false ? { text: '—' } : { text: row.game, hint: hintText('Inspiration', row.inspiration) },
+  };
+}
+
+export function buildTheatresportsPlan(plan, dateISO = null) {
+  const blocks = [];
+  const many = plan.matches.length > 1;
+  let anyFlex = false;
+
+  plan.matches.forEach((match, i) => {
+    if (many) blocks.push(B.sub(`Match ${i + 1}`));
+    const rows = [];
+    if (match.warmup) {
+      rows.push({ kind: 'joint', label: 'Aufwärmen', span: { text: match.warmup } });
+    }
+    match.rows.forEach((row) => {
+      if (row.flexible) anyFlex = true;
+      rows.push(planRowToExport(row));
+    });
+    blocks.push(B.showplan({ teamA: match.teamA, teamB: match.teamB, rows }));
+    blocks.push(B.space(6));
+  });
+
+  if (anyFlex) {
+    blocks.push(B.p('* Diese Runde kann bei Zeitnot gestrichen werden.'));
+  }
+
+  if ((plan.backupJoint || []).length || (plan.backupSolo || []).length) {
+    blocks.push(B.section('Back-up-Spiele'));
+    if ((plan.backupJoint || []).length) {
+      blocks.push(B.sub('Gemeinsame Szenen (zusätzliche Runde)'));
+      blocks.push(B.bullets(plan.backupJoint));
+    }
+    if ((plan.backupSolo || []).length) {
+      blocks.push(B.sub('Einzelne Szenen'));
+      blocks.push(B.bullets(plan.backupSolo));
+    }
+  }
+
+  if (String(plan.notes || '').trim()) {
+    blocks.push(B.section('Moderationsnotizen'));
+    const lines = String(plan.notes).split('\n').map((l) => l.replace(/^[•\-•]\s*/, '').trim()).filter(Boolean);
+    blocks.push(B.bullets(lines));
+  }
+
+  const date = dateISO || plan.createdAt || null;
+  return buildDocument({
+    title: 'Theatersport-Showplan',
+    subtitle: `${plan.matches.length === 1 ? '2 Teams' : `${plan.teamCount} Teams`} · ${plan.rounds} Runden`,
+    meta: [
+      { label: 'Format', value: 'Theatersport' },
+      date ? { label: 'Datum', value: prettyDate(date) } : null,
+    ].filter(Boolean),
+    blocks,
+    lang: 'de',
+    fileBase: 'theatersport-showplan',
+  });
+}
