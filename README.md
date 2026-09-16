@@ -145,10 +145,19 @@ the toggle off for curated-only evenings. A Charaktere theme is
 encyclopedia-only, since the manual's collection has no character bucket.
 
 In the editor every game can be re-rolled, swapped within its theme, deselected,
-or given an inspiration prompt; team names, warm-up, rounds and moderation notes
-are editable. Export is PDF or DOCX in the manual's purple-table layout, with
-the back-up lists, moderation notes and per-game explanations appended. The
-current plan is stored in `state.theatresports` and is included in sync.
+or given an inspiration prompt; an (i) button opens a game's full explanation
+(fullText, coaching notes and variations, lazy-loaded from the library). Team
+names, warm-up, rounds and moderation notes are editable. A four-team evening
+uses a different audience warm-up for the second match after the break.
+
+A fixed yellow block, «Wichtig für die Moderation» (`TS_MODERATOR_ESSENTIALS`),
+sits at the top of the editor and every export with the same reduced set of
+moderator essentials, one point per concern.
+
+Export is PDF or DOCX in the manual's purple-table layout, with the back-up
+lists, the editable moderation notes and each used game's full explanation
+appended. The current plan is stored in `state.theatresports` and is included
+in sync.
 
 - `src/data/theatresports.js` — the Spielesammlung, themes, warm-ups, back-ups, moderation notes
 - `src/lib/theatresports.js` — the generator and the pure edit helpers

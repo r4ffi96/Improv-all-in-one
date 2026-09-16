@@ -636,3 +636,23 @@ input[type='search']::-webkit-search-decoration { -webkit-appearance: none; appe
   color: var(--text-dim); border-left: 2px solid var(--border);
   padding-left: 8px;
 }
+
+.ts-essentials {
+  border: 1px solid var(--gold-line);
+  background: var(--gold-soft);
+  border-radius: var(--r-md);
+  padding: 12px 14px;
+}
+.ts-essentials__title {
+  font-weight: 800; color: var(--gold);
+  font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.ts-ul { margin: 0; padding-left: 18px; }
+.ts-ul li { margin: 3px 0; font-size: 13.5px; line-height: 1.45; }
+.ts-essentials .ts-ul li { color: var(--text); }
+
+.ts-i {
+  font-style: italic; font-weight: 700; font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px; line-height: 1;
+}

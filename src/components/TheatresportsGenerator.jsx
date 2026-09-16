@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useApp } from '../context/AppContext.jsx';
 import {
   generateEvening, rerollSplitGame, rerollSingleGame, patchMatch, replaceRow,
@@ -7,13 +7,17 @@ import {
 } from '../lib/theatresports.js';
 import {
   TS_THEME_BY_ID, TS_JOINT_THEME_IDS, TS_FINALE_GAMES, TS_WARMUPS, TS_INSPIRATIONS,
+  TS_MODERATOR_ESSENTIALS,
 } from '../data/theatresports.js';
+import { ensureLibraryDetails, fullById } from '../data/library.js';
 import { buildTheatresportsPlan } from '../export/builders.js';
 import { exportDocument } from '../export/index.js';
 import {
   Card, Sheet, Switch, TextInput, TextArea, CheckBox,
 } from './ui.jsx';
-import { IconDice, IconDownload, IconTrash, IconPlus } from './Icons.jsx';
+import {
+  IconDice, IconDownload, IconTrash, IconPlus,
+} from './Icons.jsx';
 
 const norm = (s) => String(s || '').trim().toLowerCase();
 
@@ -59,7 +63,18 @@ function InspirationInput({ value, onChange, ariaLabel }) {
   );
 }
 
-function CellEditor({ plan, setPlan, mi, row, side, teamName }) {
+function InfoButton({ refId, name, onInfo }) {
+  if (!refId) return null;
+  return (
+    <button type="button" className="btn btn--icon" aria-label={`${name}: full explanation`} onClick={() => onInfo(refId, name)}>
+      <span className="ts-i">i</span>
+    </button>
+  );
+}
+
+function CellEditor({
+  plan, setPlan, mi, row, side, teamName, onInfo,
+}) {
   const cell = row[side];
   const letter = (side === 'a') === row.startLeft ? 'A' : 'B';
   const pool = poolForTheme(row.themeId, plan.widePool);
@@ -74,6 +89,7 @@ function CellEditor({ plan, setPlan, mi, row, side, teamName }) {
         <div style={{ flex: 1, minWidth: 0 }}>
           <GameSelect value={cell.game} pool={pool} plan={plan} ariaLabel={`${teamName}: game`} onChange={(v) => setPlan(setSplitGame(plan, mi, row.id, side, v))} />
         </div>
+        <InfoButton refId={cell.refId} name={cell.game} onInfo={onInfo} />
         <button type="button" className="btn btn--icon" aria-label={`${teamName}: re-roll game`} onClick={() => setPlan(rerollSplitGame(plan, mi, row.id, side))}>
           <IconDice />
         </button>
@@ -87,7 +103,7 @@ function CellEditor({ plan, setPlan, mi, row, side, teamName }) {
 }
 
 function RowEditor({
-  plan, setPlan, mi, row, teamA, teamB, themeOptions,
+  plan, setPlan, mi, row, teamA, teamB, themeOptions, onInfo,
 }) {
   const header = (
     <div className="row row--tight ts-rowhead">
@@ -112,8 +128,8 @@ function RowEditor({
           </select>
         </div>
         <div className="ts-cells">
-          <CellEditor plan={plan} setPlan={setPlan} mi={mi} row={row} side="a" teamName={teamA} />
-          <CellEditor plan={plan} setPlan={setPlan} mi={mi} row={row} side="b" teamName={teamB} />
+          <CellEditor plan={plan} setPlan={setPlan} mi={mi} row={row} side="a" teamName={teamA} onInfo={onInfo} />
+          <CellEditor plan={plan} setPlan={setPlan} mi={mi} row={row} side="b" teamName={teamB} onInfo={onInfo} />
         </div>
       </div>
     );
@@ -146,6 +162,7 @@ function RowEditor({
           <div style={{ flex: 1, minWidth: 0 }}>
             <GameSelect value={row.game} pool={pool} plan={plan} ariaLabel="Game" onChange={(v) => setPlan(setSingleGame(plan, mi, row.id, v))} />
           </div>
+          <InfoButton refId={row.refId} name={row.game} onInfo={onInfo} />
           <button type="button" className="btn btn--icon" aria-label="re-roll game" onClick={() => setPlan(rerollSingleGame(plan, mi, row.id))}>
             <IconDice />
           </button>
@@ -161,6 +178,48 @@ function RowEditor({
   );
 }
 
+function InfoSheet({ refId, name, onClose }) {
+  const [game, setGame] = useState(null);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    let live = true;
+    ensureLibraryDetails().then(() => {
+      if (live) { setGame(fullById(refId)); setLoading(false); }
+    });
+    return () => { live = false; };
+  }, [refId]);
+  return (
+    <Sheet title={name} subtitle="Game explanation" onClose={onClose}>
+      {loading ? (
+        <div className="small muted">Loading…</div>
+      ) : !game ? (
+        <div className="small muted">No explanation available.</div>
+      ) : (
+        <div className="stack">
+          {game.categoryTags && game.categoryTags.length ? (
+            <div className="chip-row">
+              {game.categoryTags.map((t) => <span key={t} className="tag">{t}</span>)}
+            </div>
+          ) : null}
+          {game.fullText ? <p className="pre-wrap" style={{ margin: 0, fontSize: 15 }}>{game.fullText}</p> : null}
+          {game.coachingNotes && game.coachingNotes.length ? (
+            <div>
+              <div className="section-title">Coaching notes</div>
+              <ul className="ts-ul">{game.coachingNotes.map((n, i) => <li key={i}>{n}</li>)}</ul>
+            </div>
+          ) : null}
+          {game.variations && game.variations.length ? (
+            <div>
+              <div className="section-title">Variations</div>
+              <ul className="ts-ul">{game.variations.map((n, i) => <li key={i}>{n}</li>)}</ul>
+            </div>
+          ) : null}
+        </div>
+      )}
+    </Sheet>
+  );
+}
+
 export default function TheatresportsGenerator({ onClose }) {
   const { state, patch, showToast } = useApp();
   const plan = state.theatresports;
@@ -168,13 +227,18 @@ export default function TheatresportsGenerator({ onClose }) {
   const [rounds, setRounds] = useState(plan?.rounds || 5);
   const [widePool, setWidePool] = useState(plan?.widePool ?? true);
   const [exporting, setExporting] = useState('');
+  const [info, setInfo] = useState(null);
 
   const setPlan = (next) => patch({ theatresports: next });
   const generate = () => setPlan(generateEvening({ teamCount, rounds, widePool }));
+  const onInfo = (refId, name) => setInfo({ refId, name });
 
   const doExport = async (format) => {
     setExporting(format);
     try {
+      // The full game explanations are lazy-loaded; make sure they are in
+      // memory so the export can include them.
+      await ensureLibraryDetails();
       await exportDocument(buildTheatresportsPlan(plan), format);
     } catch (err) {
       showToast(`Export failed: ${err.message}`);
@@ -250,6 +314,13 @@ export default function TheatresportsGenerator({ onClose }) {
       </datalist>
 
       <div className="stack">
+        <div className="ts-essentials">
+          <div className="ts-essentials__title">Wichtig für die Moderation</div>
+          <ul className="ts-ul">
+            {TS_MODERATOR_ESSENTIALS.map((t, i) => <li key={i}>{t}</li>)}
+          </ul>
+        </div>
+
         <Card className="card--flat">
           <button type="button" className="btn btn--primary btn--block" onClick={generate}>
             <IconDice /> Regenerate
@@ -282,7 +353,7 @@ export default function TheatresportsGenerator({ onClose }) {
             </div>
             <div className="stack-sm" style={{ marginTop: 8 }}>
               {match.rows.map((row) => (
-                <RowEditor key={row.id} plan={plan} setPlan={setPlan} mi={mi} row={row} teamA={match.teamA} teamB={match.teamB} themeOptions={themeOptions} />
+                <RowEditor key={row.id} plan={plan} setPlan={setPlan} mi={mi} row={row} teamA={match.teamA} teamB={match.teamB} themeOptions={themeOptions} onInfo={onInfo} />
               ))}
             </div>
             <button type="button" className="btn btn--ghost btn--sm btn--block" style={{ marginTop: 8 }} onClick={() => setPlan(addSplitRound(plan, mi))}>
@@ -314,6 +385,8 @@ export default function TheatresportsGenerator({ onClose }) {
           </button>
         </div>
       </div>
+
+      {info ? <InfoSheet refId={info.refId} name={info.name} onClose={() => setInfo(null)} /> : null}
     </Sheet>
   );
 }

@@ -8,6 +8,7 @@
 import { B, buildDocument, formatMinutes, prettyDate, quote } from './docModel.js';
 import { getStrings } from './labels.js';
 import { fullById } from '../data/library.js';
+import { TS_MODERATOR_ESSENTIALS } from '../data/theatresports.js';
 import forgeData from '../data/format-forge-steps.json';
 
 const SESSION_ADJUSTMENTS = [
@@ -375,6 +376,9 @@ export function buildTheatresportsPlan(plan, dateISO = null) {
   const many = plan.matches.length > 1;
   let anyFlex = false;
 
+  // A fixed yellow block of moderator essentials, always first, always the same.
+  blocks.push(B.coaching(TS_MODERATOR_ESSENTIALS, 'Wichtig für die Moderation'));
+
   plan.matches.forEach((match, i) => {
     if (many) blocks.push(B.sub(`Match ${i + 1}`));
     const rows = [];
@@ -411,24 +415,33 @@ export function buildTheatresportsPlan(plan, dateISO = null) {
     blocks.push(B.bullets(lines));
   }
 
-  // Short "how to explain it" lines, so a game the teams have not played is
-  // still runnable. Only games that carry an explanation are listed.
+  // The full explanation of every game used, so a game the teams have not
+  // played is still runnable. The full text is lazy-loaded, so the caller must
+  // ensureLibraryDetails() before building; without it this falls back to the
+  // short description stored on the cell.
   const explained = [];
   const seen = new Set();
   plan.matches.forEach((match) => match.rows.forEach((row) => {
     const take = (cell) => {
-      if (!cell || !cell.explain || cell.include === false) return;
+      if (!cell || cell.include === false) return;
       const key = String(cell.game || '').trim().toLowerCase();
       if (!key || seen.has(key)) return;
+      const full = cell.refId ? fullById(cell.refId) : null;
+      const body = (full && full.fullText) || cell.explain || '';
+      if (!body) return;
       seen.add(key);
-      explained.push([cell.game, cell.explain]);
+      explained.push({ name: cell.game, body, coaching: (full && full.coachingNotes) || [] });
     };
     if (row.kind === 'split') { take(row.a); take(row.b); }
     else if (row.kind === 'joint' || row.kind === 'group') take(row);
   }));
   if (explained.length) {
     blocks.push(B.section('Spielerklärungen'));
-    blocks.push(B.kv(explained));
+    explained.forEach((g) => {
+      blocks.push(B.sub(g.name));
+      blocks.push(B.p(g.body));
+      if (g.coaching.length) blocks.push(B.bullets(g.coaching));
+    });
   }
 
   const date = dateISO || plan.createdAt || null;

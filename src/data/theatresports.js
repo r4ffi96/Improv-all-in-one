@@ -291,6 +291,20 @@ export const TS_DEFAULT_TEAMS = ['Team 1', 'Team 2', 'Team 3', 'Team 4'];
 export const TS_TEAMWUNSCH = 'Teamwunsch';
 
 /**
+ * A fixed, reduced overview of what a moderator must keep in mind, one point
+ * per distinct concern. Always shown, never edited: it appears as a yellow
+ * block in the app and in every export, unchanged.
+ */
+export const TS_MODERATOR_ESSENTIALS = [
+  'Energie & Timing: Bühne nie leer lassen, ohne Unterbruch überleiten, Szenen früh und auf dem Höhepunkt beenden.',
+  'Erklären statt benennen: jede Szene kurz fürs Publikum erklären, den Spielnamen nicht ansagen.',
+  'Abwechslung: keine ähnlichen Spiele hintereinander; längere Szenen in die Mitte, hohe Energie ans Ende jeder Halbzeit.',
+  'Fairness: Startseite (A) pro Runde wechseln; Geschenke und Challenges auf die Teams verteilen.',
+  'Inspiration: pro Szene ein Ein-Wort-Input aus dem Publikum, bewusst variieren.',
+  'Sicherheit: bei Grenzüberschreitung «Freeze» rufen, ruhig und sachlich die Szene lenken.',
+];
+
+/**
  * Default moderation notes for the export, drawn from the manual. Editable
  * per plan; this is only the seed text.
  */
